@@ -905,7 +905,7 @@ function fmtNum(n) {
 function renderHeader() {
   const el = document.getElementById('siteHeader');
   if (!el) return;
-  const isSub = window.location.pathname.includes('/constituency/');
+  const isSub = window.location.pathname.includes('/constituency/') || window.location.pathname.includes('/district/');
   const pathPrefix = isSub ? '../' : '';
 
   el.innerHTML = `
@@ -952,7 +952,7 @@ function renderHeader() {
 function renderFooter() {
   const el = document.getElementById('siteFooter');
   if (!el) return;
-  const isSub = window.location.pathname.includes('/constituency/');
+  const isSub = window.location.pathname.includes('/constituency/') || window.location.pathname.includes('/district/');
   const pathPrefix = isSub ? '../' : '';
 
   el.innerHTML = `
