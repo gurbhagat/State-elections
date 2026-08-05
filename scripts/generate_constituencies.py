@@ -220,13 +220,13 @@ template = """<!DOCTYPE html>
 
     // Dynamic FAQ logic
     const faqQ1 = lang === 'hi' ? `2022 के पंजाब चुनाव में ${{acName}} सीट से किसने जीत दर्ज की?` : lang === 'pa' ? `2022 ਦੀਆਂ ਪੰਜਾਬ ਚੋਣਾਂ ਵਿੱਚ ${{acName}} ਸੀਟ ਤੋਂ ਕਿਸ ਨੇ ਜਿੱਤ ਪ੍ਰਾਪਤ ਕੀਤੀ?` : `Who won the 2022 election in ${{acName}}?`;
-    const faqA1 = lang === 'hi' ? `2022 के चुनाव में \${{getWinner(r22)}} (\${{r22.party}}) ने \${{fmtNum(r22.margin)}} वोटों के अंतर से ${{acName}} निर्वाचन क्षेत्र जीता।` : lang === 'pa' ? `2022 ਦੀਆਂ ਚੋਣਾਂ ਵਿੱਚ \${{getWinner(r22)}} (\${{r22.party}}) ਨੇ \${{fmtNum(r22.margin)}} ਵੋਟਾਂ ਦੇ ਫਰਕ ਨਾਲ ${{acName}} ਹਲਕੇ ਤੋਂ ਜਿੱਤ ਪ੍ਰਾਪਤ ਕੀਤੀ।` : `\${{getWinner(r22)}} (\${{r22.party}}) won the ${{acName}} constituency in the 2022 elections with a margin of \${{fmtNum(r22.margin)}} votes.`;
+    const faqA1 = lang === 'hi' ? `2022 के चुनाव में ${{getWinner(r22)}} (${{r22.party}}) ने ${{fmtNum(r22.margin)}} वोटों के अंतर से ${{acName}} निर्वाचन क्षेत्र जीता।` : lang === 'pa' ? `2022 ਦੀਆਂ ਚੋਣਾਂ ਵਿੱਚ ${{getWinner(r22)}} (${{r22.party}}) ਨੇ ${{fmtNum(r22.margin)}} ਵੋਟਾਂ ਦੇ ਫਰਕ ਨਾਲ ${{acName}} ਹਲਕੇ ਤੋਂ ਜਿੱਤ ਪ੍ਰਾਪਤ ਕੀਤੀ।` : `${{getWinner(r22)}} (${{r22.party}}) won the ${{acName}} constituency in the 2022 elections with a margin of ${{fmtNum(r22.margin)}} votes.`;
 
     const faqQ2 = lang === 'hi' ? `पंजाब के ${{acName}} निर्वाचन क्षेत्र का विधान सभा नंबर क्या है?` : lang === 'pa' ? `ਪੰਜਾਬ ਦੇ ${{acName}} ਹਲਕੇ ਦਾ ਵਿਧਾਨ ਸਭਾ ਨੰਬਰ ਕੀ ਹੈ?` : `What is the assembly constituency number (AC No) of ${{acName}}?`;
-    const faqA2 = lang === 'hi' ? `${{acName}} निर्वाचन क्षेत्र का विधान सभा नंबर \${{ac.id || ac.acNo || '—'}} है, और यह \${{ac.district || '—'}} जिले में आता है।` : lang === 'pa' ? `${{acName}} ਹਲਕੇ ਦਾ ਵਿਧਾਨ ਸਭਾ ਨੰਬਰ \${{ac.id || ac.acNo || '—'}} ਹੈ, ਅਤੇ ਇਹ \${{ac.district || '—'}} ਜ਼ਿਲ੍ਹੇ ਅਧੀਨ ਆਉਂਦਾ ਹੈ।` : `${{acName}} is Assembly Constituency No. \${{ac.id || ac.acNo || '—'}} and is located in \${{ac.district || '—'}} District.`;
+    const faqA2 = lang === 'hi' ? `${{acName}} निर्वाचन क्षेत्र का विधान सभा नंबर ${{ac.id || ac.acNo || '—'}} है, और यह ${{ac.district || '—'}} जिले में आता है।` : lang === 'pa' ? `${{acName}} ਹਲਕੇ ਦਾ ਵਿਧਾਨ ਸਭਾ ਨੰਬਰ ${{ac.id || ac.acNo || '—'}} ਹੈ, ਅਤੇ ਇਹ ${{ac.district || '—'}} ਜ਼ਿਲ੍ਹੇ ਅਧੀਨ ਆਉਂਦਾ ਹੈ।` : `${{acName}} is Assembly Constituency No. ${{ac.id || ac.acNo || '—'}} and is located in ${{ac.district || '—'}} District.`;
 
     const faqQ3 = lang === 'hi' ? `${{acName}} निर्वाचन क्षेत्र में 2022 का कुल मतदान प्रतिशत क्या था?` : lang === 'pa' ? `2022 ਦੀਆਂ ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ ਵਿੱਚ ${{acName}} ਸੀਟ 'ਤੇ ਕੁੱਲ ਵੋਟਿੰਗ ਪ੍ਰਤੀਸ਼ਤ ਕੀ ਸੀ?` : `What was the voter turnout in ${{acName}} in the 2022 assembly elections?`;
-    const faqA3 = lang === 'hi' ? `2022 के पंजाब विधान सभा चुनाव में ${{acName}} सीट पर कुल मतदान प्रतिशत \${{r22.turnout}}% था।` : lang === 'pa' ? `2022 ਦੀਆਂ ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ ਵਿੱਚ ${{acName}} ਸੀਟ 'ਤੇ ਕੁੱਲ ਵੋਟਿੰਗ ਪ੍ਰਤੀਸ਼ਤ \${{r22.turnout}}% ਸੀ।` : `The voter turnout in the ${{acName}} constituency for the 2022 Punjab Legislative Assembly elections was \${{r22.turnout}}%.`;
+    const faqA3 = lang === 'hi' ? `2022 के पंजाब विधान सभा चुनाव में ${{acName}} सीट पर कुल मतदान प्रतिशत ${{r22.turnout}}% था।` : lang === 'pa' ? `2022 ਦੀਆਂ ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ ਵਿੱਚ ${{acName}} ਸੀਟ 'ਤੇ ਕੁੱਲ ਵੋਟਿੰਗ ਪ੍ਰਤੀਸ਼ਤ ${{r22.turnout}}% ਸੀ।` : `The voter turnout in the ${{acName}} constituency for the 2022 Punjab Legislative Assembly elections was ${{r22.turnout}}%.`;
 
     document.getElementById('faqQ1').textContent = faqQ1;
     document.getElementById('faqA1').textContent = faqA1;
@@ -237,14 +237,14 @@ template = """<!DOCTYPE html>
 
     // Update share links dynamically
     const shareText = encodeURIComponent(lang === 'hi' ? 
-      `पंजाब विधानसभा चुनाव: \${{acName}} निर्वाचन क्षेत्र के परिणाम और उम्मीदवार देखें:` : 
+      `पंजाब विधानसभा चुनाव: ${{acName}} निर्वाचन क्षेत्र के परिणाम और उम्मीदवार देखें:` : 
       lang === 'pa' ? 
-      `ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ: \${{acName}} ਹਲਕੇ ਦੇ ਨਤੀਜੇ ਅਤੇ ਉਮੀਦਵਾਰ ਦੇਖੋ:` : 
-      `Punjab Elections: Check results and candidates for \${{acName}} constituency:`);
+      `ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ: ${{acName}} ਹਲਕੇ ਦੇ ਨਤੀਜੇ ਅਤੇ ਉਮੀਦਵਾਰ ਦੇਖੋ:` : 
+      `Punjab Elections: Check results and candidates for ${{acName}} constituency:`);
     
     const pageUrl = encodeURIComponent(window.location.href);
-    document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=\${{shareText}}%20\${{pageUrl}}`;
-    document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=\${{shareText}}&url=\${{pageUrl}}`;
+    document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=${{shareText}}%20${{pageUrl}}`;
+    document.getElementById('shareX').href = `https://twitter.com/intent/tweet?text=${{shareText}}&url=${{pageUrl}}`;
 
     // Inject FAQ Schema dynamically in head
     let schemaScript = document.getElementById('faqSchema');
