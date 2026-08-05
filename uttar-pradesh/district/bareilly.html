@@ -16,131 +16,126 @@
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <style>
+    .dist-hero {
+      background: linear-gradient(135deg, #FF671F18 0%, var(--surface) 55%);
+      border-bottom: 1px solid var(--border);
+      padding: var(--s-10) 0 var(--s-8);
+      position: relative;
+      overflow: hidden;
+    }
+    .dist-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: #FF671F;
+    }
+    .dist-breadcrumb { font-size: var(--text-sm); color: var(--text-3); margin-bottom: var(--s-3); }
+    .dist-breadcrumb a { color: var(--text-3); text-decoration: none; }
+    .dist-breadcrumb a:hover { color: var(--accent); }
+    .dist-hero-title { font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; color: var(--text); letter-spacing: -.5px; margin-bottom: var(--s-2); }
+    .dist-hero-sub { font-size: var(--text-base); color: var(--text-2); margin-bottom: 0; }
+    .dist-stats-strip { display: flex; gap: var(--s-6); flex-wrap: wrap; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid var(--border); }
+    .dist-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--text); line-height: 1; }
+    .dist-stat-lbl { font-size: var(--text-xs); color: var(--text-3); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; margin-top: 3px; }
+    .dist-section-label { font-size: var(--text-xs); font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--s-4); }
+    .dist-party-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); margin-bottom: var(--s-8); }
+    .dist-party-bar { height: 12px; background: var(--surface-3); border-radius: 100px; overflow: hidden; display: flex; margin-bottom: var(--s-4); }
+    .dist-bar-seg { height: 100%; transition: width .6s cubic-bezier(.4,0,.2,1); }
+    .dist-party-legend { display: flex; gap: var(--s-4); flex-wrap: wrap; }
+    .dist-leg-item { display: flex; align-items: center; gap: 6px; }
+    .dist-leg-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+    .dist-leg-label { font-size: var(--text-sm); font-weight: 600; color: var(--text-2); }
+    .dist-leg-count { font-size: var(--text-sm); color: var(--text-3); }
+    .const-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--s-4); }
+    .const-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #888;
+      border-radius: var(--radius);
+      padding: var(--s-4) var(--s-5);
+      text-decoration: none;
+      display: block;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .const-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); border-color: var(--border-2); }
+    .const-name { font-size: var(--text-sm); font-weight: 700; color: var(--text); margin-bottom: var(--s-1); display: flex; align-items: center; gap: var(--s-2); }
+    .const-winner { font-size: var(--text-sm); color: var(--text-2); margin-bottom: var(--s-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .const-meta { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); }
+    .const-badge { font-size: 11px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 4px; }
+    .const-margin { font-size: 11px; color: var(--text-3); font-weight: 500; }
+    .const-sc-tag { font-size: 10px; font-weight: 600; color: var(--text-3); background: var(--surface-3); border-radius: 4px; padding: 1px 5px; }
+    @media (max-width: 640px) {
+      .dist-stats-strip { gap: var(--s-4); }
+      .const-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 400px) {
+      .const-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ac-hero">
+<div class="dist-hero">
   <div class="container">
-    <div class="ac-breadcrumb">
-      <a href="../districts.html">Districts</a> / <span id="distBreadcrumb">Bareilly</span>
-    </div>
-    <h1 class="ac-title">Bareilly District</h1>
-    <div class="ac-meta">
-      <span class="badge badge-gen">9 Constituencies</span>
+    <div class="dist-breadcrumb"><a href="../districts.html">← All Districts</a> / Bareilly</div>
+    <h1 class="dist-hero-title">Bareilly District</h1>
+    <p class="dist-hero-sub">Uttar Pradesh Vidhan Sabha — 2022 Assembly Election Results</p>
+    <div class="dist-stats-strip">
+      <div class="dist-stat">
+        <div class="dist-stat-num">9</div>
+        <div class="dist-stat-lbl">Constituencies</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">1</div>
+        <div class="dist-stat-lbl">SC Reserved</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">BJP</div>
+        <div class="dist-stat-lbl">Leading Party</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">7</div>
+        <div class="dist-stat-lbl">Seats Won</div>
+      </div>
     </div>
   </div>
 </div>
 
 <main class="section">
-  <div class="container" style="max-width:900px">
-    
-    <!-- Seat Summary Table -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">2022 Seat Distribution in Bareilly</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Party</th>
-            <th style="text-align:right">Seats Won (2022)</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><strong>BJP</strong></td>
-            <td style="text-align:right;font-weight:600">7</td>
-          </tr>
-          <tr>
-            <td><strong>SP</strong></td>
-            <td style="text-align:right;font-weight:600">2</td>
-          </tr>
+  <div class="container" style="max-width:980px">
 
-        </tbody>
-      </table>
+    <div class="dist-party-section">
+      <div class="dist-section-label">2022 Seat Distribution</div>
+      <div class="dist-party-bar"><div class="dist-bar-seg" style="width:77.8%;background:#FF671F" title="BJP: 7"></div><div class="dist-bar-seg" style="width:22.2%;background:#E33229" title="SP: 2"></div></div>
+      <div class="dist-party-legend"><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#FF671F"></div><span class="dist-leg-label">BJP</span><span class="dist-leg-count">7</span></div><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#E33229"></div><span class="dist-leg-label">SP</span><span class="dist-leg-count">2</span></div></div>
     </div>
 
-    <!-- Constituencies List -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">Constituency-wise Results</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Constituency</th>
-            <th>2022 Winner</th>
-            <th>Party</th>
-            <th style="text-align:right">Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><a href="../constituency/baheri.html" class="ac-link">Baheri</a></td>
-            <td>Ataur Rehman</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">3,355</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/meerganj.html" class="ac-link">Meerganj</a></td>
-            <td>DC Verma</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">32,840</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/bhojipura.html" class="ac-link">Bhojipura</a></td>
-            <td>Shazil Islam Ansari</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">9,409</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/nawabganj.html" class="ac-link">Nawabganj</a></td>
-            <td>Dr. M. P. Arya Gangwar</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">9,237</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/faridpur.html" class="ac-link">Faridpur</a></td>
-            <td>Shyam Bihari Lal</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">2,921</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/bithari-chainpur.html" class="ac-link">Bithari Chainpur</a></td>
-            <td>Raghavendra Sharma</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">15,841</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/bareilly.html" class="ac-link">Bareilly</a></td>
-            <td>Dr. Arun Kumar Saxena</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">32,320</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/bareilly-cantt.html" class="ac-link">Bareilly Cantt</a></td>
-            <td>Sanjeev Agarwal</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">10,768</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/aonla.html" class="ac-link">Aonla</a></td>
-            <td>Dharampal Singh</td>
-            <td><span class="badge" style="background:var(--c-bjp);color:#fff">BJP</span></td>
-            <td style="text-align:right">18,424</td>
-          </tr>
+    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    <div class="const-grid">
+<a class="const-card const-card-party-line" href="../constituency/baheri.html" style="border-left-color:#E33229"><div class="const-name">Baheri</div><div class="const-winner">Ataur Rehman</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 3,355</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/meerganj.html" style="border-left-color:#FF671F"><div class="const-name">Meerganj</div><div class="const-winner">DC Verma</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 32,840</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/bhojipura.html" style="border-left-color:#E33229"><div class="const-name">Bhojipura</div><div class="const-winner">Shazil Islam Ansari</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 9,409</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/nawabganj.html" style="border-left-color:#FF671F"><div class="const-name">Nawabganj</div><div class="const-winner">Dr. M. P. Arya Gangwar</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 9,237</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/faridpur.html" style="border-left-color:#FF671F"><div class="const-name">Faridpur<span class="const-sc-tag">SC</span></div><div class="const-winner">Shyam Bihari Lal</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 2,921</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/bithari-chainpur.html" style="border-left-color:#FF671F"><div class="const-name">Bithari Chainpur</div><div class="const-winner">Raghavendra Sharma</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 15,841</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/bareilly.html" style="border-left-color:#FF671F"><div class="const-name">Bareilly</div><div class="const-winner">Dr. Arun Kumar Saxena</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 32,320</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/bareilly-cantt.html" style="border-left-color:#FF671F"><div class="const-name">Bareilly Cantt</div><div class="const-winner">Sanjeev Agarwal</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 10,768</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/aonla.html" style="border-left-color:#FF671F"><div class="const-name">Aonla</div><div class="const-winner">Dharampal Singh</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 18,424</span></div></a>
 
-        </tbody>
-      </table>
     </div>
 
-    <div style="margin-top:var(--s-6)">
-      <a href="../districts.html" class="btn btn-secondary">All Districts</a>
+    <div style="margin-top:var(--s-8)">
+      <a href="../districts.html" class="btn btn-secondary">← All Districts</a>
     </div>
 
   </div>
 </main>
 
 <footer class="site-footer" id="siteFooter"></footer>
-
 <script src="../js/app.js"></script>
 </body>
 </html>

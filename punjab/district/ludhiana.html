@@ -16,161 +16,131 @@
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <style>
+    .dist-hero {
+      background: linear-gradient(135deg, #DD222218 0%, var(--surface) 55%);
+      border-bottom: 1px solid var(--border);
+      padding: var(--s-10) 0 var(--s-8);
+      position: relative;
+      overflow: hidden;
+    }
+    .dist-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: #DD2222;
+    }
+    .dist-breadcrumb { font-size: var(--text-sm); color: var(--text-3); margin-bottom: var(--s-3); }
+    .dist-breadcrumb a { color: var(--text-3); text-decoration: none; }
+    .dist-breadcrumb a:hover { color: var(--accent); }
+    .dist-hero-title { font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; color: var(--text); letter-spacing: -.5px; margin-bottom: var(--s-2); }
+    .dist-hero-sub { font-size: var(--text-base); color: var(--text-2); margin-bottom: 0; }
+    .dist-stats-strip { display: flex; gap: var(--s-6); flex-wrap: wrap; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid var(--border); }
+    .dist-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--text); line-height: 1; }
+    .dist-stat-lbl { font-size: var(--text-xs); color: var(--text-3); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; margin-top: 3px; }
+    .dist-section-label { font-size: var(--text-xs); font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--s-4); }
+    .dist-party-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); margin-bottom: var(--s-8); }
+    .dist-party-bar { height: 12px; background: var(--surface-3); border-radius: 100px; overflow: hidden; display: flex; margin-bottom: var(--s-4); }
+    .dist-bar-seg { height: 100%; transition: width .6s cubic-bezier(.4,0,.2,1); }
+    .dist-party-legend { display: flex; gap: var(--s-4); flex-wrap: wrap; }
+    .dist-leg-item { display: flex; align-items: center; gap: 6px; }
+    .dist-leg-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+    .dist-leg-label { font-size: var(--text-sm); font-weight: 600; color: var(--text-2); }
+    .dist-leg-count { font-size: var(--text-sm); color: var(--text-3); }
+    .const-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--s-4); }
+    .const-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #888;
+      border-radius: var(--radius);
+      padding: var(--s-4) var(--s-5);
+      text-decoration: none;
+      display: block;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .const-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); border-color: var(--border-2); }
+    .const-name { font-size: var(--text-sm); font-weight: 700; color: var(--text); margin-bottom: var(--s-1); display: flex; align-items: center; gap: var(--s-2); }
+    .const-winner { font-size: var(--text-sm); color: var(--text-2); margin-bottom: var(--s-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .const-meta { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); }
+    .const-badge { font-size: 11px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 4px; }
+    .const-margin { font-size: 11px; color: var(--text-3); font-weight: 500; }
+    .const-sc-tag { font-size: 10px; font-weight: 600; color: var(--text-3); background: var(--surface-3); border-radius: 4px; padding: 1px 5px; }
+    @media (max-width: 640px) {
+      .dist-stats-strip { gap: var(--s-4); }
+      .const-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 400px) {
+      .const-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ac-hero">
+<div class="dist-hero">
   <div class="container">
-    <div class="ac-breadcrumb">
-      <a href="../districts.html">Districts</a> / <span id="distBreadcrumb">Ludhiana</span>
-    </div>
-    <h1 class="ac-title">Ludhiana District</h1>
-    <div class="ac-meta">
-      <span class="badge badge-gen">14 Constituencies</span>
+    <div class="dist-breadcrumb"><a href="../districts.html">← All Districts</a> / Ludhiana</div>
+    <h1 class="dist-hero-title">Ludhiana District</h1>
+    <p class="dist-hero-sub">Punjab Vidhan Sabha — 2022 Assembly Election Results</p>
+    <div class="dist-stats-strip">
+      <div class="dist-stat">
+        <div class="dist-stat-num">14</div>
+        <div class="dist-stat-lbl">Constituencies</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">4</div>
+        <div class="dist-stat-lbl">SC Reserved</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">AAP</div>
+        <div class="dist-stat-lbl">Leading Party</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">13</div>
+        <div class="dist-stat-lbl">Seats Won</div>
+      </div>
     </div>
   </div>
 </div>
 
 <main class="section">
-  <div class="container" style="max-width:900px">
-    
-    <!-- Seat Summary Table -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">2022 Seat Distribution in Ludhiana</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Party</th>
-            <th style="text-align:right">Seats Won (2022)</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><strong>AAP</strong></td>
-            <td style="text-align:right;font-weight:600">13</td>
-          </tr>
-          <tr>
-            <td><strong>SAD</strong></td>
-            <td style="text-align:right;font-weight:600">1</td>
-          </tr>
+  <div class="container" style="max-width:980px">
 
-        </tbody>
-      </table>
+    <div class="dist-party-section">
+      <div class="dist-section-label">2022 Seat Distribution</div>
+      <div class="dist-party-bar"><div class="dist-bar-seg" style="width:92.9%;background:#DD2222" title="AAP: 13"></div><div class="dist-bar-seg" style="width:7.1%;background:#1A237E" title="SAD: 1"></div></div>
+      <div class="dist-party-legend"><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#DD2222"></div><span class="dist-leg-label">AAP</span><span class="dist-leg-count">13</span></div><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#1A237E"></div><span class="dist-leg-label">SAD</span><span class="dist-leg-count">1</span></div></div>
     </div>
 
-    <!-- Constituencies List -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">Constituency-wise Results</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Constituency</th>
-            <th>2022 Winner</th>
-            <th>Party</th>
-            <th style="text-align:right">Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><a href="../constituency/khanna.html" class="ac-link">Khanna</a></td>
-            <td>Tarunpreet Sond</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">35,620</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/samrala.html" class="ac-link">Samrala</a></td>
-            <td>Jagtar Singh</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">30,890</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/sahnewal.html" class="ac-link">Sahnewal</a></td>
-            <td>Hardeep Mundian</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">15,193</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/ludhiana-east.html" class="ac-link">Ludhiana East</a></td>
-            <td>Daljit Singh Grewal</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">35,922</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/ludhiana-south.html" class="ac-link">Ludhiana South</a></td>
-            <td>Rajinder Pal Kaur</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">26,138</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/atam-nagar.html" class="ac-link">Atam Nagar</a></td>
-            <td>Kulwant Singh Sidhu</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">16,354</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/ludhiana-central.html" class="ac-link">Ludhiana Central</a></td>
-            <td>Ashok Parashar Pappi</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">4,804</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/ludhiana-west.html" class="ac-link">Ludhiana West</a></td>
-            <td>Gurpreet Gogi</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">7,512</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/ludhiana-north.html" class="ac-link">Ludhiana North</a></td>
-            <td>Madan Lal Bagga</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">15,282</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/gill.html" class="ac-link">Gill</a></td>
-            <td>Jiwan Singh Sangowal</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">57,644</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/payal.html" class="ac-link">Payal</a></td>
-            <td>Manwinder Singh</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">33,009</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/dakha.html" class="ac-link">Dakha</a></td>
-            <td>Manpreet Singh Ayali</td>
-            <td><span class="badge" style="background:var(--c-sad);color:#fff">SAD</span></td>
-            <td style="text-align:right">5,807</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/raikot.html" class="ac-link">Raikot</a></td>
-            <td>Hakam Singh Thekedar</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">27,644</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/jagraon.html" class="ac-link">Jagraon</a></td>
-            <td>Sarvjit Kaur Manuke</td>
-            <td><span class="badge" style="background:var(--c-aap);color:#fff">AAP</span></td>
-            <td style="text-align:right">39,656</td>
-          </tr>
+    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    <div class="const-grid">
+<a class="const-card const-card-party-line" href="../constituency/khanna.html" style="border-left-color:#DD2222"><div class="const-name">Khanna</div><div class="const-winner">Tarunpreet Sond</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 35,620</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/samrala.html" style="border-left-color:#DD2222"><div class="const-name">Samrala</div><div class="const-winner">Jagtar Singh</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 30,890</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/sahnewal.html" style="border-left-color:#DD2222"><div class="const-name">Sahnewal</div><div class="const-winner">Hardeep Mundian</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 15,193</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/ludhiana-east.html" style="border-left-color:#DD2222"><div class="const-name">Ludhiana East</div><div class="const-winner">Daljit Singh Grewal</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 35,922</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/ludhiana-south.html" style="border-left-color:#DD2222"><div class="const-name">Ludhiana South</div><div class="const-winner">Rajinder Pal Kaur</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 26,138</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/atam-nagar.html" style="border-left-color:#DD2222"><div class="const-name">Atam Nagar</div><div class="const-winner">Kulwant Singh Sidhu</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 16,354</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/ludhiana-central.html" style="border-left-color:#DD2222"><div class="const-name">Ludhiana Central</div><div class="const-winner">Ashok Parashar Pappi</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 4,804</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/ludhiana-west.html" style="border-left-color:#DD2222"><div class="const-name">Ludhiana West</div><div class="const-winner">Gurpreet Gogi</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 7,512</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/ludhiana-north.html" style="border-left-color:#DD2222"><div class="const-name">Ludhiana North</div><div class="const-winner">Madan Lal Bagga</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 15,282</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/gill.html" style="border-left-color:#DD2222"><div class="const-name">Gill<span class="const-sc-tag">SC</span></div><div class="const-winner">Jiwan Singh Sangowal</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 57,644</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/payal.html" style="border-left-color:#DD2222"><div class="const-name">Payal<span class="const-sc-tag">SC</span></div><div class="const-winner">Manwinder Singh</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 33,009</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/dakha.html" style="border-left-color:#1A237E"><div class="const-name">Dakha</div><div class="const-winner">Manpreet Singh Ayali</div><div class="const-meta"><span class="const-badge" style="background:#1A237E">SAD</span><span class="const-margin">Margin: 5,807</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/raikot.html" style="border-left-color:#DD2222"><div class="const-name">Raikot<span class="const-sc-tag">SC</span></div><div class="const-winner">Hakam Singh Thekedar</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 27,644</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/jagraon.html" style="border-left-color:#DD2222"><div class="const-name">Jagraon<span class="const-sc-tag">SC</span></div><div class="const-winner">Sarvjit Kaur Manuke</div><div class="const-meta"><span class="const-badge" style="background:#DD2222">AAP</span><span class="const-margin">Margin: 39,656</span></div></a>
 
-        </tbody>
-      </table>
     </div>
 
-    <div style="margin-top:var(--s-6)">
-      <a href="../districts.html" class="btn btn-secondary">All Districts</a>
+    <div style="margin-top:var(--s-8)">
+      <a href="../districts.html" class="btn btn-secondary">← All Districts</a>
     </div>
 
   </div>
 </main>
 
 <footer class="site-footer" id="siteFooter"></footer>
-
 <script src="../js/app.js"></script>
 </body>
 </html>

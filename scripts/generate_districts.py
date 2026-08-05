@@ -8,28 +8,90 @@ root_dir = "c:/Users/User/Documents/GitHub/pnjabele"
 def slugify(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower())
 
+PARTY_COLORS = {
+    "BJP": "#FF671F", "SP": "#E33229", "BSP": "#1B4FBB", "INC": "#19AAED",
+    "AAP": "#DD2222", "SAD": "#1A237E", "RLD": "#009B4C", "ADS": "#8B5CF6",
+    "SBSP": "#D97706", "NISHAD": "#0EA5E9", "JSDL": "#84CC16",
+    "JJKP": "#6D28D9", "CPM": "#CC0000", "IND": "#6B7280"
+}
+
+def party_color(p):
+    return PARTY_COLORS.get(p, "#6B7280")
+
 def generate_district_pages(state_name, json_path, out_dir, root_state_dir, domain):
     with open(json_path, "r", encoding="utf-8") as f:
         constituencies = json.load(f)
-        
+
     os.makedirs(out_dir, exist_ok=True)
-    
-    # Group constituencies by district
+
     district_map = defaultdict(list)
     for c in constituencies:
         dist = c.get("district", state_name)
         district_map[dist].append(c)
-        
-    template = """<!DOCTYPE html>
+
+    for dist, list_c in district_map.items():
+        slug = slugify(dist)
+        total_seats = len(list_c)
+        sc_seats = sum(1 for c in list_c if c.get("reserved") == "SC")
+
+        # Party counts
+        party_counts = defaultdict(int)
+        for c in list_c:
+            p = c.get("r22", {}).get("party", "IND")
+            party_counts[p] += 1
+        sorted_parties = sorted(party_counts.items(), key=lambda x: x[1], reverse=True)
+        top_party = sorted_parties[0][0] if sorted_parties else "—"
+        top_seats = sorted_parties[0][1] if sorted_parties else 0
+        top_color = party_color(top_party)
+
+        # Party bar + legend
+        bar_segs = ""
+        legend_items = ""
+        for p, cnt in sorted_parties:
+            pct = round(cnt / total_seats * 100, 1)
+            col = party_color(p)
+            bar_segs += f'<div class="dist-bar-seg" style="width:{pct}%;background:{col}" title="{p}: {cnt}"></div>'
+            legend_items += (
+                f'<div class="dist-leg-item">'
+                f'<div class="dist-leg-dot" style="background:{col}"></div>'
+                f'<span class="dist-leg-label">{p}</span>'
+                f'<span class="dist-leg-count">{cnt}</span>'
+                f'</div>'
+            )
+
+        # Constituency cards
+        const_cards = ""
+        for c in sorted(list_c, key=lambda x: x.get("acNo", 0)):
+            c_slug = slugify(c["name"])
+            r22 = c.get("r22", {})
+            p = r22.get("party", "IND")
+            col = party_color(p)
+            margin = r22.get("margin", 0)
+            margin_str = f'{margin:,}' if isinstance(margin, int) else str(margin)
+            winner = r22.get("winner", "—")
+            sc_tag = '<span class="const-sc-tag">SC</span>' if c.get("reserved") == "SC" else ""
+            const_cards += (
+                f'<a class="const-card const-card-party-line" href="../constituency/{c_slug}.html" '
+                f'style="border-left-color:{col}">'
+                f'<div class="const-name">{c["name"]}{sc_tag}</div>'
+                f'<div class="const-winner">{winner}</div>'
+                f'<div class="const-meta">'
+                f'<span class="const-badge" style="background:{col}">{p}</span>'
+                f'<span class="const-margin">Margin: {margin_str}</span>'
+                f'</div>'
+                f'</a>\n'
+            )
+
+        html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{dist_name} District Assembly Elections | {state_name} Elections</title>
-  <meta name="description" content="Detailed election results for {dist_name} district in {state_name}. Seat tallies, winning candidates, and margins for all constituencies.">
+  <title>{dist} District Assembly Elections | {state_name} Elections</title>
+  <meta name="description" content="Detailed election results for {dist} district in {state_name}. Seat tallies, winning candidates, and margins for all constituencies.">
   <link rel="canonical" href="https://{domain}/district/{slug}.html">
-  <meta property="og:title" content="{dist_name} District Assembly Elections | {state_name} Elections">
-  <meta property="og:description" content="Detailed election results for {dist_name} district. Seat tallies, winners and margins.">
+  <meta property="og:title" content="{dist} District Assembly Elections | {state_name} Elections">
+  <meta property="og:description" content="Detailed election results for {dist} district. Seat tallies, winners and margins.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -38,120 +100,126 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <style>
+    .dist-hero {{
+      background: linear-gradient(135deg, {top_color}18 0%, var(--surface) 55%);
+      border-bottom: 1px solid var(--border);
+      padding: var(--s-10) 0 var(--s-8);
+      position: relative;
+      overflow: hidden;
+    }}
+    .dist-hero::before {{
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: {top_color};
+    }}
+    .dist-breadcrumb {{ font-size: var(--text-sm); color: var(--text-3); margin-bottom: var(--s-3); }}
+    .dist-breadcrumb a {{ color: var(--text-3); text-decoration: none; }}
+    .dist-breadcrumb a:hover {{ color: var(--accent); }}
+    .dist-hero-title {{ font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; color: var(--text); letter-spacing: -.5px; margin-bottom: var(--s-2); }}
+    .dist-hero-sub {{ font-size: var(--text-base); color: var(--text-2); margin-bottom: 0; }}
+    .dist-stats-strip {{ display: flex; gap: var(--s-6); flex-wrap: wrap; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid var(--border); }}
+    .dist-stat-num {{ font-size: 1.75rem; font-weight: 800; color: var(--text); line-height: 1; }}
+    .dist-stat-lbl {{ font-size: var(--text-xs); color: var(--text-3); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; margin-top: 3px; }}
+    .dist-section-label {{ font-size: var(--text-xs); font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--s-4); }}
+    .dist-party-section {{ background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); margin-bottom: var(--s-8); }}
+    .dist-party-bar {{ height: 12px; background: var(--surface-3); border-radius: 100px; overflow: hidden; display: flex; margin-bottom: var(--s-4); }}
+    .dist-bar-seg {{ height: 100%; transition: width .6s cubic-bezier(.4,0,.2,1); }}
+    .dist-party-legend {{ display: flex; gap: var(--s-4); flex-wrap: wrap; }}
+    .dist-leg-item {{ display: flex; align-items: center; gap: 6px; }}
+    .dist-leg-dot {{ width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }}
+    .dist-leg-label {{ font-size: var(--text-sm); font-weight: 600; color: var(--text-2); }}
+    .dist-leg-count {{ font-size: var(--text-sm); color: var(--text-3); }}
+    .const-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--s-4); }}
+    .const-card {{
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #888;
+      border-radius: var(--radius);
+      padding: var(--s-4) var(--s-5);
+      text-decoration: none;
+      display: block;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }}
+    .const-card:hover {{ transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); border-color: var(--border-2); }}
+    .const-name {{ font-size: var(--text-sm); font-weight: 700; color: var(--text); margin-bottom: var(--s-1); display: flex; align-items: center; gap: var(--s-2); }}
+    .const-winner {{ font-size: var(--text-sm); color: var(--text-2); margin-bottom: var(--s-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+    .const-meta {{ display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); }}
+    .const-badge {{ font-size: 11px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 4px; }}
+    .const-margin {{ font-size: 11px; color: var(--text-3); font-weight: 500; }}
+    .const-sc-tag {{ font-size: 10px; font-weight: 600; color: var(--text-3); background: var(--surface-3); border-radius: 4px; padding: 1px 5px; }}
+    @media (max-width: 640px) {{
+      .dist-stats-strip {{ gap: var(--s-4); }}
+      .const-grid {{ grid-template-columns: 1fr 1fr; }}
+    }}
+    @media (max-width: 400px) {{
+      .const-grid {{ grid-template-columns: 1fr; }}
+    }}
+  </style>
 </head>
 <body>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ac-hero">
+<div class="dist-hero">
   <div class="container">
-    <div class="ac-breadcrumb">
-      <a href="../districts.html">Districts</a> / <span id="distBreadcrumb">{dist_name}</span>
-    </div>
-    <h1 class="ac-title">{dist_name} District</h1>
-    <div class="ac-meta">
-      <span class="badge badge-gen">{total_seats} Constituencies</span>
+    <div class="dist-breadcrumb"><a href="../districts.html">← All Districts</a> / {dist}</div>
+    <h1 class="dist-hero-title">{dist} District</h1>
+    <p class="dist-hero-sub">{state_name} Vidhan Sabha — 2022 Assembly Election Results</p>
+    <div class="dist-stats-strip">
+      <div class="dist-stat">
+        <div class="dist-stat-num">{total_seats}</div>
+        <div class="dist-stat-lbl">Constituencies</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">{sc_seats}</div>
+        <div class="dist-stat-lbl">SC Reserved</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">{top_party}</div>
+        <div class="dist-stat-lbl">Leading Party</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">{top_seats}</div>
+        <div class="dist-stat-lbl">Seats Won</div>
+      </div>
     </div>
   </div>
 </div>
 
 <main class="section">
-  <div class="container" style="max-width:900px">
-    
-    <!-- Seat Summary Table -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">2022 Seat Distribution in {dist_name}</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Party</th>
-            <th style="text-align:right">Seats Won (2022)</th>
-          </tr>
-        </thead>
-        <tbody>
-          {seat_rows}
-        </tbody>
-      </table>
+  <div class="container" style="max-width:980px">
+
+    <div class="dist-party-section">
+      <div class="dist-section-label">2022 Seat Distribution</div>
+      <div class="dist-party-bar">{bar_segs}</div>
+      <div class="dist-party-legend">{legend_items}</div>
     </div>
 
-    <!-- Constituencies List -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">Constituency-wise Results</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Constituency</th>
-            <th>2022 Winner</th>
-            <th>Party</th>
-            <th style="text-align:right">Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-          {constituency_rows}
-        </tbody>
-      </table>
+    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    <div class="const-grid">
+{const_cards}
     </div>
 
-    <div style="margin-top:var(--s-6)">
-      <a href="../districts.html" class="btn btn-secondary">All Districts</a>
+    <div style="margin-top:var(--s-8)">
+      <a href="../districts.html" class="btn btn-secondary">← All Districts</a>
     </div>
 
   </div>
 </main>
 
 <footer class="site-footer" id="siteFooter"></footer>
-
 <script src="../js/app.js"></script>
 </body>
-</html>
-"""
+</html>"""
 
-    for dist, list_c in district_map.items():
-        slug = slugify(dist)
-        total_seats = len(list_c)
-        
-        # Calculate party counts
-        party_counts = defaultdict(int)
-        for c in list_c:
-            p22 = c.get("r22", {}).get("party", "—")
-            party_counts[p22] += 1
-            
-        # Sort parties by seats won
-        sorted_parties = sorted(party_counts.items(), key=lambda x: x[1], reverse=True)
-        seat_rows = ""
-        for p, count in sorted_parties:
-            seat_rows += f"""          <tr>
-            <td><strong>{p}</strong></td>
-            <td style="text-align:right;font-weight:600">{count}</td>
-          </tr>\n"""
-          
-        # Build constituencies list rows
-        const_rows = ""
-        for c in sorted(list_c, key=lambda x: x.get("acNo", 0)):
-            c_slug = slugify(c["name"])
-            r22 = c.get("r22", {})
-            const_rows += f"""          <tr>
-            <td><a href="../constituency/{c_slug}.html" class="ac-link">{c["name"]}</a></td>
-            <td>{r22.get("winner", "—")}</td>
-            <td><span class="badge" style="background:var(--c-{r22.get("party", "").lower()});color:#fff">{r22.get("party", "—")}</span></td>
-            <td style="text-align:right">{r22.get("margin", 0):,}</td>
-          </tr>\n"""
-          
-        html = template.format(
-            dist_name=dist,
-            state_name=state_name,
-            slug=slug,
-            domain=domain,
-            total_seats=total_seats,
-            seat_rows=seat_rows,
-            constituency_rows=const_rows
-        )
-        
         # Write nested district file
         file_path = os.path.join(out_dir, f"{slug}.html")
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(html)
-            
+
         # Write root level redirect stub
         stub_path = os.path.join(root_state_dir, f"district-{slug}.html")
         stub_html = f"""<!DOCTYPE html>

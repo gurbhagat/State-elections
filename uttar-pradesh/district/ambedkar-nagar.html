@@ -16,103 +16,122 @@
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <style>
+    .dist-hero {
+      background: linear-gradient(135deg, #E3322918 0%, var(--surface) 55%);
+      border-bottom: 1px solid var(--border);
+      padding: var(--s-10) 0 var(--s-8);
+      position: relative;
+      overflow: hidden;
+    }
+    .dist-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: #E33229;
+    }
+    .dist-breadcrumb { font-size: var(--text-sm); color: var(--text-3); margin-bottom: var(--s-3); }
+    .dist-breadcrumb a { color: var(--text-3); text-decoration: none; }
+    .dist-breadcrumb a:hover { color: var(--accent); }
+    .dist-hero-title { font-size: clamp(1.5rem, 4vw, 2.25rem); font-weight: 800; color: var(--text); letter-spacing: -.5px; margin-bottom: var(--s-2); }
+    .dist-hero-sub { font-size: var(--text-base); color: var(--text-2); margin-bottom: 0; }
+    .dist-stats-strip { display: flex; gap: var(--s-6); flex-wrap: wrap; margin-top: var(--s-6); padding-top: var(--s-6); border-top: 1px solid var(--border); }
+    .dist-stat-num { font-size: 1.75rem; font-weight: 800; color: var(--text); line-height: 1; }
+    .dist-stat-lbl { font-size: var(--text-xs); color: var(--text-3); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; margin-top: 3px; }
+    .dist-section-label { font-size: var(--text-xs); font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; margin-bottom: var(--s-4); }
+    .dist-party-section { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); margin-bottom: var(--s-8); }
+    .dist-party-bar { height: 12px; background: var(--surface-3); border-radius: 100px; overflow: hidden; display: flex; margin-bottom: var(--s-4); }
+    .dist-bar-seg { height: 100%; transition: width .6s cubic-bezier(.4,0,.2,1); }
+    .dist-party-legend { display: flex; gap: var(--s-4); flex-wrap: wrap; }
+    .dist-leg-item { display: flex; align-items: center; gap: 6px; }
+    .dist-leg-dot { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
+    .dist-leg-label { font-size: var(--text-sm); font-weight: 600; color: var(--text-2); }
+    .dist-leg-count { font-size: var(--text-sm); color: var(--text-3); }
+    .const-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--s-4); }
+    .const-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid #888;
+      border-radius: var(--radius);
+      padding: var(--s-4) var(--s-5);
+      text-decoration: none;
+      display: block;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .const-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.14); border-color: var(--border-2); }
+    .const-name { font-size: var(--text-sm); font-weight: 700; color: var(--text); margin-bottom: var(--s-1); display: flex; align-items: center; gap: var(--s-2); }
+    .const-winner { font-size: var(--text-sm); color: var(--text-2); margin-bottom: var(--s-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .const-meta { display: flex; align-items: center; justify-content: space-between; gap: var(--s-2); }
+    .const-badge { font-size: 11px; font-weight: 700; color: #fff; padding: 2px 8px; border-radius: 4px; }
+    .const-margin { font-size: 11px; color: var(--text-3); font-weight: 500; }
+    .const-sc-tag { font-size: 10px; font-weight: 600; color: var(--text-3); background: var(--surface-3); border-radius: 4px; padding: 1px 5px; }
+    @media (max-width: 640px) {
+      .dist-stats-strip { gap: var(--s-4); }
+      .const-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 400px) {
+      .const-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ac-hero">
+<div class="dist-hero">
   <div class="container">
-    <div class="ac-breadcrumb">
-      <a href="../districts.html">Districts</a> / <span id="distBreadcrumb">Ambedkar Nagar</span>
-    </div>
-    <h1 class="ac-title">Ambedkar Nagar District</h1>
-    <div class="ac-meta">
-      <span class="badge badge-gen">5 Constituencies</span>
+    <div class="dist-breadcrumb"><a href="../districts.html">← All Districts</a> / Ambedkar Nagar</div>
+    <h1 class="dist-hero-title">Ambedkar Nagar District</h1>
+    <p class="dist-hero-sub">Uttar Pradesh Vidhan Sabha — 2022 Assembly Election Results</p>
+    <div class="dist-stats-strip">
+      <div class="dist-stat">
+        <div class="dist-stat-num">5</div>
+        <div class="dist-stat-lbl">Constituencies</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">1</div>
+        <div class="dist-stat-lbl">SC Reserved</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">SP</div>
+        <div class="dist-stat-lbl">Leading Party</div>
+      </div>
+      <div class="dist-stat">
+        <div class="dist-stat-num">5</div>
+        <div class="dist-stat-lbl">Seats Won</div>
+      </div>
     </div>
   </div>
 </div>
 
 <main class="section">
-  <div class="container" style="max-width:900px">
-    
-    <!-- Seat Summary Table -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">2022 Seat Distribution in Ambedkar Nagar</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Party</th>
-            <th style="text-align:right">Seats Won (2022)</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><strong>SP</strong></td>
-            <td style="text-align:right;font-weight:600">5</td>
-          </tr>
+  <div class="container" style="max-width:980px">
 
-        </tbody>
-      </table>
+    <div class="dist-party-section">
+      <div class="dist-section-label">2022 Seat Distribution</div>
+      <div class="dist-party-bar"><div class="dist-bar-seg" style="width:100.0%;background:#E33229" title="SP: 5"></div></div>
+      <div class="dist-party-legend"><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#E33229"></div><span class="dist-leg-label">SP</span><span class="dist-leg-count">5</span></div></div>
     </div>
 
-    <!-- Constituencies List -->
-    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
-      <div class="chart-title">Constituency-wise Results</div>
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Constituency</th>
-            <th>2022 Winner</th>
-            <th>Party</th>
-            <th style="text-align:right">Margin</th>
-          </tr>
-        </thead>
-        <tbody>
-                    <tr>
-            <td><a href="../constituency/katehari.html" class="ac-link">Katehari</a></td>
-            <td>Lalji Verma</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">7,696</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/tanda.html" class="ac-link">Tanda</a></td>
-            <td>Ram Murti Verma</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">32,097</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/alapur.html" class="ac-link">Alapur</a></td>
-            <td>Tribhuwan Dutt</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">9,383</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/jalalpur.html" class="ac-link">Jalalpur</a></td>
-            <td>Rakesh Pandey</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">13,630</td>
-          </tr>
-          <tr>
-            <td><a href="../constituency/akbarpur.html" class="ac-link">Akbarpur</a></td>
-            <td>Ram Achal Rajbhar</td>
-            <td><span class="badge" style="background:var(--c-sp);color:#fff">SP</span></td>
-            <td style="text-align:right">12,336</td>
-          </tr>
+    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    <div class="const-grid">
+<a class="const-card const-card-party-line" href="../constituency/katehari.html" style="border-left-color:#E33229"><div class="const-name">Katehari</div><div class="const-winner">Lalji Verma</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 7,696</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/tanda.html" style="border-left-color:#E33229"><div class="const-name">Tanda</div><div class="const-winner">Ram Murti Verma</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 32,097</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/alapur.html" style="border-left-color:#E33229"><div class="const-name">Alapur<span class="const-sc-tag">SC</span></div><div class="const-winner">Tribhuwan Dutt</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 9,383</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/jalalpur.html" style="border-left-color:#E33229"><div class="const-name">Jalalpur</div><div class="const-winner">Rakesh Pandey</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 13,630</span></div></a>
+<a class="const-card const-card-party-line" href="../constituency/akbarpur.html" style="border-left-color:#E33229"><div class="const-name">Akbarpur</div><div class="const-winner">Ram Achal Rajbhar</div><div class="const-meta"><span class="const-badge" style="background:#E33229">SP</span><span class="const-margin">Margin: 12,336</span></div></a>
 
-        </tbody>
-      </table>
     </div>
 
-    <div style="margin-top:var(--s-6)">
-      <a href="../districts.html" class="btn btn-secondary">All Districts</a>
+    <div style="margin-top:var(--s-8)">
+      <a href="../districts.html" class="btn btn-secondary">← All Districts</a>
     </div>
 
   </div>
 </main>
 
 <footer class="site-footer" id="siteFooter"></footer>
-
 <script src="../js/app.js"></script>
 </body>
 </html>
