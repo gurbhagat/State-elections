@@ -1,0 +1,28 @@
+# AI Crawler Access Policy — Last updated: 2026-07-28
+
+# --- Search Engine Crawlers ---
+User-agent: *
+Allow: /
+
+# --- AI Search-Augmented Crawlers (allow — these drive citations) ---
+User-agent: PerplexityBot
+Allow: /
+
+# --- AI Training & Browsing Crawlers (allow) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Aggressive/Unwanted Scrapers (block) ---
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://punjabelectionresults.com/sitemap.xml

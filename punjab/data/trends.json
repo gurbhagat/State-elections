@@ -1,0 +1,96 @@
+{
+  "elections": [
+    {
+      "year": 1997,
+      "date": "7 February 1997",
+      "totalSeats": 117,
+      "turnout": 69.1,
+      "results": [
+        { "party": "SAD",  "seats": 75, "voteShare": 37.6, "color": "#003366" },
+        { "party": "BJP",  "seats": 18, "voteShare": 6.6,  "color": "#FF6600" },
+        { "party": "INC",  "seats": 14, "voteShare": 26.4, "color": "#138808" },
+        { "party": "BSP",  "seats": 0,  "voteShare": 1.4,  "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 10, "voteShare": 28.0, "color": "#777777" }
+      ],
+      "winner": "SAD-BJP Alliance",
+      "cm": "Parkash Singh Badal"
+    },
+    {
+      "year": 2002,
+      "date": "13 February 2002",
+      "totalSeats": 117,
+      "turnout": 65.1,
+      "results": [
+        { "party": "INC",  "seats": 62, "voteShare": 35.9, "color": "#138808" },
+        { "party": "SAD",  "seats": 41, "voteShare": 31.1, "color": "#003366" },
+        { "party": "BJP",  "seats": 3,  "voteShare": 5.67, "color": "#FF6600" },
+        { "party": "BSP",  "seats": 0,  "voteShare": 5.7,  "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 11, "voteShare": 21.6, "color": "#777777" }
+      ],
+      "winner": "INC",
+      "cm": "Amarinder Singh"
+    },
+    {
+      "year": 2007,
+      "date": "13 February 2007",
+      "totalSeats": 117,
+      "turnout": 75.6,
+      "results": [
+        { "party": "SAD",  "seats": 48, "voteShare": 37.1, "color": "#003366" },
+        { "party": "BJP",  "seats": 19, "voteShare": 8.3,  "color": "#FF6600" },
+        { "party": "INC",  "seats": 44, "voteShare": 40.7, "color": "#138808" },
+        { "party": "BSP",  "seats": 0,  "voteShare": 4.1,  "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 6,  "voteShare": 9.8,  "color": "#777777" }
+      ],
+      "winner": "SAD-BJP Alliance",
+      "cm": "Parkash Singh Badal"
+    },
+    {
+      "year": 2012,
+      "date": "30 January 2012",
+      "totalSeats": 117,
+      "turnout": 78.3,
+      "results": [
+        { "party": "SAD",  "seats": 56, "voteShare": 34.7, "color": "#003366" },
+        { "party": "BJP",  "seats": 12, "voteShare": 7.2,  "color": "#FF6600" },
+        { "party": "INC",  "seats": 46, "voteShare": 40.1, "color": "#138808" },
+        { "party": "BSP",  "seats": 1,  "voteShare": 4.3,  "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 2,  "voteShare": 13.7, "color": "#777777" }
+      ],
+      "winner": "SAD-BJP Alliance",
+      "cm": "Parkash Singh Badal"
+    },
+    {
+      "year": 2017,
+      "date": "4 February 2017",
+      "totalSeats": 117,
+      "turnout": 77.4,
+      "results": [
+        { "party": "INC",  "seats": 77, "voteShare": 38.5,  "color": "#138808" },
+        { "party": "AAP",  "seats": 20, "voteShare": 23.72, "color": "#005DAA" },
+        { "party": "SAD",  "seats": 15, "voteShare": 25.2,  "color": "#003366" },
+        { "party": "BJP",  "seats": 3,  "voteShare": 5.4,   "color": "#FF6600" },
+        { "party": "BSP",  "seats": 0,  "voteShare": 1.5,   "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 2,  "voteShare": 3.0,   "color": "#777777" }
+      ],
+      "winner": "INC",
+      "cm": "Amarinder Singh"
+    },
+    {
+      "year": 2022,
+      "date": "20 February 2022",
+      "totalSeats": 117,
+      "turnout": 71.95,
+      "results": [
+        { "party": "AAP",  "seats": 92, "voteShare": 42.01, "color": "#005DAA" },
+        { "party": "INC",  "seats": 18, "voteShare": 22.98, "color": "#138808" },
+        { "party": "SAD",  "seats": 3,  "voteShare": 18.38, "color": "#003366" },
+        { "party": "BJP",  "seats": 2,  "voteShare": 6.59,  "color": "#FF6600" },
+        { "party": "BSP",  "seats": 1,  "voteShare": 1.72,  "color": "#0A0A5A" },
+        { "party": "IND",  "seats": 1,  "voteShare": 8.32,  "color": "#777777" }
+      ],
+      "winner": "AAP",
+      "cm": "Bhagwant Mann"
+    }
+  ]
+}

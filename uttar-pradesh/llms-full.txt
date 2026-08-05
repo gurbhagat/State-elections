@@ -1,0 +1,45 @@
+# UP Elections Complete Info (llms-full.txt)
+
+> This document contains the full aggregated textual context of UPElectionResults.com for easy ingestion by AI agents and language models.
+
+---
+
+## 1. Portal Overview
+UP Elections 2027 is an independent, non-partisan election database covering the Uttar Pradesh Legislative Assembly (Vidhan Sabha).
+* **Domain**: https://upelectionresults.com
+* **Total Constituencies**: 403
+* **Majority Mark**: 202 seats
+* **Voters**: ~15.02 Crore registered voters
+* **Districts**: 75 administrative districts
+
+---
+
+## 2. Core Political Parties in Uttar Pradesh
+* **Bharatiya Janata Party (BJP)**: Current ruling party. Secured landslide victories in both 2017 (312 seats) and 2022 (255 seats) under Yogi Adityanath.
+* **Samajwadi Party (SP)**: Main opposition party in UP, led by former Chief Minister Akhilesh Yadav. Secured 111 seats in the 2022 elections.
+* **Bahujan Samaj Party (BSP)**: National party led by Mayawati, focusing on Dalit representation. Historically held power in UP.
+* **Indian National Congress (INC)**: National party. Contested in alliances.
+* **Rashtriya Lok Dal (RLD)**: Regional party active in Western UP, representing farmer interests.
+
+---
+
+## 3. Frequently Asked Questions (FAQ)
+
+### Q: When is the UP Assembly Election 2027?
+A: The UP Assembly Election 2027 is expected to be held in February-March 2027. The Election Commission of India (ECI) will announce the official schedule approximately 2–3 months before polling.
+
+### Q: How many seats are there in the Uttar Pradesh Vidhan Sabha?
+A: The Uttar Pradesh Legislative Assembly has 403 seats spread across 75 districts. Of these, 84 seats are reserved for Scheduled Castes (SC) and 2 seats for Scheduled Tribes (ST). A party or alliance needs at least 202 seats to form the government.
+
+### Q: Who won the 2022 Uttar Pradesh election?
+A: The Bharatiya Janata Party (BJP) won a landslide victory in the 2022 UP Assembly Election, securing 255 of 403 seats with a 41.29% vote share. Yogi Adityanath became Chief Minister.
+
+### Q: What was the 2017 Uttar Pradesh election result?
+A: In the 2017 UP Assembly Election, the Bharatiya Janata Party (BJP) won a historic landslide, securing 312 of 403 seats. Yogi Adityanath became Chief Minister.
+
+---
+
+## 4. Methodology & Sourcing
+* **Primary Source**: All electoral data is sourced directly from the Election Commission of India (ECI) official records (Form 20 constituency-wise counts and official reports).
+* **Data Disclaimers**: Results are approximate and intended for informational, educational, and research purposes.
+* **Corrections Policy**: Errors can be reported to contact@indiaelections.org and are corrected within 48 hours of verification against official ECI records.

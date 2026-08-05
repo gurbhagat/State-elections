@@ -1,0 +1,19 @@
+# Punjab Elections
+
+> Independent election data portal for the Punjab Legislative Assembly (Vidhan Sabha) election results, constituency data, candidate profiles, and historical trends.
+
+## Key Pages
+- [Home](https://punjabelectionresults.com/): Main landing page with live countdown to Punjab Assembly Election 2027, district maps, and current assembly configuration.
+- [Constituency Directory](https://punjabelectionresults.com/constituencies.html): Comprehensive search and filter tool for all 117 assembly constituencies in Punjab.
+- [2022 Election Results](https://punjabelectionresults.com/results-2022.html): Full results for the 2022 Vidhan Sabha election, including constituency winners, runner-ups, margins, and turnout metrics.
+- [2017 Election Results](https://punjabelectionresults.com/results-2017.html): Full results for the 2017 Vidhan Sabha election.
+- [Candidate Directory](https://punjabelectionresults.com/candidates.html): Database of winners and runner-ups for the 2022 and 2017 elections, searchable by name, party, and constituency.
+- [Political Parties](https://punjabelectionresults.com/parties.html): Profiles of major political parties in Punjab (AAP, INC, SAD, BJP, BSP) including leader details, ideologies, and historical seat tallies.
+- [Historical Trends](https://punjabelectionresults.com/trends.html): Detailed seat sharing and vote share swing analysis across Punjab elections from 1997 to 2022.
+- [District-wise Analysis](https://punjabelectionresults.com/districts.html): Seat tallies and SC reservation breakdown for all 23 districts in Punjab.
+- [About & Methodology](https://punjabelectionresults.com/about.html): Information about data sources (Election Commission of India - ECI), methodology, and contact info.
+
+## Data Schema & Formats
+All election data is structured in static JSON files located in the `/data/` directory:
+- [Constituencies Dataset](https://punjabelectionresults.com/data/constituencies.json): Raw JSON database containing ID, name, district, category (SC/GEN), and detailed candidate lists and election statistics for both 2022 and 2017 elections.
+- [Parties Dataset](https://punjabelectionresults.com/data/parties.json): Raw JSON database containing profiles, seat tallies, and vote shares of political parties.

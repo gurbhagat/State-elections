@@ -1,0 +1,19 @@
+# UP Elections
+
+> Independent election data portal for the Uttar Pradesh Legislative Assembly (Vidhan Sabha) election results, constituency data, candidate profiles, and historical trends.
+
+## Key Pages
+- [Home](https://upelectionresults.com/): Main landing page with live countdown to UP Assembly Election 2027, district maps, and current assembly configuration.
+- [Constituency Directory](https://upelectionresults.com/constituencies.html): Comprehensive search and filter tool for all 403 assembly constituencies in Uttar Pradesh.
+- [2022 Election Results](https://upelectionresults.com/results-2022.html): Full results for the 2022 Vidhan Sabha election, including constituency winners, runner-ups, margins, and turnout metrics.
+- [2017 Election Results](https://upelectionresults.com/results-2017.html): Full results for the 2017 Vidhan Sabha election.
+- [Candidate Directory](https://upelectionresults.com/candidates.html): Database of winners and runner-ups for the 2022 and 2017 elections, searchable by name, party, and constituency.
+- [Political Parties](https://upelectionresults.com/parties.html): Profiles of major political parties in Uttar Pradesh (BJP, SP, BSP, INC, RLD) including leader details, ideologies, and historical seat tallies.
+- [Historical Trends](https://upelectionresults.com/trends.html): Detailed seat sharing and vote share swing analysis across Uttar Pradesh elections from 1997 to 2022.
+- [District-wise Analysis](https://upelectionresults.com/districts.html): Seat tallies and SC/ST reservation breakdown for all 75 districts in Uttar Pradesh.
+- [About & Methodology](https://upelectionresults.com/about.html): Information about data sources (Election Commission of India - ECI), methodology, and contact info.
+
+## Data Schema & Formats
+All election data is structured in static JSON files located in the `/data/` directory:
+- [Constituencies Dataset](https://upelectionresults.com/data/constituencies.json): Raw JSON database containing ID, name, district, category (SC/ST/GEN), and detailed candidate lists and election statistics for both 2022 and 2017 elections.
+- [Parties Dataset](https://upelectionresults.com/data/parties.json): Raw JSON database containing profiles, seat tallies, and vote shares of political parties.

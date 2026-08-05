@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punjab Election Historical Trends 1997–2022 | Punjab Elections</title>
+  <meta name="description" content="Historical trends in Punjab assembly elections from 1997 to 2022. Seat counts, vote shares and swing analysis for all major parties across six Punjab elections.">
+  <link rel="canonical" href="https://punjabelectionresults.com/trends.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/trends.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/trends.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/trends.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/trends.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Vidhan Sabha Elections</span>
+    <h1 class="page-title" data-i18n="navTrends">Historical Election Trends</h1>
+    <p class="page-desc" data-i18n="trendsDesc">Six decades of Punjab electoral history — seat counts, vote shares and swing analysis from 1997 to 2022.</p>
+  </div>
+</div>
+
+<main>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title" data-i18n="trendsTitle">Seats Won — All Elections</h2>
+          <p class="section-sub">Number of Punjab Vidhan Sabha seats won per party, per election</p>
+        </div>
+      </div>
+      <div class="trend-chart-wrap">
+        <div id="seatHistoryChart"></div>
+        <div class="trend-legend" id="seatLegend"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Election-by-Election Summary</h2>
+      </div>
+      <div id="electionCards" style="display:flex;flex-direction:column;gap:var(--s-5)"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Vote Share Trends</h2>
+        <p class="section-sub">Percentage vote share per party across Punjab assembly elections</p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="voteShareTable">
+          <thead><tr>
+            <th>Party</th>
+            <th style="text-align:right">1997</th><th style="text-align:right">2002</th>
+            <th style="text-align:right">2007</th><th style="text-align:right">2012</th>
+            <th style="text-align:right">2017</th><th style="text-align:right">2022</th>
+          </tr></thead>
+          <tbody id="voteShareBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/trends.data.js"></script>
+<script src="data/parties.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  const [trendsData, partiesData] = await Promise.all([loadTrends(), loadParties()]);
+  const elections = trendsData.elections;
+  const years = elections.map(e => e.year);
+  const parties_show = ['AAP','INC','SAD','BJP'];
+  const colors = { AAP:'#005DAA', INC:'#138808', SAD:'#003380', BJP:'#FF6000', BSP:'#1A1A8A', IND:'#666660' };
+
+  // Seat history chart
+  const chartData = {};
+  years.forEach((y, i) => {
+    chartData[y] = { year: y };
+    elections[i].results.forEach(r => { chartData[y][r.party] = r.seats; });
+  });
+  renderGroupedBarChart('seatHistoryChart', Object.values(chartData), { parties: parties_show, colors, height: 360 });
+  document.getElementById('seatLegend').innerHTML = parties_show.map(p =>
+    `<div class="legend-item"><div class="legend-dot" style="background:${colors[p]}"></div>${p}</div>`).join('');
+
+  // Election cards
+  const cards = document.getElementById('electionCards');
+  [...elections].reverse().forEach(e => {
+    const total = 117;
+    const winner = e.results.slice().sort((a,b) => b.seats - a.seats)[0];
+    const barHtml = e.results.map(r => {
+      const pct = (r.seats / total * 100).toFixed(2);
+      return `<div style="width:${pct}%;background:${r.color};height:100%;float:left" title="${r.party}: ${r.seats}"></div>`;
+    }).join('');
+
+    cards.innerHTML += `
+      <div class="chart-wrap">
+        <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px">
+          <div>
+            <h3 style="font-size:var(--text-lg);font-weight:700;color:var(--text)">${e.year} — Punjab Assembly Election</h3>
+            <div style="font-size:var(--text-sm);color:var(--text-3);margin-top:2px">${e.date} · Turnout: ${e.turnout}% · CM: ${e.cm}</div>
+          </div>
+          <div style="text-align:right;flex-shrink:0">
+            <span style="font-size:var(--text-sm);font-weight:700;color:${colors[winner.party]||'#666'}">${winner.party} won — ${winner.seats} seats</span>
+          </div>
+        </div>
+        <div style="height:8px;border-radius:100px;overflow:hidden;display:flex;background:var(--surface-3);margin-bottom:12px">${barHtml}</div>
+        <div style="display:flex;gap:16px;flex-wrap:wrap">
+          ${e.results.map(r => `<span class="legend-item"><span class="legend-dot" style="background:${r.color}"></span>${r.party} <strong>${r.seats}</strong> <span style="color:var(--text-3)">(${r.voteShare}%)</span></span>`).join('')}
+        </div>
+      </div>`;
+  });
+
+  // Vote share table
+  const partyMap = {};
+  elections.forEach(e => {
+    e.results.forEach(r => {
+      if (!partyMap[r.party]) partyMap[r.party] = {};
+      partyMap[r.party][e.year] = r.voteShare;
+    });
+  });
+
+  const tbody = document.getElementById('voteShareBody');
+  Object.entries(partyMap).sort((a,b) => (partyMap[b[0]][2022]||0) - (partyMap[a[0]][2022]||0)).forEach(([party, yrs]) => {
+    const cells = years.map(y => `<td style="text-align:right;color:var(--text-2)">${yrs[y] != null ? yrs[y].toFixed(2) + '%' : '—'}</td>`).join('');
+    tbody.innerHTML += `<tr><td>${partyBadge(party)}</td>${cells}</tr>`;
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "version": "1.0",
+  "site": "https://upelectionresults.com",
+  "actions": [
+    {
+      "id": "search-constituency",
+      "name": "Search Constituency",
+      "description": "Query and filter assembly constituencies by name, district, category, or winning party.",
+      "method": "declarative",
+      "endpoint": "/constituencies.html",
+      "parameters": {
+        "required": [],
+        "optional": [
+          "query",
+          "district",
+          "category",
+          "party"
+        ]
+      }
+    },
+    {
+      "id": "search-candidate",
+      "name": "Search Candidate",
+      "description": "Search winners and runners-up from assembly elections by name, party, year, or status.",
+      "method": "declarative",
+      "endpoint": "/candidates.html",
+      "parameters": {
+        "required": [],
+        "optional": [
+          "query",
+          "year",
+          "type",
+          "party"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "election": {
+    "title": "UP Assembly Election 2027",
+    "titleHi": "यूपी विधानसभा चुनाव 2027",
+    "totalSeats": 403,
+    "majorityMark": 202,
+    "assemblyTerm": "March 18, 2022 – March 2027",
+    "estimatedVotingDate": "February 2027",
+    "estimatedResultDate": "March 2027",
+    "note": "Election schedule to be announced by the Election Commission of India. Dates are estimates based on the 5-year assembly term.",
+    "noteHi": "चुनाव कार्यक्रम की घोषणा भारत निर्वाचन आयोग द्वारा की जाएगी।"
+  },
+  "milestones": [
+    {
+      "event": "Current Assembly Constituted",
+      "eventHi": "वर्तमान विधानसभा का गठन",
+      "date": "18 March 2022",
+      "status": "done"
+    },
+    {
+      "event": "Election Commission Announcement (Est.)",
+      "eventHi": "चुनाव आयोग की घोषणा (अनु.)",
+      "date": "December 2026",
+      "status": "upcoming"
+    },
+    {
+      "event": "Model Code of Conduct Begins (Est.)",
+      "eventHi": "आदर्श चुनाव आचार संहिता लागू (अनु.)",
+      "date": "December 2026",
+      "status": "upcoming"
+    },
+    {
+      "event": "Nomination Filing (Est.)",
+      "eventHi": "नामांकन दाखिल करना (अनु.)",
+      "date": "January 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Last Date for Withdrawal (Est.)",
+      "eventHi": "नामांकन वापसी की अंतिम तिथि (अनु.)",
+      "date": "January 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Polling Day (Est.)",
+      "eventHi": "मतदान दिवस (अनु.)",
+      "date": "February 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Counting & Results (Est.)",
+      "eventHi": "मतगणना और परिणाम (अनु.)",
+      "date": "March 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "New Government Sworn In (Est.)",
+      "eventHi": "नई सरकार का शपथ ग्रहण (अनु.)",
+      "date": "March 2027",
+      "status": "upcoming"
+    }
+  ]
+}

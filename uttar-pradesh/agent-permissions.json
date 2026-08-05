@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "accessPolicy": {
+    "publicAllowed": true,
+    "userAgentsAllowed": ["*"],
+    "scrapingAllowed": true,
+    "crawlDelaySeconds": 1
+  },
+  "permissions": {
+    "read": {
+      "pathPatterns": ["/*"],
+      "authRequired": false
+    },
+    "write": {
+      "pathPatterns": [],
+      "authRequired": true
+    }
+  }
+}

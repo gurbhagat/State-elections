@@ -1,0 +1,45 @@
+# Punjab Elections Complete Info (llms-full.txt)
+
+> This document contains the full aggregated textual context of PunjabElectionResults.com for easy ingestion by AI agents and language models.
+
+---
+
+## 1. Portal Overview
+Punjab Elections 2027 is an independent, non-partisan election database covering the Punjab Legislative Assembly (Vidhan Sabha).
+* **Domain**: https://punjabelectionresults.com
+* **Total Constituencies**: 117
+* **Majority Mark**: 59 seats
+* **Voters**: ~2.14 Crore registered voters
+* **Districts**: 23 administrative districts
+
+---
+
+## 2. Core Political Parties in Punjab
+* **Aam Aadmi Party (AAP)**: Current ruling party. Formed in 2012, won a landslide victory in the 2022 elections, securing 92 seats. Led regionally by Chief Minister Bhagwant Mann.
+* **Indian National Congress (INC)**: Main opposition party. Won the 2017 elections with 77 seats under Capt. Amarinder Singh.
+* **Shiromani Akali Dal (SAD)**: Historical regional party focusing on Sikh interest and regional federalism. Led by Sukhbir Singh Badal.
+* **Bharatiya Janata Party (BJP)**: National party. Previously contested in alliance with SAD, currently contesting independently.
+* **Bahujan Samaj Party (BSP)**: National party focusing on Bahujan/Dalit representation, contesting in regional alliances.
+
+---
+
+## 3. Frequently Asked Questions (FAQ)
+
+### Q: When is the Punjab Assembly Election 2027?
+A: The Punjab Assembly Election 2027 is expected to be held in February 2027. The Election Commission of India (ECI) will announce the official schedule approximately 2–3 months before polling.
+
+### Q: How many seats are there in the Punjab Vidhan Sabha?
+A: The Punjab Legislative Assembly has 117 seats spread across 23 districts. Of these, 34 seats are reserved for Scheduled Castes (SC). A party or alliance needs at least 59 seats to form the government.
+
+### Q: Who won the 2022 Punjab election?
+A: Aam Aadmi Party (AAP) won a landslide victory in the 2022 Punjab Assembly Election, securing 92 of 117 seats with 42.01% vote share. Bhagwant Mann became Chief Minister.
+
+### Q: What was the 2017 Punjab election result?
+A: In the 2017 Punjab Assembly Election, the Indian National Congress (INC) won a landslide, securing 77 of 117 seats. Captain Amarinder Singh became Chief Minister.
+
+---
+
+## 4. Methodology & Sourcing
+* **Primary Source**: All electoral data is sourced directly from the Election Commission of India (ECI) official records (Form 20 constituency-wise counts and official reports).
+* **Data Disclaimers**: Results are approximate and intended for informational, educational, and research purposes.
+* **Corrections Policy**: Errors can be reported to contact@indiaelections.org and are corrected within 48 hours of verification against official ECI records.

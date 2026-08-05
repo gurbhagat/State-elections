@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All 117 Punjab Assembly Constituencies | Punjab Elections</title>
+  <meta name="description" content="Complete list of all 117 Punjab Assembly Constituencies with district, reservation category, 2022 winner and 2017 winner. Search and filter by district, party or category.">
+  <link rel="canonical" href="https://punjabelectionresults.com/constituencies.html">
+  <meta property="og:title" content="All 117 Punjab Constituencies | Punjab Elections">
+  <meta property="og:description" content="Search all 117 Punjab assembly constituencies with 2022 and 2017 election results.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script type="application/ld+json">
+  { "@context":"https://schema.org", "@type":"ItemList", "name":"Punjab Assembly Constituencies", "description":"List of all 117 Punjab assembly constituencies", "url":"https://punjabelectionresults.com/constituencies.html" }
+  </script>
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/constituencies.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/constituencies.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/constituencies.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/constituencies.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Assembly Election 2027</span>
+    <h1 class="page-title" data-i18n="navConstituencies">All 117 Constituencies</h1>
+    <p class="page-desc" data-i18n="constituencyDesc">Browse every Punjab assembly constituency — searchable and filterable by district, category and party.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <form class="filter-bar" onsubmit="event.preventDefault();" data-mcp-action="search-constituency" role="search" data-mcp-description="Query and filter assembly constituencies by name, district, category, or winning party." data-mcp-params='{"required": [], "optional": ["query", "district", "category", "party"]}'>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" class="search-input" aria-label="Search constituencies" placeholder="Search constituencies..." data-i18n-placeholder="search" autocomplete="off" spellcheck="false" data-mcp-param="query" data-mcp-description="Text query to filter constituency name">
+      </div>
+      <select id="districtFilter" class="filter-select" data-mcp-param="district" data-mcp-description="Filter constituencies by district name">
+        <option value="" data-i18n="filterDist">All Districts</option>
+      </select>
+      <select id="categoryFilter" class="filter-select" data-mcp-param="category" data-mcp-description="Filter by SC/ST/GEN reservation status">
+        <option value="" data-i18n="filterCat">All Categories</option>
+        <option value="GEN">General</option>
+        <option value="SC">SC Reserved</option>
+      </select>
+      <select id="partyFilter2022" class="filter-select">
+        <option value="" data-i18n="filterParty">All Parties (2022)</option>
+        <option value="AAP">AAP</option>
+        <option value="INC">INC</option>
+        <option value="SAD">SAD</option>
+        <option value="BJP">BJP</option>
+        <option value="BSP">BSP</option>
+        <option value="IND">IND</option>
+      </select>
+      <span class="result-count" id="resultCount"></span>
+    </form>
+
+    <div id="tableContainer">
+      <div class="table-wrap">
+        <table class="data-table" id="constituencyTable">
+          <thead></thead>
+          <tbody><tr><td colspan="8" style="text-align:center;padding:48px;color:var(--text-3)">Loading data...</td></tr></tbody>
+        </table>
+      </div>
+      <div class="pagination-wrap" id="paginationWrap" style="display:flex;justify-content:center;margin-top:20px;gap:6px"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/table.js"></script>
+<script>
+(async () => {
+  const constituencies = await loadConstituencies();
+  const districts = getDistricts(constituencies);
+
+  // Populate district filter
+  const distSel = document.getElementById('districtFilter');
+  districts.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = d; distSel.appendChild(o); });
+
+  const tableData = flattenForTable(constituencies, 2022);
+
+  // Init table
+  const tbl = new DataTable({
+    containerId: 'tableContainer',
+    pageSize: 30,
+    defaultSort: 'acNo',
+    columns: [
+      { key: 'acNo',     label: 'AC No.', width: '60px', className: 'num text-muted' },
+      { key: 'name',     label: 'Constituency', render: (v, row) => `<a href="constituency/${row.slug}.html" class="ac-link">${v}</a>` },
+      { key: 'district', label: 'District' },
+      { key: 'reserved', label: 'Category', render: v => `<span class="badge badge-${(v||'').toLowerCase()}">${v}</span>` },
+      { key: 'winner',   label: '2022 Winner' },
+      { key: 'party',    label: '2022 Party', render: v => partyBadge(v) },
+      { key: 'margin',   label: '2022 Margin', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'turnout',  label: 'Turnout %', align: 'right', className: 'num', render: v => v ? v.toFixed(1) + '%' : '—' }
+    ]
+  });
+  tbl.load(tableData).sort('acNo', 'asc');
+
+  // Wire count display
+  tbl.countEl = document.getElementById('resultCount');
+  tbl.paginationEl = document.getElementById('paginationWrap');
+  tbl.render();
+
+  // Search
+  document.getElementById('searchInput').addEventListener('input', filterTable);
+  distSel.addEventListener('change', filterTable);
+  document.getElementById('categoryFilter').addEventListener('change', filterTable);
+  document.getElementById('partyFilter2022').addEventListener('change', filterTable);
+
+  function filterTable() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const dist = distSel.value;
+    const cat = document.getElementById('categoryFilter').value;
+    const party = document.getElementById('partyFilter2022').value;
+    tbl.filter(row =>
+      (!q || row.name.toLowerCase().includes(q) || row.winner.toLowerCase().includes(q) || row.district.toLowerCase().includes(q)) &&
+      (!dist || row.district === dist) &&
+      (!cat || row.reserved === cat) &&
+      (!party || row.party === party)
+    );
+    tbl.countEl = document.getElementById('resultCount');
+    tbl.paginationEl = document.getElementById('paginationWrap');
+    tbl.render();
+  }
+
+  document.addEventListener('langchange', () => {
+    const si = document.getElementById('searchInput');
+    if (si) si.placeholder = t('search');
+    const freshData = flattenForTable(constituencies, 2022);
+    tbl.load(freshData).sort('acNo', 'asc');
+    filterTable();
+  });
+})();
+</script>
+</body>
+</html>

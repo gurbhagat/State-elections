@@ -1,0 +1,89 @@
+{
+  "election": {
+    "title": "Punjab Assembly Election 2027",
+    "titleHi": "पंजाब विधानसभा चुनाव 2027",
+    "titlePa": "ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ 2027",
+    "totalSeats": 117,
+    "majorityMark": 59,
+    "assemblyTerm": "March 16, 2022 – March 2027",
+    "estimatedVotingDate": "February 2027",
+    "estimatedResultDate": "March 2027",
+    "note": "Election schedule to be announced by the Election Commission of India. Dates are estimates based on the 5-year assembly term.",
+    "noteHi": "चुनाव कार्यक्रम की घोषणा भारत निर्वाचन आयोग द्वारा की जाएगी।",
+    "notePa": "ਚੋਣ ਕਾਰਜਕ੍ਰਮ ਭਾਰਤ ਚੋਣ ਕਮਿਸ਼ਨ ਦੁਆਰਾ ਐਲਾਨਿਆ ਜਾਵੇਗਾ।"
+  },
+  "milestones": [
+    {
+      "event": "Current Assembly Constituted",
+      "eventHi": "वर्तमान विधानसभा का गठन",
+      "eventPa": "ਮੌਜੂਦਾ ਵਿਧਾਨ ਸਭਾ ਗਠਿਤ",
+      "date": "16 March 2022",
+      "dateHi": "16 मार्च 2022",
+      "datePa": "16 ਮਾਰਚ 2022",
+      "status": "done"
+    },
+    {
+      "event": "Election Commission Announcement (Est.)",
+      "eventHi": "चुनाव आयोग की घोषणा (अनु.)",
+      "eventPa": "ਚੋਣ ਕਮਿਸ਼ਨ ਐਲਾਨ (ਅਨੁਮਾਨਿਤ)",
+      "date": "December 2026",
+      "dateHi": "दिसंबर 2026",
+      "datePa": "ਦਸੰਬਰ 2026",
+      "status": "upcoming"
+    },
+    {
+      "event": "Model Code of Conduct Begins (Est.)",
+      "eventHi": "आदर्श चुनाव आचार संहिता लागू (अनु.)",
+      "eventPa": "ਆਦਰਸ਼ ਚੋਣ ਜ਼ਾਬਤਾ ਸ਼ੁਰੂ (ਅਨੁਮਾਨਿਤ)",
+      "date": "December 2026",
+      "dateHi": "दिसंबर 2026",
+      "datePa": "ਦਸੰਬਰ 2026",
+      "status": "upcoming"
+    },
+    {
+      "event": "Nomination Filing (Est.)",
+      "eventHi": "नामांकन दाखिल करना (अनु.)",
+      "eventPa": "ਨਾਮਜ਼ਦਗੀ ਦਾਖ਼ਲ ਕਰਨਾ (ਅਨੁਮਾਨਿਤ)",
+      "date": "January 2027",
+      "dateHi": "जनवरी 2027",
+      "datePa": "ਜਨਵਰੀ 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Last Date for Withdrawal (Est.)",
+      "eventHi": "नामांकन वापसी की अंतिम तिथि (अनु.)",
+      "eventPa": "ਨਾਮਜ਼ਦਗੀ ਵਾਪਸੀ ਦੀ ਆਖਰੀ ਮਿਤੀ (ਅਨੁਮਾਨਿਤ)",
+      "date": "January 2027",
+      "dateHi": "जनवरी 2027",
+      "datePa": "ਜਨਵਰੀ 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Polling Day (Est.)",
+      "eventHi": "मतदान दिवस (अनु.)",
+      "eventPa": "ਵੋਟਿੰਗ ਦਿਵਸ (ਅਨੁਮਾਨਿਤ)",
+      "date": "February 2027",
+      "dateHi": "फरवरी 2027",
+      "datePa": "ਫਰਵਰੀ 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "Counting & Results (Est.)",
+      "eventHi": "मतगणना और परिणाम (अनु.)",
+      "eventPa": "ਗਿਣਤੀ ਅਤੇ ਨਤੀਜੇ (ਅਨੁਮਾਨਿਤ)",
+      "date": "March 2027",
+      "dateHi": "मार्च 2027",
+      "datePa": "ਮਾਰਚ 2027",
+      "status": "upcoming"
+    },
+    {
+      "event": "New Government Sworn In (Est.)",
+      "eventHi": "नई सरकार का शपथ ग्रहण (अनु.)",
+      "eventPa": "ਨਵੀਂ ਸਰਕਾਰ ਸਹੁੰ ਚੁੱਕਣਾ (ਅਨੁਮਾਨਿਤ)",
+      "date": "March 2027",
+      "dateHi": "मार्च 2027",
+      "datePa": "ਮਾਰਚ 2027",
+      "status": "upcoming"
+    }
+  ]
+}

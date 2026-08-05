@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Network — State Election Portals | UP Elections</title>
+  <meta name="description" content="Explore the IndiaElections.org network of state-specific election data portals. Accurate Vidhan Sabha constituency results, candidates, and historical trends.">
+  <link rel="canonical" href="https://upelectionresults.com/network.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <style>
+    .network-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: var(--s-6);
+      margin-top: var(--s-8);
+    }
+    .network-card {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--s-6);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.2s ease;
+    }
+    .network-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      box-shadow: var(--shadow-sm);
+    }
+    .network-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      align-self: flex-start;
+      margin-bottom: var(--s-3);
+      line-height: 1;
+    }
+    .badge-live {
+      background: rgba(34, 197, 94, 0.1);
+      color: #22c55e;
+    }
+    .badge-soon {
+      background: rgba(148, 163, 184, 0.1);
+      color: #94a3b8;
+    }
+    .network-title {
+      font-size: var(--text-lg);
+      font-weight: 600;
+      color: var(--text-1);
+      margin-bottom: var(--s-2);
+    }
+    .network-desc {
+      font-size: var(--text-sm);
+      color: var(--text-3);
+      flex-grow: 1;
+      margin-bottom: var(--s-4);
+      line-height: 1.5;
+    }
+    .network-link {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .network-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/network.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/network.html?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/network.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="netEyebrow">Elections Network</span>
+    <h1 class="page-title" data-i18n="netTitle">Our State Portals</h1>
+    <p class="page-desc" data-i18n="netDesc">We are building specialized, lightning-fast election data portals for every Indian state. Explore the current network directories below.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    
+    <div class="network-grid">
+      <!-- National -->
+      <div class="network-card">
+        <span class="network-badge badge-live" data-i18n="statusLive">Active Hub</span>
+        <h3 class="network-title">IndiaElections.org</h3>
+        <p class="network-desc" data-i18n="descIndia">The central hub of our election analytics network. Offers general election updates, national party profiles, and centralized database archives.</p>
+        <a href="https://indiaelections.org" target="_blank" rel="noopener" class="network-link" data-i18n="visitHub">
+          Visit central hub ➔
+        </a>
+      </div>
+
+      <!-- Punjab -->
+      <div class="network-card">
+        <span class="network-badge badge-live" data-i18n="statusLive">Active Hub</span>
+        <h3 class="network-title">PunjabElectionResults.com</h3>
+        <p class="network-desc" data-i18n="descPunjab">Dedicated regional portal for the Punjab Vidhan Sabha. Complete coverage of all 117 assembly constituencies, candidate details, and 1997–2022 trends.</p>
+        <a href="https://punjabelectionresults.com" target="_blank" rel="noopener" class="network-link" data-i18n="visitPunjab">
+          Browse Punjab data ➔
+        </a>
+      </div>
+
+      <!-- Uttar Pradesh -->
+      <div class="network-card" style="border-color: var(--accent)">
+        <span class="network-badge badge-live" data-i18n="statusLiveThis">Current Portal</span>
+        <h3 class="network-title">UPElectionResults.com</h3>
+        <p class="network-desc" data-i18n="descUP">Upcoming dedicated election data portal for the Uttar Pradesh Vidhan Sabha (403 assembly seats).</p>
+        <a href="index.html" class="network-link" data-i18n="browseUP">
+          Browse UP data ➔
+        </a>
+      </div>
+
+      <!-- Gujarat -->
+      <div class="network-card" style="opacity: 0.8;">
+        <span class="network-badge badge-soon" data-i18n="statusSoon">Coming Soon</span>
+        <h3 class="network-title">Gujarat Elections</h3>
+        <p class="network-desc" data-i18n="descGujarat">Upcoming election analytics portal for the Gujarat Legislative Assembly (182 seats).</p>
+        <span class="network-desc" style="font-style:italic" data-i18n="launchSoon">Launching soon</span>
+      </div>
+
+      <!-- Haryana -->
+      <div class="network-card" style="opacity: 0.8;">
+        <span class="network-badge badge-soon" data-i18n="statusSoon">Coming Soon</span>
+        <h3 class="network-title">Haryana Elections</h3>
+        <p class="network-desc" data-i18n="descHaryana">Upcoming coverage for the Haryana Legislative Assembly elections (90 seats).</p>
+        <span class="network-desc" style="font-style:italic" data-i18n="launchSoon">Launching soon</span>
+      </div>
+
+      <!-- Himachal Pradesh -->
+      <div class="network-card" style="opacity: 0.8;">
+        <span class="network-badge badge-soon" data-i18n="statusSoon">Coming Soon</span>
+        <h3 class="network-title">Himachal Pradesh Elections</h3>
+        <p class="network-desc" data-i18n="descHimachal">Upcoming election coverage for the Himachal Pradesh Vidhan Sabha (68 seats).</p>
+        <span class="network-desc" style="font-style:italic" data-i18n="launchSoon">Launching soon</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

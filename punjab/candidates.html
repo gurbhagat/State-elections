@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punjab Election 2022 & 2017 Candidates — Winners & Runners-up | Punjab Elections</title>
+  <meta name="description" content="Search all candidates from Punjab Assembly Elections 2022 and 2017 — winners, runners-up, votes, margins and party affiliations across all 117 constituencies.">
+  <link rel="canonical" href="https://punjabelectionresults.com/candidates.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/candidates.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/candidates.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/candidates.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/candidates.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Assembly Election</span>
+    <h1 class="page-title" data-i18n="navCandidates">Candidates</h1>
+    <p class="page-desc" data-i18n="candidatesDesc">Winners and runners-up from the 2022 and 2017 Punjab Assembly Elections. Search by candidate name, party or constituency.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <form class="filter-bar" onsubmit="event.preventDefault();" data-mcp-action="search-candidate" role="search" data-mcp-description="Search winners and runners-up from assembly elections by name, party, year, or status." data-mcp-params='{"required": [], "optional": ["query", "year", "type", "party"]}'>
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" class="search-input" aria-label="Search candidates" placeholder="Search by candidate or constituency..." data-i18n-placeholder="search" data-mcp-param="query" data-mcp-description="Text query to filter candidate name or constituency">
+      </div>
+      <select id="yearFilter" class="filter-select" data-mcp-param="year" data-mcp-description="Select election year">
+        <option value="2022" data-i18n="opt2022">2022 Election</option>
+        <option value="2017" data-i18n="opt2017">2017 Election</option>
+      </select>
+      <select id="typeFilter" class="filter-select" data-mcp-param="type" data-mcp-description="Filter by Winner or Runner-up status">
+        <option value="" data-i18n="optAllTypes">Winners & Runners-up</option>
+        <option value="winner" data-i18n="optWinner">Winners only</option>
+        <option value="runnerup" data-i18n="optRunnerup">Runners-up only</option>
+      </select>
+      <select id="partyFilter" class="filter-select" data-mcp-param="party" data-mcp-description="Filter candidates by political party affiliation">
+        <option value="" data-i18n="filterParty">All Parties</option>
+        <option value="AAP">AAP</option><option value="INC">INC</option>
+        <option value="SAD">SAD</option><option value="BJP">BJP</option>
+        <option value="BSP">BSP</option><option value="IND">IND</option>
+      </select>
+      <span class="result-count" id="resultCount"></span>
+    </form>
+
+    <div id="tableContainer">
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead></thead>
+          <tbody><tr><td colspan="8" style="text-align:center;padding:48px;color:var(--text-3)">Loading candidates...</td></tr></tbody>
+        </table>
+      </div>
+      <div id="paginationWrap" style="display:flex;justify-content:center;margin-top:20px;gap:6px"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/table.js"></script>
+<script>
+let allCandidates = [];
+let tbl;
+
+(async () => {
+  const constituencies = await loadConstituencies();
+  allCandidates = buildCandidates(constituencies);
+
+  tbl = new DataTable({
+    containerId: 'tableContainer',
+    pageSize: 40,
+    columns: [
+      { key: 'name',   label: 'Candidate', render: v => `<strong>${v}</strong>` },
+      { key: 'party',  label: 'Party', render: v => partyBadge(v) },
+      { key: 'type',   label: 'Status', render: v => v === 'winner' ? `<span class="badge badge-aap" style="background:rgba(0,140,0,.12);color:#138808">${(window.t && t('winner')) || 'Winner'}</span>` : `<span class="badge badge-ind">${(window.t && t('runnerup')) || 'Runner-up'}</span>` },
+      { key: 'constituency', label: 'Constituency', render: (v, row) => `<a href="constituency/${row.slug}.html" class="ac-link">${v}</a>` },
+      { key: 'district', label: 'District' },
+      { key: 'votes',  label: 'Votes', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'margin', label: 'Margin', align: 'right', className: 'num', render: (v, row) => row.type === 'winner' ? fmtNum(v) : '—' },
+    ]
+  });
+  tbl.countEl = document.getElementById('resultCount');
+  tbl.paginationEl = document.getElementById('paginationWrap');
+  tbl.load(allCandidates.filter(c => c.year == 2022)).sort('votes', 'desc');
+
+  document.getElementById('searchInput').addEventListener('input', filterCandidates);
+  document.getElementById('yearFilter').addEventListener('change', () => { rebuildForYear(); filterCandidates(); });
+  document.getElementById('typeFilter').addEventListener('change', filterCandidates);
+  document.getElementById('partyFilter').addEventListener('change', filterCandidates);
+
+  function rebuildForYear() {
+    const yr = document.getElementById('yearFilter').value;
+    tbl.load(allCandidates.filter(c => String(c.year) === yr));
+  }
+
+  function filterCandidates() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const type = document.getElementById('typeFilter').value;
+    const party = document.getElementById('partyFilter').value;
+    const yr = document.getElementById('yearFilter').value;
+    tbl.filter(row =>
+      String(row.year) === yr &&
+      (!q || row.name.toLowerCase().includes(q) || row.constituency.toLowerCase().includes(q)) &&
+      (!type || row.type === type) &&
+      (!party || row.party === party)
+    );
+    tbl.countEl = document.getElementById('resultCount');
+    tbl.paginationEl = document.getElementById('paginationWrap');
+    tbl.render();
+  }
+
+  document.addEventListener('langchange', () => {
+    allCandidates = buildCandidates(constituencies);
+    rebuildForYear();
+    filterCandidates();
+  });
+})();
+
+function buildCandidates(constituencies) {
+  const rows = [];
+  const lang = window.currentLang || 'en';
+  constituencies.forEach(c => {
+    const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const acName = lang === 'hi' ? (c.nameHi || c.name) : lang === 'pa' ? (c.namePa || c.name) : c.name;
+    const add = (r, year, type) => {
+      if (!r) return;
+      const winnerName = lang === 'hi' ? (r.winnerHi || r.winner) : lang === 'pa' ? (r.winnerPa || r.winner) : r.winner;
+      const runnerupName = lang === 'hi' ? (r.runnerupHi || r.runnerup) : lang === 'pa' ? (r.runnerupPa || r.runnerup) : r.runnerup;
+      const candidateName = type === 'winner' ? winnerName : runnerupName;
+      if (!candidateName) return;
+      rows.push({
+        name: candidateName,
+        party: type === 'winner' ? r.party : r.runnerupParty,
+        type,
+        constituency: acName,
+        district: c.district,
+        votes: type === 'winner' ? r.votes : (r.votes && r.margin ? Math.max(0, r.votes - r.margin) : 0),
+        margin: r.margin,
+        year,
+        slug
+      });
+    };
+    add(c.r22, 2022, 'winner');
+    add(c.r22, 2022, 'runnerup');
+    add(c.r17, 2017, 'winner');
+    add(c.r17, 2017, 'runnerup');
+  });
+  return rows;
+}
+</script>
+</body>
+</html>

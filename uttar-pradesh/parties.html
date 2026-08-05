@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Political Parties in UP Elections — BJP, SP, BSP, INC, RLD | UP Elections</title>
+  <meta name="description" content="Profiles of all major political parties in UP Elections — BJP, SP, BSP, INC, RLD, ADS — with historical seat tallies, vote shares, leaders and ideology.">
+  <link rel="canonical" href="https://upelectionresults.com/parties.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/parties.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/parties.html?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/parties.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">UP Assembly Election</span>
+    <h1 class="page-title" data-i18n="navParties">Political Parties</h1>
+    <p class="page-desc" data-i18n="partiesDesc">Historical performance, leadership and ideology of major parties contesting Uttar Pradesh assembly elections.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="party-grid" id="partyGrid">
+      <div style="text-align:center;padding:64px;color:var(--text-3);grid-column:1/-1">Loading party data...</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Historical comparison chart -->
+    <div class="section-header" style="margin-top:var(--s-8)">
+      <div>
+        <h2 class="section-title">Seat History 1997–2022</h2>
+        <p class="section-sub">UP Assembly Election seat tallies across six elections</p>
+      </div>
+    </div>
+
+    <div class="trend-chart-wrap">
+      <div id="historyChart"></div>
+      <div class="trend-legend" id="trendLegend"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/parties.data.js"></script>
+<script src="data/trends.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  const [parties, trends] = await Promise.all([loadParties(), loadTrends()]);
+
+  // Party cards
+  const grid = document.getElementById('partyGrid');
+  const lang = localStorage.getItem('pe_lang') || 'en';
+  grid.innerHTML = parties.map(p => {
+    const latest = p.seats.slice(-1)[0] || {};
+    const prev = p.seats.slice(-2, -1)[0] || {};
+    const swing = latest.seats - (prev.seats || 0);
+    const swingHtml = swing > 0 ? `<span style="color:#138808">+${swing}</span>` : swing < 0 ? `<span style="color:#c00">${swing}</span>` : '<span style="color:var(--text-3)">—</span>';
+    
+    // Translation helpers
+    const seatsLabel = lang === 'hi' ? '2022 सीटें' : '2022 Seats';
+    const voteShareLabel = lang === 'hi' ? '2022 मत प्रतिशत' : '2022 Vote Share';
+    const changeLabel = lang === 'hi' ? '2017 से बदलाव' : 'Change from 2017';
+    const prevSeatsLabel = lang === 'hi' ? '2017 सीटें' : '2017 Seats';
+    const leaderLabel = lang === 'hi' ? '2022 नेता' : '2022 Leader';
+    const ideologyLabel = lang === 'hi' ? 'विचारधारा' : 'Ideology';
+    
+    const pName = lang === 'hi' ? p.nameHi : p.name;
+    const pSub = lang === 'hi' ? p.name : p.nameHi;
+    const pIdeology = lang === 'hi' ? (p.ideologyHi || p.ideology) : p.ideology;
+    
+    return `
+      <div class="party-card">
+        <div class="party-card-header">
+          <div class="party-abbr" style="background:${p.color}">${p.abbr}</div>
+          <div>
+            <div class="party-card-name">${pName}</div>
+            <div class="party-card-abbr-text">${pSub}</div>
+          </div>
+        </div>
+        <div class="party-card-body">
+          <div class="party-stat-row"><span class="label">${seatsLabel}</span><span class="value">${latest.seats ?? '—'} / 403</span></div>
+          <div class="party-stat-row"><span class="label">${voteShareLabel}</span><span class="value">${latest.voteShare ? latest.voteShare.toFixed(2) + '%' : '—'}</span></div>
+          <div class="party-stat-row"><span class="label">${changeLabel}</span><span class="value">${swingHtml}</span></div>
+          <div class="party-stat-row"><span class="label">${prevSeatsLabel}</span><span class="value">${prev.seats ?? '—'}</span></div>
+          ${p.leader2022 ? `<div class="party-stat-row"><span class="label">${leaderLabel}</span><span class="value">${p.leader2022}</span></div>` : ''}
+          ${pIdeology ? `<div class="party-stat-row"><span class="label">${ideologyLabel}</span><span class="value" style="font-size:12px">${pIdeology}</span></div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+
+  // Historical chart
+  const years = trends.map(t => t.year);
+  const parties_to_show = ['BJP', 'SP', 'BSP', 'RLD', 'ADS'];
+  const chartData = {};
+  years.forEach((y, i) => {
+    chartData[y] = { year: y };
+    trends[i].results.forEach(r => { chartData[y][r.party] = r.seats; });
+  });
+
+  const colors = { BJP:'#FF9933', SP:'#FF2222', BSP:'#0000FF', RLD:'#008000', ADS:'#00FFFF' };
+  renderGroupedBarChart('historyChart', Object.values(chartData), { parties: parties_to_show, colors, height: 340 });
+
+  const legend = document.getElementById('trendLegend');
+  legend.innerHTML = parties_to_show.map(p => `
+    <div class="legend-item"><div class="legend-dot" style="background:${colors[p]}"></div>${p}</div>`).join('');
+})();
+</script>
+</body>
+</html>

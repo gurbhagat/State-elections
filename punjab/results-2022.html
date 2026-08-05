@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punjab Assembly Election 2022 Results — All 117 Constituencies | Punjab Elections</title>
+  <meta name="description" content="Full results of the 2022 Punjab Assembly Election. All 117 constituency-wise winners, margins, vote counts and turnout. AAP won 92 seats with 42.01% vote share.">
+  <link rel="canonical" href="https://punjabelectionresults.com/results-2022.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/results-2022.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/results-2022.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/results-2022.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/results-2022.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow">Punjab Vidhan Sabha Chunav</span>
+    <h1 class="page-title" data-i18n="nav2022">2022 Election Results</h1>
+    <p class="page-desc" data-i18n="results2022Desc">Punjab Assembly Election held on February 20, 2022. Results declared March 10, 2022. Total turnout: 71.95%. AAP won 92 of 117 seats.</p>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stat-item"><span class="stat-num">92</span><span class="stat-label" data-i18n="aapSeats">AAP Seats</span></div>
+      <div class="stat-item"><span class="stat-num">18</span><span class="stat-label" data-i18n="incSeats">INC Seats</span></div>
+      <div class="stat-item"><span class="stat-num">71.95%</span><span class="stat-label" data-i18n="voterTurnout">Voter Turnout</span></div>
+      <div class="stat-item"><span class="stat-num">Feb 20, 2022</span><span class="stat-label" data-i18n="pollingDate">Polling Date</span></div>
+    </div>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <!-- Seat Bar -->
+    <div style="margin-bottom:var(--s-8)">
+      <div style="height:10px;border-radius:100px;overflow:hidden;display:flex;margin-bottom:12px;background:var(--surface-3)" id="seatBar2022"></div>
+      <div style="display:flex;gap:var(--s-5);flex-wrap:wrap">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-aap)"></div><span data-i18n="legendAap92">AAP — 92 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-inc)"></div><span data-i18n="legendInc18">INC — 18 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-sad)"></div><span data-i18n="legendSad3">SAD — 3 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-bjp)"></div><span data-i18n="legendBjp2">BJP — 2 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-bsp)"></div><span data-i18n="legendBsp1"><span data-i18n="legendBsp1">BSP — 1 seat</span></span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-ind)"></div><span data-i18n="legendInd1">IND — 1 seat</span></div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search winner or constituency...">
+      </div>
+      <select id="districtFilter" class="filter-select"><option value="" data-i18n="filterDist">All Districts</option></select>
+      <select id="partyFilter" class="filter-select">
+        <option value="" data-i18n="filterParty">All Parties</option>
+        <option value="AAP">AAP</option><option value="INC">INC</option>
+        <option value="SAD">SAD</option><option value="BJP">BJP</option>
+        <option value="BSP">BSP</option><option value="IND">IND</option>
+      </select>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+
+    <div id="tableContainer">
+      <div class="table-wrap">
+        <table class="data-table" id="resultsTable">
+          <thead></thead>
+          <tbody><tr><td colspan="8" style="text-align:center;padding:48px;color:var(--text-3)">Loading results...</td></tr></tbody>
+        </table>
+      </div>
+      <div id="paginationWrap" style="display:flex;justify-content:center;margin-top:20px;gap:6px"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/table.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  renderSeatBar('seatBar2022', [
+    { party:'AAP', seats:92, color:'var(--c-aap)' }, { party:'INC', seats:18, color:'var(--c-inc)' },
+    { party:'SAD', seats:3,  color:'var(--c-sad)' }, { party:'BJP', seats:2,  color:'var(--c-bjp)' },
+    { party:'BSP', seats:1,  color:'var(--c-bsp)' }, { party:'IND', seats:1,  color:'var(--c-ind)' }
+  ], 117);
+
+  const constituencies = await loadConstituencies();
+  const data = flattenForTable(constituencies, 2022);
+  const districts = getDistricts(constituencies);
+  const distSel = document.getElementById('districtFilter');
+  districts.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = d; distSel.appendChild(o); });
+
+  const tbl = new DataTable({
+    containerId: 'tableContainer',
+    pageSize: 30,
+    columns: [
+      { key: 'acNo',          label: 'AC No.', width: '60px', className: 'num text-muted' },
+      { key: 'name',          label: 'Constituency', render: (v, row) => `<a href="constituency/${row.slug}.html" class="ac-link">${v}</a>` },
+      { key: 'district',      label: 'District' },
+      { key: 'winner',        label: 'Winner', render: v => `<strong>${v}</strong>` },
+      { key: 'party',         label: 'Party', render: v => partyBadge(v) },
+      { key: 'votes',         label: 'Votes', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'margin',        label: 'Margin', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'turnout',       label: 'Turnout', align: 'right', className: 'num', render: v => v ? v.toFixed(1) + '%' : '—' }
+    ]
+  });
+  tbl.countEl = document.getElementById('resultCount');
+  tbl.paginationEl = document.getElementById('paginationWrap');
+  tbl.load(data).sort('acNo', 'asc');
+
+  function filterTable() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const dist = distSel.value;
+    const party = document.getElementById('partyFilter').value;
+    tbl.filter(row =>
+      (!q || row.name.toLowerCase().includes(q) || row.winner.toLowerCase().includes(q) || row.district.toLowerCase().includes(q)) &&
+      (!dist || row.district === dist) &&
+      (!party || row.party === party)
+    );
+    tbl.countEl = document.getElementById('resultCount');
+    tbl.paginationEl = document.getElementById('paginationWrap');
+    tbl.render();
+  }
+
+  document.getElementById('searchInput').addEventListener('input', filterTable);
+  distSel.addEventListener('change', filterTable);
+  document.getElementById('partyFilter').addEventListener('change', filterTable);
+
+  document.addEventListener('langchange', () => {
+    const freshData = flattenForTable(constituencies, 2022);
+    tbl.load(freshData).sort('acNo', 'asc');
+    filterTable();
+  });
+})();
+</script>
+</body>
+</html>

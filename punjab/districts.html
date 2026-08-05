@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punjab Districts — Assembly Constituencies by District | Punjab Elections</title>
+  <meta name="description" content="Punjab election results and assembly constituencies district-wise. All 23 Punjab districts with seat count, 2022 party breakdown and SC reserved seats.">
+  <link rel="canonical" href="https://punjabelectionresults.com/districts.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/districts.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/districts.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/districts.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/districts.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Assembly Election</span>
+    <h1 class="page-title" data-i18n="navDistricts">District-wise View</h1>
+    <p class="page-desc" data-i18n="districtsDesc">Punjab has 23 districts with a total of 117 assembly constituencies. Click a district to see its constituencies and 2022 results.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="district-grid" id="districtGrid">
+      <div style="text-align:center;padding:64px;color:var(--text-3);grid-column:1/-1">Loading districts...</div>
+    </div>
+
+    <div id="districtDetail" class="hidden" style="margin-top:var(--s-10)">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);margin-bottom:var(--s-6)">
+        <h2 class="section-title" id="districtDetailTitle"></h2>
+        <button id="closeDetail" class="btn btn-secondary btn-sm">Close</button>
+      </div>
+      <div id="districtDetailContent"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="data/districts.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/table.js"></script>
+<script>
+const partyColors = { AAP:'var(--c-aap)', INC:'var(--c-inc)', SAD:'var(--c-sad)', BJP:'var(--c-bjp)', BSP:'var(--c-bsp)', IND:'var(--c-ind)' };
+
+(async () => {
+  const [constituencies, districtsData] = await Promise.all([loadConstituencies(), loadDistricts()]);
+
+  // Build district summary
+  const distMap = {};
+  constituencies.forEach(c => {
+    const d = c.district;
+    if (!distMap[d]) distMap[d] = { seats: 0, scSeats: 0, parties: {} };
+    distMap[d].seats++;
+    if (c.reserved === 'SC') distMap[d].scSeats++;
+    const p = c.r22.party;
+    distMap[d].parties[p] = (distMap[d].parties[p] || 0) + 1;
+    if (!distMap[d].constituencies) distMap[d].constituencies = [];
+    distMap[d].constituencies.push(c);
+  });
+
+  const grid = document.getElementById('districtGrid');
+  const sortedDistricts = [...new Set(constituencies.map(c => c.district))];
+
+  grid.innerHTML = sortedDistricts.map(distName => {
+    const d = distMap[distName];
+    const partiesSorted = Object.entries(d.parties).sort((a,b) => b[1]-a[1]);
+    const barSegs = partiesSorted.map(([p, s]) => {
+      const pct = (s / d.seats * 100).toFixed(1);
+      return `<div class="district-bar-seg" style="width:${pct}%;background:${partyColors[p]||'#888'}" title="${p}: ${s}"></div>`;
+    }).join('');
+    const topParty = partiesSorted[0];
+
+    return `
+      <div class="district-card" onclick="showDistrict('${distName}')" data-district="${distName}">
+        <div class="district-name">${distName}</div>
+        <div class="district-bar">${barSegs}</div>
+        <div class="district-stats">
+          <div class="district-stat"><span class="val">${d.seats}</span><span class="lbl">Seats</span></div>
+          <div class="district-stat"><span class="val">${d.scSeats}</span><span class="lbl">SC Seats</span></div>
+          <div class="district-stat"><span class="val">${topParty ? partyBadge(topParty[0]) + ' ' + topParty[1] : '—'}</span><span class="lbl">Largest party 2022</span></div>
+        </div>
+      </div>`;
+  }).join('');
+
+  window.distMap = distMap;
+  window.showDistrict = function(distName) {
+    const d = distMap[distName];
+    if (!d) return;
+    document.getElementById('districtDetailTitle').textContent = distName + ' — ' + d.seats + ' Constituencies';
+
+    const lang = window.currentLang || 'en';
+    const rows = d.constituencies.map(c => {
+      const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+      const acName = lang === 'hi' ? (c.nameHi || c.name) : lang === 'pa' ? (c.namePa || c.name) : c.name;
+      const winnerName = lang === 'hi' ? (c.r22.winnerHi || c.r22.winner) : lang === 'pa' ? (c.r22.winnerPa || c.r22.winner) : c.r22.winner;
+      return `<tr>
+        <td class="num text-muted">${c.acNo}</td>
+        <td><a href="constituency/${slug}.html" class="ac-link">${acName}</a></td>
+        <td><span class="badge badge-${(c.reserved||'').toLowerCase()}">${c.reserved}</span></td>
+        <td><strong>${winnerName}</strong></td>
+        <td>${partyBadge(c.r22.party)}</td>
+        <td class="num">${fmtNum(c.r22.margin)}</td>
+        <td class="num">${c.r22.turnout}%</td>
+      </tr>`;
+    }).join('');
+
+    document.getElementById('districtDetailContent').innerHTML = `
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>AC No.</th><th>Constituency</th><th>Category</th><th>2022 Winner</th><th>Party</th><th style="text-align:right">Margin</th><th style="text-align:right">Turnout</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>`;
+
+    const det = document.getElementById('districtDetail');
+    det.classList.remove('hidden');
+    det.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  document.getElementById('closeDetail').addEventListener('click', () => {
+    document.getElementById('districtDetail').classList.add('hidden');
+  });
+})();
+</script>
+</body>
+</html>

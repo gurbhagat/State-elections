@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Shield/Rounded Hexagon -->
+  <rect x="4" y="4" width="120" height="120" rx="32" fill="url(#shieldGrad)" stroke="#334155" stroke-width="3" />
+  
+  <!-- Stylized Ballot Box Base (Green/Navy) -->
+  <path d="M34 76 L34 94 C34 98, 40 102, 64 102 C88 102, 94 98, 94 94 L94 76" fill="none" stroke="#22c55e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Slot opening -->
+  <path d="M40 76 L88 76" stroke="#475569" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Saffron Checkmark Ballot Card sliding into slot -->
+  <path d="M50 36 L62 48 L90 20" fill="none" stroke="#f97316" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+  
+  <!-- Stylized Indian Democratic Flag/Tricolor Ribbon flowing inside -->
+  <path d="M38 52 C48 58, 54 48, 64 54 C74 60, 80 50, 90 56" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" opacity="0.8" />
+</svg>

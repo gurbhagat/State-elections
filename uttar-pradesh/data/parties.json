@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ads",
+    "name": "Apna Dal (Sonelal)",
+    "nameHi": "अपना दल (सोनेलाल)",
+    "abbr": "AD(S)",
+    "color": "#00FFFF",
+    "textColor": "#000000",
+    "founded": 2016,
+    "ideology": "Social Justice, Kurmi Representation, Regionalism",
+    "ideologyHi": "सामाजिक न्याय, कुर्मी प्रतिनिधित्व, क्षेत्रवाद",
+    "history": "Apna Dal (Sonelal) is a regional party active in Uttar Pradesh, representing backward classes, particularly the Kurmi community, allied with the BJP.",
+    "historyHi": "अपना दल (सोनेलाल) उत्तर प्रदेश में सक्रिय एक क्षेत्रीय दल है, जो पिछड़े वर्गों, विशेष रूप से कुर्मी समुदाय का प्रतिनिधित्व करता है और भाजपा के साथ गठबंधन में है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 9,
+        "voteShare": 0.98
+      },
+      {
+        "year": 2022,
+        "seats": 12,
+        "voteShare": 1.54
+      }
+    ]
+  },
+  {
+    "id": "bjp",
+    "name": "Bharatiya Janata Party",
+    "nameHi": "भारतीय जनता पार्टी",
+    "abbr": "BJP",
+    "color": "#FF9933",
+    "textColor": "#FFFFFF",
+    "founded": 1980,
+    "ideology": "Hindutva, Social Conservatism, Right-wing Populism",
+    "ideologyHi": "हिन्दुत्व, सामाजिक रूढ़िवादिता, दक्षिणपंथी लोकलुभावनवाद",
+    "history": "The Bharatiya Janata Party (BJP) is a major political party in India and currently forms the ruling government in Uttar Pradesh under Chief Minister Yogi Adityanath.",
+    "historyHi": "भारतीय जनता पार्टी (भाजपा) भारत का एक प्रमुख राजनीतिक दल है और वर्तमान में मुख्यमंत्री योगी आदित्यनाथ के नेतृत्व में उत्तर प्रदेश में सत्तारूढ़ सरकार है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 312,
+        "voteShare": 39.67
+      },
+      {
+        "year": 2022,
+        "seats": 255,
+        "voteShare": 41.29
+      }
+    ]
+  },
+  {
+    "id": "bsp",
+    "name": "Bahujan Samaj Party",
+    "nameHi": "बहुजन समाज पार्टी",
+    "abbr": "BSP",
+    "color": "#0000FF",
+    "textColor": "#FFFFFF",
+    "founded": 1984,
+    "ideology": "Social Equality, Bahujan Integration, Dalit Welfare",
+    "ideologyHi": "सामाजिक समानता, बहुजन एकीकरण, दलित कल्याण",
+    "history": "The Bahujan Samaj Party (BSP) was founded by Kanshi Ram and led by Mayawati, representing Bahujans, Scheduled Castes, Scheduled Tribes, and religious minorities.",
+    "historyHi": "बहुजन समाज पार्टी (बसपा) की स्थापना कांशीराम ने की थी और इसका नेतृत्व मायावती कर रही हैं, जो बहुजनों, अनुसूचित जातियों, अनुसूचित जनजातियों और धार्मिक अल्पसंख्यकों का प्रतिनिधित्व करती है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 19,
+        "voteShare": 22.23
+      },
+      {
+        "year": 2022,
+        "seats": 1,
+        "voteShare": 12.88
+      }
+    ]
+  },
+  {
+    "id": "inc",
+    "name": "Indian National Congress",
+    "nameHi": "भारतीय राष्ट्रीय कांग्रेस",
+    "abbr": "INC",
+    "color": "#19AAED",
+    "textColor": "#FFFFFF",
+    "founded": 1885,
+    "ideology": "Social Liberalism, Secularism, Civic Nationalism",
+    "ideologyHi": "सामाजिक उदारवाद, धर्मनिरपेक्षता, नागरिक राष्ट्रवाद",
+    "history": "The Indian National Congress (INC) is one of India's oldest political parties, advocating for secularism, social welfare, and liberal democracy.",
+    "historyHi": "भारतीय राष्ट्रीय कांग्रेस (आईएनसी) भारत के सबसे पुराने राजनीतिक दलों में से एक है, जो धर्मनिरपेक्षता, सामाजिक कल्याण और उदार लोकतंत्र की वकालत करता है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 7,
+        "voteShare": 6.25
+      },
+      {
+        "year": 2022,
+        "seats": 2,
+        "voteShare": 2.33
+      }
+    ]
+  },
+  {
+    "id": "ind",
+    "name": "Independent",
+    "nameHi": "निर्दलीय",
+    "abbr": "IND",
+    "color": "#808080",
+    "textColor": "#FFFFFF",
+    "founded": 0,
+    "ideology": "Regional Interests",
+    "ideologyHi": "क्षेत्रीय हित",
+    "history": "Independent is a political party active in Uttar Pradesh.",
+    "historyHi": "निर्दलीय उत्तर प्रदेश में सक्रिय एक राजनीतिक दल है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 3,
+        "voteShare": 0
+      },
+      {
+        "year": 2022,
+        "seats": 0,
+        "voteShare": 0
+      }
+    ]
+  },
+  {
+    "id": "jdl",
+    "name": "Party JD(L)",
+    "nameHi": "दल JD(L)",
+    "abbr": "JD(L)",
+    "color": "#7F8C8D",
+    "textColor": "#FFFFFF",
+    "founded": 2000,
+    "ideology": "Regional Interests",
+    "ideologyHi": "क्षेत्रीय हित",
+    "history": "Party JD(L) is a political party active in Uttar Pradesh.",
+    "historyHi": "दल JD(L) उत्तर प्रदेश में सक्रिय एक राजनीतिक दल है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 0,
+        "voteShare": 0
+      },
+      {
+        "year": 2022,
+        "seats": 2,
+        "voteShare": 0
+      }
+    ]
+  },
+  {
+    "id": "nishad",
+    "name": "Nirbal Indian Shoshit Hamara Aam Dal",
+    "nameHi": "निषाद पार्टी",
+    "abbr": "NISHAD",
+    "color": "#FF00FF",
+    "textColor": "#FFFFFF",
+    "founded": 2016,
+    "ideology": "Fisherman Community Rights, Social Justice",
+    "ideologyHi": "निषाद/मछुआरा समुदाय अधिकार, सामाजिक न्याय",
+    "history": "The Nirbal Indian Shoshit Hamara Aam Dal (NISHAD Party) champions the rights of riverine communities and traditional fishermen groups in Uttar Pradesh.",
+    "historyHi": "निर्बल इंडियन शोषित हमारा आम दल (निषाद पार्टी) उत्तर प्रदेश में नदी तटीय समुदायों और पारंपरिक मछुआरे समूहों के अधिकारों की वकालत करता है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 1,
+        "voteShare": 0.62
+      },
+      {
+        "year": 2022,
+        "seats": 6,
+        "voteShare": 0.9
+      }
+    ]
+  },
+  {
+    "id": "rld",
+    "name": "Rashtriya Lok Dal",
+    "nameHi": "राष्ट्रीय लोक दल",
+    "abbr": "RLD",
+    "color": "#008000",
+    "textColor": "#FFFFFF",
+    "founded": 1996,
+    "ideology": "Agrarianism, Regionalism, Farmers' Welfare",
+    "ideologyHi": "कृषिवाद, क्षेत्रवाद, किसानों का कल्याण",
+    "history": "The Rashtriya Lok Dal (RLD) is a regional party founded by Chaudhary Ajit Singh, primarily active in western Uttar Pradesh with a focus on farmer and agrarian issues.",
+    "historyHi": "राष्ट्रीय लोक दल (रालोद) चौधरी अजीत सिंह द्वारा स्थापित एक क्षेत्रीय दल है, जो मुख्य रूप से पश्चिमी उत्तर प्रदेश में सक्रिय है और किसानों तथा कृषि मुद्दों पर ध्यान केंद्रित करता है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 1,
+        "voteShare": 1.78
+      },
+      {
+        "year": 2022,
+        "seats": 8,
+        "voteShare": 2.85
+      }
+    ]
+  },
+  {
+    "id": "sbsp",
+    "name": "Suheldev Bharatiya Samaj Party",
+    "nameHi": "सुहेलदेव भारतीय समाज पार्टी",
+    "abbr": "SBSP",
+    "color": "#FFFF00",
+    "textColor": "#000000",
+    "founded": 2002,
+    "ideology": "Rajbhar Community Rights, Backward Class Welfare",
+    "ideologyHi": "राजभर समुदाय अधिकार, पिछड़ा वर्ग कल्याण",
+    "history": "The Suheldev Bharatiya Samaj Party (SBSP) is a regional party representing the Rajbhar community and other backward classes in eastern Uttar Pradesh.",
+    "historyHi": "सुहेलदेव भारतीय समाज पार्टी (सुभासपा) एक क्षेत्रीय दल है जो पूर्वी उत्तर प्रदेश में राजभर समुदाय और अन्य पिछड़े वर्गों का प्रतिनिधित्व करता है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 4,
+        "voteShare": 0.7
+      },
+      {
+        "year": 2022,
+        "seats": 6,
+        "voteShare": 1.3
+      }
+    ]
+  },
+  {
+    "id": "sp",
+    "name": "Samajwadi Party",
+    "nameHi": "समाजवादी पार्टी",
+    "abbr": "SP",
+    "color": "#FF2222",
+    "textColor": "#FFFFFF",
+    "founded": 1992,
+    "ideology": "Social Democracy, Democratic Socialism, Populism",
+    "ideologyHi": "सामाजिक लोकतंत्र, लोकतांत्रिक समाजवाद, लोकलुभावनवाद",
+    "history": "The Samajwadi Party (SP) is a major regional party founded by Mulayam Singh Yadav, advocating for social equality and the welfare of backward classes.",
+    "historyHi": "समाजवादी पार्टी (सपा) मुलायम सिंह यादव द्वारा स्थापित एक प्रमुख क्षेत्रीय दल है, जो सामाजिक समानता और पिछड़े वर्गों के कल्याण की वकालत करता है।",
+    "seats": [
+      {
+        "year": 2017,
+        "seats": 47,
+        "voteShare": 21.82
+      },
+      {
+        "year": 2022,
+        "seats": 111,
+        "voteShare": 32.06
+      }
+    ]
+  }
+]

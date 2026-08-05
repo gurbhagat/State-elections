@@ -1,0 +1,25 @@
+window._DATA = window._DATA || {};
+window._DATA.districts = [
+  { "id": "amritsar",    "name": "Amritsar",        "nameHi": "अमृतसर",           "namePa": "ਅੰਮ੍ਰਿਤਸਰ",      "seats": 10, "scSeats": 2 },
+  { "id": "gurdaspur",   "name": "Gurdaspur",       "nameHi": "गुरदासपुर",        "namePa": "ਗੁਰਦਾਸਪੁਰ",     "seats": 6,  "scSeats": 2 },
+  { "id": "pathankot",   "name": "Pathankot",       "nameHi": "पठानकोट",          "namePa": "ਪਠਾਨਕੋਟ",       "seats": 3,  "scSeats": 1 },
+  { "id": "hoshiarpur",  "name": "Hoshiarpur",      "nameHi": "होशियारपुर",       "namePa": "ਹੁਸ਼ਿਆਰਪੁਰ",    "seats": 8,  "scSeats": 5 },
+  { "id": "sbsnagar",    "name": "SBS Nagar",       "nameHi": "एसबीएस नगर",       "namePa": "ਐੱਸਬੀਐੱਸ ਨਗਰ", "seats": 3,  "scSeats": 1 },
+  { "id": "rupnagar",    "name": "Rupnagar",        "nameHi": "रूपनगर",           "namePa": "ਰੂਪਨਗਰ",        "seats": 3,  "scSeats": 0 },
+  { "id": "sasnagar",    "name": "SAS Nagar",       "nameHi": "सास नगर (मोहाली)", "namePa": "ਐੱਸਏਐੱਸ ਨਗਰ",  "seats": 3,  "scSeats": 1 },
+  { "id": "fatehgarh",   "name": "Fatehgarh Sahib", "nameHi": "फतेहगढ़ साहिब",    "namePa": "ਫਤਹਿਗੜ੍ਹ ਸਾਹਿਬ","seats": 4,  "scSeats": 3 },
+  { "id": "ludhiana",    "name": "Ludhiana",        "nameHi": "लुधियाना",         "namePa": "ਲੁਧਿਆਣਾ",       "seats": 14, "scSeats": 4 },
+  { "id": "kapurthala",  "name": "Kapurthala",      "nameHi": "कपूरथला",          "namePa": "ਕਪੂਰਥਲਾ",       "seats": 4,  "scSeats": 1 },
+  { "id": "jalandhar",   "name": "Jalandhar",       "nameHi": "जालंधर",           "namePa": "ਜਲੰਧਰ",          "seats": 9,  "scSeats": 3 },
+  { "id": "tarntaran",   "name": "Tarn Taran",      "nameHi": "तरन तारन",         "namePa": "ਤਰਨ ਤਾਰਨ",      "seats": 5,  "scSeats": 2 },
+  { "id": "firozpur",    "name": "Firozpur",        "nameHi": "फिरोजपुर",         "namePa": "ਫ਼ਿਰੋਜ਼ਪੁਰ",     "seats": 5,  "scSeats": 1 },
+  { "id": "fazilka",     "name": "Fazilka",         "nameHi": "फाजिल्का",         "namePa": "ਫ਼ਾਜ਼ਿਲਕਾ",      "seats": 5,  "scSeats": 1 },
+  { "id": "muktsar",     "name": "Sri Muktsar Sahib","nameHi": "श्री मुक्तसर साहिब","namePa": "ਸ੍ਰੀ ਮੁਕਤਸਰ ਸਾਹਿਬ","seats": 3,"scSeats": 2 },
+  { "id": "faridkot",    "name": "Faridkot",        "nameHi": "फरीदकोट",          "namePa": "ਫ਼ਰੀਦਕੋਟ",       "seats": 4,  "scSeats": 1 },
+  { "id": "moga",        "name": "Moga",            "nameHi": "मोगा",             "namePa": "ਮੋਗਾ",           "seats": 5,  "scSeats": 2 },
+  { "id": "bathinda",    "name": "Bathinda",        "nameHi": "बठिंडा",           "namePa": "ਬਠਿੰਡਾ",         "seats": 8,  "scSeats": 3 },
+  { "id": "barnala",     "name": "Barnala",         "nameHi": "बरनाला",           "namePa": "ਬਰਨਾਲਾ",        "seats": 3,  "scSeats": 1 },
+  { "id": "sangrur",     "name": "Sangrur",         "nameHi": "संगरूर",           "namePa": "ਸੰਗਰੂਰ",         "seats": 6,  "scSeats": 3 },
+  { "id": "patiala",     "name": "Patiala",         "nameHi": "पटियाला",          "namePa": "ਪਟਿਆਲਾ",        "seats": 6,  "scSeats": 2 }
+]
+;

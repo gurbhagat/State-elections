@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Political Parties in Punjab Elections — AAP, INC, SAD, BJP | Punjab Elections</title>
+  <meta name="description" content="Profiles of all major political parties in Punjab Elections — AAP, INC, SAD, BJP, BSP — with historical seat tallies, vote shares, leaders and ideology.">
+  <link rel="canonical" href="https://punjabelectionresults.com/parties.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://punjabelectionresults.com/parties.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://punjabelectionresults.com/parties.html?lang=hi" />
+  <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/parties.html?lang=pa" />
+  <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/parties.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Assembly Election</span>
+    <h1 class="page-title" data-i18n="navParties">Political Parties</h1>
+    <p class="page-desc" data-i18n="partiesDesc">Historical performance, leadership and ideology of major parties contesting Punjab assembly elections.</p>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    <div class="party-grid" id="partyGrid">
+      <div style="text-align:center;padding:64px;color:var(--text-3);grid-column:1/-1">Loading party data...</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Historical comparison chart -->
+    <div class="section-header" style="margin-top:var(--s-8)">
+      <div>
+        <h2 class="section-title">Seat History 1997–2022</h2>
+        <p class="section-sub">Punjab Assembly Election seat tallies across six elections</p>
+      </div>
+    </div>
+
+    <div class="trend-chart-wrap">
+      <div id="historyChart"></div>
+      <div class="trend-legend" id="trendLegend"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/parties.data.js"></script>
+<script src="data/trends.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  const [parties, trends] = await Promise.all([loadParties(), loadTrends()]);
+
+  // Party cards
+  const grid = document.getElementById('partyGrid');
+  grid.innerHTML = parties.map(p => {
+    const latest = p.seats.slice(-1)[0] || {};
+    const prev = p.seats.slice(-2, -1)[0] || {};
+    const swing = latest.seats - (prev.seats || 0);
+    const swingHtml = swing > 0 ? `<span style="color:#138808">+${swing}</span>` : swing < 0 ? `<span style="color:#c00">${swing}</span>` : '<span style="color:var(--text-3)">—</span>';
+    return `
+      <div class="party-card">
+        <div class="party-card-header">
+          <div class="party-abbr" style="background:${p.color}">${p.abbr}</div>
+          <div>
+            <div class="party-card-name">${p.name}</div>
+            <div class="party-card-abbr-text">${p.nameHi} · ${p.namePa}</div>
+          </div>
+        </div>
+        <div class="party-card-body">
+          <div class="party-stat-row"><span class="label">2022 Seats</span><span class="value">${latest.seats ?? '—'} / 117</span></div>
+          <div class="party-stat-row"><span class="label">2022 Vote Share</span><span class="value">${latest.voteShare ? latest.voteShare.toFixed(2) + '%' : '—'}</span></div>
+          <div class="party-stat-row"><span class="label">Change from 2017</span><span class="value">${swingHtml}</span></div>
+          <div class="party-stat-row"><span class="label">2017 Seats</span><span class="value">${prev.seats ?? '—'}</span></div>
+          ${p.leader2022 ? `<div class="party-stat-row"><span class="label">2022 Leader</span><span class="value">${p.leader2022}</span></div>` : ''}
+          ${p.ideology ? `<div class="party-stat-row"><span class="label">Ideology</span><span class="value" style="font-size:12px">${p.ideology}</span></div>` : ''}
+        </div>
+      </div>`;
+  }).join('');
+
+  // Historical chart
+  const elections = trends.elections;
+  const years = elections.map(e => e.year);
+  const parties_to_show = ['AAP','INC','SAD','BJP'];
+  const chartData = {};
+  years.forEach((y, i) => {
+    chartData[y] = { year: y };
+    elections[i].results.forEach(r => { chartData[y][r.party] = r.seats; });
+  });
+
+  const colors = { AAP:'#005DAA', INC:'#138808', SAD:'#003380', BJP:'#FF6000' };
+  renderGroupedBarChart('historyChart', Object.values(chartData), { parties: parties_to_show, colors, height: 340 });
+
+  const legend = document.getElementById('trendLegend');
+  legend.innerHTML = parties_to_show.map(p => `
+    <div class="legend-item"><div class="legend-dot" style="background:${colors[p]}"></div>${p}</div>`).join('');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Constituency | UP Elections</title>
+  <meta name="description" id="pageDesc" content="Constituency-wise election results for UP assembly election 2022 and 2017.">
+  <link rel="canonical" id="pageCanonical" href="https://upelectionresults.com/constituency.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/constituency.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/constituency.html?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/constituency.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="ac-hero" id="acHero">
+  <div class="container">
+    <div class="ac-breadcrumb">
+      <a href="constituencies.html">Constituencies</a> / <span id="acName">Loading...</span>
+    </div>
+    <h1 class="ac-title" id="acTitle">—</h1>
+    <div class="ac-meta" id="acMeta"></div>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container" style="max-width:900px">
+
+    <div id="acContent">
+      <div style="text-align:center;padding:64px;color:var(--text-3)">Loading constituency data...</div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get('ac');
+  if (!slug) { window.location = 'constituencies.html'; return; }
+
+  const constituencies = await loadConstituencies();
+  const ac = constituencies.find(c => c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') === slug || String(c.id) === slug);
+  if (!ac) { document.getElementById('acContent').innerHTML = '<div style="text-align:center;padding:64px;color:var(--text-3)">Constituency not found. <a href="constituencies.html" style="color:var(--accent)">Browse all constituencies</a></div>'; return; }
+
+  // Update meta
+  document.getElementById('pageTitle').textContent = `${ac.name} Constituency — UP Elections`;
+  document.getElementById('pageDesc').content = `${ac.name} assembly constituency results — 2022 winner: ${ac.r22.winner} (${ac.r22.party}), 2017 winner: ${ac.r17.winner} (${ac.r17.party}). District: ${ac.district}.`;
+  document.getElementById('pageCanonical').href = `https://upelectionresults.com/constituency.html?ac=${slug}`;
+  document.getElementById('acName').textContent = ac.name;
+  document.getElementById('acTitle').textContent = ac.name;
+  document.getElementById('acMeta').innerHTML = `
+    <span class="badge badge-${ac.reserved.toLowerCase()}">${ac.reserved === 'SC' ? 'SC Reserved' : ac.reserved === 'ST' ? 'ST Reserved' : 'General'}</span>
+    <span style="font-size:var(--text-sm);color:var(--text-3)">${ac.district} District</span>
+    <span style="font-size:var(--text-sm);color:var(--text-3)">AC No. ${ac.acNo}</span>`;
+
+  // Build result cards
+  function resultCard(year, r, prev) {
+    return `
+      <div class="result-card">
+        <div class="result-card-year">${year} Result</div>
+        <div class="result-card-winner">${r.winner}</div>
+        ${partyBadge(r.party)}
+        <div class="result-card-stats">
+          <div class="result-card-stat"><span class="val">${fmtNum(r.votes)}</span><span class="lbl">Votes</span></div>
+          <div class="result-card-stat"><span class="val">${fmtNum(r.margin)}</span><span class="lbl">Margin</span></div>
+          <div class="result-card-stat"><span class="val">${r.turnout}%</span><span class="lbl">Turnout</span></div>
+        </div>
+        <div style="margin-top:var(--s-4);font-size:var(--text-sm);color:var(--text-3)">
+          Runner-up: <strong>${r.runnerup || '—'}</strong> ${partyBadge(r.runnerupParty || '')} (${fmtNum(r.runnerup ? r.votes - r.margin : 0)} votes)
+        </div>
+      </div>`;
+  }
+
+  // Vote share bar for 2022
+  const total22 = ac.r22.totalVotes;
+  const wPct22 = ((ac.r22.votes / total22) * 100).toFixed(1);
+  const rrPct22 = (((ac.r22.votes - ac.r22.margin) / total22) * 100).toFixed(1);
+  const colors = { BJP:'var(--c-bjp)', SP:'var(--c-sp)', BSP:'var(--c-bsp)', INC:'var(--c-inc)', RLD:'var(--c-rld)', ADS:'var(--c-ads)', SBSP:'var(--c-sbsp)', NISHAD:'var(--c-nishad)', JSDL:'var(--c-jsdl)', IND:'var(--c-ind)' };
+  const wColor = colors[ac.r22.party] || '#888';
+  const rrColor = colors[ac.r22.runnerupParty] || '#888';
+
+  document.getElementById('acContent').innerHTML = `
+    <div class="result-cards">
+      ${resultCard('2022', ac.r22)}
+      ${resultCard('2017', ac.r17)}
+    </div>
+
+    <div class="chart-wrap" style="margin-bottom:var(--s-6)">
+      <div class="chart-title">2022 Vote Share — Top Candidates</div>
+      <div class="bar-chart" id="voteShareChart">
+        <div class="bar-row">
+          <div class="bar-label" style="width:80px;font-size:12px">${ac.r22.party}</div>
+          <div class="bar-track"><div class="bar-fill" style="width:${wPct22}%;background:${wColor}"><span>${wPct22}%</span></div></div>
+          <div class="bar-num" style="width:60px">${fmtNum(ac.r22.votes)}</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label" style="width:80px;font-size:12px">${ac.r22.runnerupParty || 'Runner-up'}</div>
+          <div class="bar-track"><div class="bar-fill" style="width:${rrPct22}%;background:${rrColor}"><span>${rrPct22}%</span></div></div>
+          <div class="bar-num" style="width:60px">${fmtNum(ac.r22.votes - ac.r22.margin)}</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;gap:var(--s-4);flex-wrap:wrap;margin-bottom:var(--s-6)">
+      <div class="chart-wrap" style="flex:1;min-width:200px">
+        <div class="chart-title">Swing: 2017 to 2022</div>
+        <div style="font-size:var(--text-sm);color:var(--text-2);margin-top:var(--s-3)">
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span>2017 Winner</span><strong>${ac.r17.winner} (${ac.r17.party})</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span>2022 Winner</span><strong>${ac.r22.winner} (${ac.r22.party})</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span>2017 Margin</span><strong>${fmtNum(ac.r17.margin)}</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border)"><span>2022 Margin</span><strong>${fmtNum(ac.r22.margin)}</strong></div>
+          <div style="display:flex;justify-content:space-between;padding:6px 0"><span>Seat changed hands?</span><strong>${ac.r17.party !== ac.r22.party ? 'Yes — ' + ac.r17.party + ' to ' + ac.r22.party : 'No (same party)'}</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--s-6)">
+      <a href="constituencies.html" class="btn btn-secondary">All Constituencies</a>
+    </div>`;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UP Assembly Election 2017 Results — All 403 Constituencies | UP Elections</title>
+  <meta name="description" content="Full results of the 2017 UP Assembly Election. BJP won 312 seats. All 403 constituency-wise winners, margins and vote counts.">
+  <link rel="canonical" href="https://upelectionresults.com/results-2017.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/results-2017.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/results-2017.html?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/results-2017.html" />
+  <link rel="mcp-actions" href="/mcp-actions.json" />
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow">Uttar Pradesh Vidhan Sabha Chunav</span>
+    <h1 class="page-title" data-i18n="nav2017">2017 Election Results</h1>
+    <p class="page-desc" data-i18n="results2017Desc">UP Assembly Election held in Feb–Mar 2017. Results declared March 11, 2017. Total turnout: 61.24%. BJP won 312 of 403 seats.</p>
+  </div>
+</div>
+
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stat-item"><span class="stat-num">312</span><span class="stat-label" data-i18n="bjpSeats">BJP Seats</span></div>
+      <div class="stat-item"><span class="stat-num">47</span><span class="stat-label" data-i18n="spSeats">SP Seats</span></div>
+      <div class="stat-item"><span class="stat-num">61.24%</span><span class="stat-label" data-i18n="voterTurnout">Voter Turnout</span></div>
+      <div class="stat-item"><span class="stat-num">Feb-Mar 2017</span><span class="stat-label" data-i18n="pollingDate">Polling Date</span></div>
+    </div>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+
+    <div style="margin-bottom:var(--s-8)">
+      <div style="height:10px;border-radius:100px;overflow:hidden;display:flex;margin-bottom:12px;background:var(--surface-3)" id="seatBar2017"></div>
+      <div style="display:flex;gap:var(--s-5);flex-wrap:wrap">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-bjp)"></div><span data-i18n="legendBjp312">BJP — 312 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-sp)"></div><span data-i18n="legendSp47">SP — 47 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-bsp)"></div><span data-i18n="legendBsp19">BSP — 19 seats</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-ads)"></div>ADS — 9 seats</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--c-ind)"></div><span data-i18n="legendOthers16">Others — 16 seats</span></div>
+      </div>
+    </div>
+
+    <div class="notice" style="margin-bottom:var(--s-6)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <span>2017 results are approximate based on official ECI data. The 2017 election results are shown to provide historical comparison with the 2022 election.</span>
+    </div>
+
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search winner or constituency...">
+      </div>
+      <select id="districtFilter" class="filter-select"><option value="" data-i18n="filterDist">All Districts</option></select>
+      <select id="partyFilter" class="filter-select">
+        <option value="" data-i18n="filterParty">All Parties</option>
+        <option value="BJP">BJP</option>
+        <option value="SP">SP</option>
+        <option value="BSP">BSP</option>
+        <option value="INC">INC</option>
+        <option value="RLD">RLD</option>
+        <option value="ADS">Apna Dal (S)</option>
+        <option value="SBSP">SBSP</option>
+        <option value="NISHAD">NISHAD</option>
+        <option value="IND">IND</option>
+      </select>
+      <span class="result-count" id="resultCount"></span>
+    </div>
+
+    <div id="tableContainer">
+      <div class="table-wrap">
+        <table class="data-table" id="resultsTable">
+          <thead></thead>
+          <tbody><tr><td colspan="8" style="text-align:center;padding:48px;color:var(--text-3)">Loading results...</td></tr></tbody>
+        </table>
+      </div>
+      <div id="paginationWrap" style="display:flex;justify-content:center;margin-top:20px;gap:6px"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="data/constituencies.data.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/table.js"></script>
+<script src="js/charts.js"></script>
+<script>
+(async () => {
+  renderSeatBar('seatBar2017', [
+    { party:'BJP', seats:312, color:'var(--c-bjp)' }, { party:'SP', seats:47, color:'var(--c-sp)' },
+    { party:'BSP', seats:19,  color:'var(--c-bsp)' }, { party:'ADS', seats:9,  color:'var(--c-ads)' },
+    { party:'Others', seats:16,  color:'var(--c-ind)' }
+  ], 403);
+
+  const constituencies = await loadConstituencies();
+  const data = flattenForTable(constituencies, 2017);
+  const districts = getDistricts(constituencies);
+  const distSel = document.getElementById('districtFilter');
+  districts.forEach(d => { const o = document.createElement('option'); o.value = d; o.textContent = d; distSel.appendChild(o); });
+
+  const tbl = new DataTable({
+    containerId: 'tableContainer',
+    pageSize: 30,
+    columns: [
+      { key: 'acNo',    label: 'AC No.', width: '60px', className: 'num text-muted' },
+      { key: 'name',    label: 'Constituency', render: (v, row) => `<a href="constituency/${row.slug}.html" class="ac-link">${v}</a>` },
+      { key: 'district',label: 'District' },
+      { key: 'winner',  label: 'Winner', render: v => `<strong>${v}</strong>` },
+      { key: 'party',   label: 'Party', render: v => partyBadge(v) },
+      { key: 'votes',   label: 'Votes', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'margin',  label: 'Margin', align: 'right', className: 'num', render: v => fmtNum(v) },
+      { key: 'turnout', label: 'Turnout', align: 'right', className: 'num', render: v => v ? v.toFixed(1) + '%' : '—' }
+    ]
+  });
+  tbl.countEl = document.getElementById('resultCount');
+  tbl.paginationEl = document.getElementById('paginationWrap');
+  tbl.load(data).sort('acNo', 'asc');
+
+  function filterTable() {
+    const q = document.getElementById('searchInput').value.toLowerCase();
+    const dist = distSel.value;
+    const party = document.getElementById('partyFilter').value;
+    tbl.filter(row =>
+      (!q || row.name.toLowerCase().includes(q) || row.winner.toLowerCase().includes(q)) &&
+      (!dist || row.district === dist) &&
+      (!party || row.party === party)
+    );
+    tbl.countEl = document.getElementById('resultCount');
+    tbl.paginationEl = document.getElementById('paginationWrap');
+    tbl.render();
+  }
+
+  document.getElementById('searchInput').addEventListener('input', filterTable);
+  distSel.addEventListener('change', filterTable);
+  document.getElementById('partyFilter').addEventListener('change', filterTable);
+
+  document.addEventListener('langchange', () => {
+    const freshData = flattenForTable(constituencies, 2017);
+    tbl.load(freshData).sort('acNo', 'asc');
+    filterTable();
+  });
+})();
+</script>
+</body>
+</html>
