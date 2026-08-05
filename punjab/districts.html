@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -20,31 +20,124 @@
   <link rel="alternate" hreflang="pa-IN" href="https://punjabelectionresults.com/districts.html?lang=pa" />
   <link rel="alternate" hreflang="x-default" href="https://punjabelectionresults.com/districts.html" />
   <link rel="mcp-actions" href="/mcp-actions.json" />
+  <style>
+    .districts-hero {
+      background: linear-gradient(135deg, var(--bg) 0%, var(--surface) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: var(--s-12) 0 var(--s-10);
+    }
+    .districts-hero-inner { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s-6); flex-wrap: wrap; }
+    .districts-stats-row { display: flex; gap: var(--s-6); flex-wrap: wrap; margin-top: var(--s-6); }
+    .dstat { text-align: center; }
+    .dstat-num { font-size: var(--text-3xl,2rem); font-weight: 800; color: var(--text); line-height: 1; }
+    .dstat-lbl { font-size: var(--text-xs); color: var(--text-3); text-transform: uppercase; letter-spacing: .8px; font-weight: 600; margin-top: 4px; }
+
+    .district-search-wrap { margin-bottom: var(--s-6); }
+    .district-search {
+      width: 100%; max-width: 420px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-3) var(--s-4);
+      font-size: var(--text-base);
+      color: var(--text);
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .district-search:focus { border-color: var(--accent); }
+    .district-search::placeholder { color: var(--text-3); }
+
+    .district-grid-v2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: var(--s-5);
+    }
+
+    .district-card-v2 {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg, 12px);
+      overflow: hidden;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      position: relative;
+    }
+    .district-card-v2:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+      border-color: var(--border-2);
+    }
+    .district-card-v2:hover .dc-arrow { opacity: 1; transform: translateX(0); }
+
+    .dc-stripe { height: 4px; width: 100%; }
+    .dc-body { padding: var(--s-5); }
+    .dc-header { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--s-2); margin-bottom: var(--s-4); }
+    .dc-name { font-size: var(--text-base); font-weight: 700; color: var(--text); line-height: 1.2; }
+    .dc-arrow {
+      color: var(--text-3); font-size: 1rem; opacity: 0;
+      transform: translateX(-4px);
+      transition: opacity .18s, transform .18s;
+      flex-shrink: 0; margin-top: 2px;
+    }
+
+    .dc-bar { height: 8px; background: var(--surface-3); border-radius: 100px; margin-bottom: var(--s-4); overflow: hidden; display: flex; }
+    .dc-bar-seg { height: 100%; transition: width .5s cubic-bezier(.4,0,.2,1); }
+
+    .dc-legend { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-bottom: var(--s-4); }
+    .dc-leg-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-2); font-weight: 500; }
+    .dc-leg-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+
+    .dc-stats { display: flex; gap: 0; border-top: 1px solid var(--border); }
+    .dc-stat { flex: 1; padding: var(--s-3) var(--s-4); text-align: center; border-right: 1px solid var(--border); }
+    .dc-stat:last-child { border-right: none; }
+    .dc-stat-val { font-size: var(--text-sm); font-weight: 700; color: var(--text); display: block; }
+    .dc-stat-lbl { font-size: 10px; color: var(--text-3); text-transform: uppercase; letter-spacing: .5px; font-weight: 600; margin-top: 1px; }
+
+    .no-results { text-align: center; padding: 64px; color: var(--text-3); grid-column: 1/-1; }
+
+    @media (max-width: 640px) {
+      .district-grid-v2 { grid-template-columns: 1fr 1fr; gap: var(--s-3); }
+      .dc-body { padding: var(--s-4); }
+      .dc-legend { display: none; }
+    }
+    @media (max-width: 400px) {
+      .district-grid-v2 { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="page-header">
+<div class="districts-hero">
   <div class="container">
     <span class="page-eyebrow" data-i18n="heroEyebrow">Punjab Assembly Election</span>
-    <h1 class="page-title" data-i18n="navDistricts">District-wise View</h1>
-    <p class="page-desc" data-i18n="districtsDesc">Punjab has 23 districts with a total of 117 assembly constituencies. Click a district to see its constituencies and 2022 results.</p>
+    <div class="districts-hero-inner">
+      <div>
+        <h1 class="page-title" data-i18n="navDistricts">District-wise View</h1>
+        <p class="page-desc" data-i18n="districtsDesc">Punjab has 23 districts with a total of 117 assembly constituencies. Click a district to explore its seats and 2022 results.</p>
+      </div>
+    </div>
+    <div class="districts-stats-row">
+      <div class="dstat"><div class="dstat-num">23</div><div class="dstat-lbl">Districts</div></div>
+      <div class="dstat"><div class="dstat-num">117</div><div class="dstat-lbl">Constituencies</div></div>
+      <div class="dstat"><div class="dstat-num">34</div><div class="dstat-lbl">SC Reserved</div></div>
+      <div class="dstat"><div class="dstat-num">2022</div><div class="dstat-lbl">Latest Election</div></div>
+    </div>
   </div>
 </div>
 
 <main class="section">
   <div class="container">
-    <div class="district-grid" id="districtGrid">
-      <div style="text-align:center;padding:64px;color:var(--text-3);grid-column:1/-1">Loading districts...</div>
+
+    <div class="district-search-wrap">
+      <input type="search" id="districtSearch" class="district-search" placeholder="🔍  Search districts…" autocomplete="off">
     </div>
 
-    <div id="districtDetail" class="hidden" style="margin-top:var(--s-10)">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:var(--s-4);margin-bottom:var(--s-6)">
-        <h2 class="section-title" id="districtDetailTitle"></h2>
-        <button id="closeDetail" class="btn btn-secondary btn-sm">Close</button>
-      </div>
-      <div id="districtDetailContent"></div>
+    <div class="district-grid-v2" id="districtGrid">
+      <div style="text-align:center;padding:64px;color:var(--text-3);grid-column:1/-1">Loading districts…</div>
     </div>
 
   </div>
@@ -58,12 +151,14 @@
 <script src="js/data-loader.js"></script>
 <script src="js/table.js"></script>
 <script>
-const partyColors = { AAP:'var(--c-aap)', INC:'var(--c-inc)', SAD:'var(--c-sad)', BJP:'var(--c-bjp)', BSP:'var(--c-bsp)', IND:'var(--c-ind)' };
+const partyColors = {
+  AAP: '#DD2222', INC: '#19AAED', SAD: '#1A237E', BJP: '#FF671F',
+  BSP: '#1B4FBB', IND: '#888', JJKP: '#6D28D9', CPM: '#CC0000'
+};
 
 (async () => {
-  const [constituencies, districtsData] = await Promise.all([loadConstituencies(), loadDistricts()]);
+  const [constituencies] = await Promise.all([loadConstituencies()]);
 
-  // Build district summary
   const distMap = {};
   constituencies.forEach(c => {
     const d = c.district;
@@ -72,77 +167,71 @@ const partyColors = { AAP:'var(--c-aap)', INC:'var(--c-inc)', SAD:'var(--c-sad)'
     if (c.reserved === 'SC') distMap[d].scSeats++;
     const p = c.r22.party;
     distMap[d].parties[p] = (distMap[d].parties[p] || 0) + 1;
-    if (!distMap[d].constituencies) distMap[d].constituencies = [];
-    distMap[d].constituencies.push(c);
   });
 
+  Object.values(distMap).forEach(d => {
+    d.partiesSorted = Object.entries(d.parties).sort((a,b) => b[1]-a[1]);
+    d.topParty = d.partiesSorted[0];
+  });
+
+  const sortedDistricts = [...new Set(constituencies.map(c => c.district))].sort();
   const grid = document.getElementById('districtGrid');
-  const sortedDistricts = [...new Set(constituencies.map(c => c.district))];
 
-  grid.innerHTML = sortedDistricts.map(distName => {
-    const d = distMap[distName];
-    const partiesSorted = Object.entries(d.parties).sort((a,b) => b[1]-a[1]);
-    const barSegs = partiesSorted.map(([p, s]) => {
-      const pct = (s / d.seats * 100).toFixed(1);
-      return `<div class="district-bar-seg" style="width:${pct}%;background:${partyColors[p]||'#888'}" title="${p}: ${s}"></div>`;
-    }).join('');
-    const topParty = partiesSorted[0];
+  function slugify(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-'); }
 
-    return `
-      <div class="district-card" onclick="showDistrict('${distName}')" data-district="${distName}">
-        <div class="district-name">${distName}</div>
-        <div class="district-bar">${barSegs}</div>
-        <div class="district-stats">
-          <div class="district-stat"><span class="val">${d.seats}</span><span class="lbl">Seats</span></div>
-          <div class="district-stat"><span class="val">${d.scSeats}</span><span class="lbl">SC Seats</span></div>
-          <div class="district-stat"><span class="val">${topParty ? partyBadge(topParty[0]) + ' ' + topParty[1] : '—'}</span><span class="lbl">Largest party 2022</span></div>
+  function renderCards(list) {
+    if (!list.length) {
+      grid.innerHTML = '<div class="no-results">No districts match your search.</div>';
+      return;
+    }
+    grid.innerHTML = list.map(distName => {
+      const d = distMap[distName];
+      const slug = slugify(distName);
+      const topColor = partyColors[d.topParty?.[0]] || '#888';
+
+      const barSegs = d.partiesSorted.map(([p, s]) => {
+        const pct = (s / d.seats * 100).toFixed(1);
+        return `<div class="dc-bar-seg" style="width:${pct}%;background:${partyColors[p]||'#888'}" title="${p}: ${s} seat${s>1?'s':''}"></div>`;
+      }).join('');
+
+      const legendItems = d.partiesSorted.slice(0, 3).map(([p, s]) =>
+        `<div class="dc-leg-item"><div class="dc-leg-dot" style="background:${partyColors[p]||'#888'}"></div>${p} ${s}</div>`
+      ).join('');
+
+      return `<a class="district-card-v2" href="district/${slug}.html">
+        <div class="dc-stripe" style="background:${topColor}"></div>
+        <div class="dc-body">
+          <div class="dc-header">
+            <div class="dc-name">${distName}</div>
+            <div class="dc-arrow">→</div>
+          </div>
+          <div class="dc-bar">${barSegs}</div>
+          <div class="dc-legend">${legendItems}</div>
         </div>
-      </div>`;
-  }).join('');
-
-  window.distMap = distMap;
-  window.showDistrict = function(distName) {
-    const d = distMap[distName];
-    if (!d) return;
-    document.getElementById('districtDetailTitle').textContent = distName + ' — ' + d.seats + ' Constituencies';
-
-    const lang = window.currentLang || 'en';
-    const rows = d.constituencies.map(c => {
-      const slug = c.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-      const acName = lang === 'hi' ? (c.nameHi || c.name) : lang === 'pa' ? (c.namePa || c.name) : c.name;
-      const winnerName = lang === 'hi' ? (c.r22.winnerHi || c.r22.winner) : lang === 'pa' ? (c.r22.winnerPa || c.r22.winner) : c.r22.winner;
-      return `<tr>
-        <td class="num text-muted">${c.acNo}</td>
-        <td><a href="constituency/${slug}.html" class="ac-link">${acName}</a></td>
-        <td><span class="badge badge-${(c.reserved||'').toLowerCase()}">${c.reserved}</span></td>
-        <td><strong>${winnerName}</strong></td>
-        <td>${partyBadge(c.r22.party)}</td>
-        <td class="num">${fmtNum(c.r22.margin)}</td>
-        <td class="num">${c.r22.turnout}%</td>
-      </tr>`;
+        <div class="dc-stats">
+          <div class="dc-stat">
+            <span class="dc-stat-val">${d.seats}</span>
+            <span class="dc-stat-lbl">Seats</span>
+          </div>
+          <div class="dc-stat">
+            <span class="dc-stat-val">${d.scSeats}</span>
+            <span class="dc-stat-lbl">SC</span>
+          </div>
+          <div class="dc-stat">
+            <span class="dc-stat-val">${d.topParty?.[0] || '—'}</span>
+            <span class="dc-stat-lbl">Leading</span>
+          </div>
+        </div>
+      </a>`;
     }).join('');
+  }
 
-    const distSlug = distName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-    const linkText = lang === 'hi' ? `विस्तृत ${distName} जिला पृष्ठ →` : lang === 'pa' ? `ਵੇਰਵੇ ਸਹਿਤ ${distName} ਜ਼ਿਲ੍ਹਾ ਪੰਨਾ →` : `Detailed ${distName} District Page →`;
-    
-    document.getElementById('districtDetailContent').innerHTML = `
-      <div style="margin-bottom:var(--s-4)">
-        <a href="district/${distSlug}.html" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:6px">${linkText}</a>
-      </div>
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead><tr><th>AC No.</th><th>Constituency</th><th>Category</th><th>2022 Winner</th><th>Party</th><th style="text-align:right">Margin</th><th style="text-align:right">Turnout</th></tr></thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>`;
+  renderCards(sortedDistricts);
 
-    const det = document.getElementById('districtDetail');
-    det.classList.remove('hidden');
-    det.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  };
-
-  document.getElementById('closeDetail').addEventListener('click', () => {
-    document.getElementById('districtDetail').classList.add('hidden');
+  document.getElementById('districtSearch').addEventListener('input', function() {
+    const q = this.value.trim().toLowerCase();
+    const filtered = q ? sortedDistricts.filter(n => n.toLowerCase().includes(q)) : sortedDistricts;
+    renderCards(filtered);
   });
 })();
 </script>
