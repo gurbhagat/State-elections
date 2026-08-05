@@ -23,6 +23,11 @@ template = """<!DOCTYPE html>
   <link rel="canonical" href="https://upelectionresults.com/constituency/{slug}.html">
   <meta property="og:title" content="{name} Assembly Constituency | UP Elections">
   <meta property="og:description" content="{name} assembly constituency results in UP Vidhan Sabha Elections. 2022 winner: {w22}.">
+  <meta property="og:image" content="https://upelectionresults.com/images/og/{slug}.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{name} Assembly Constituency | UP Elections">
+  <meta name="twitter:description" content="{name} assembly constituency results. 2022 winner: {w22}.">
+  <meta name="twitter:image" content="https://upelectionresults.com/images/og/{slug}.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
@@ -166,6 +171,22 @@ template = """<!DOCTYPE html>
           <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span>2017 Margin</span><strong>${{fmtNum(r17.margin)}}</strong></div>
           <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span>2022 Margin</span><strong>${{fmtNum(r22.margin)}}</strong></div>
           <div style="display:flex;justify-content:space-between;padding:8px 0"><span>Seat changed hands?</span><strong>${{r17.party !== r22.party ? 'Yes — ' + r17.party + ' to ' + r22.party : 'No (retained by ' + r22.party + ')'}}</strong></div>
+        </div>
+      </div>
+
+      <div class="faq-section" style="margin-top:var(--s-8);padding-top:var(--s-6);border-top:1px solid var(--border);text-align:left">
+        <h3 style="margin-bottom:var(--s-4)" data-i18n="faqTitle">Frequently Asked Questions</h3>
+        <div class="faq-item" style="margin-bottom:var(--s-5)">
+          <h4 style="margin-bottom:6px;font-size:var(--text-md);color:var(--text-1);font-weight:600" id="faqQ1"></h4>
+          <p style="color:var(--text-2);font-size:var(--text-sm);line-height:1.6" id="faqA1"></p>
+        </div>
+        <div class="faq-item" style="margin-bottom:var(--s-5)">
+          <h4 style="margin-bottom:6px;font-size:var(--text-md);color:var(--text-1);font-weight:600" id="faqQ2"></h4>
+          <p style="color:var(--text-2);font-size:var(--text-sm);line-height:1.6" id="faqA2"></p>
+        </div>
+        <div class="faq-item" style="margin-bottom:var(--s-5)">
+          <h4 style="margin-bottom:6px;font-size:var(--text-md);color:var(--text-1);font-weight:600" id="faqQ3"></h4>
+          <p style="color:var(--text-2);font-size:var(--text-sm);line-height:1.6" id="faqA3"></p>
         </div>
       </div>
 

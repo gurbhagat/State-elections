@@ -121,7 +121,13 @@ const partyColors = { BJP:'var(--c-bjp)', SP:'var(--c-sp)', BSP:'var(--c-bsp)', 
       </tr>`;
     }).join('');
 
+    const distSlug = distName.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+    const linkText = lang === 'hi' ? `विस्तृत ${distName} जिला पृष्ठ →` : `Detailed ${distName} District Page →`;
+    
     document.getElementById('districtDetailContent').innerHTML = `
+      <div style="margin-bottom:var(--s-4)">
+        <a href="district/${distSlug}.html" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:6px">${linkText}</a>
+      </div>
       <div class="table-wrap">
         <table class="data-table">
           <thead><tr><th>AC No.</th><th>Constituency</th><th>Category</th><th>2022 Winner</th><th>Party</th><th style="text-align:right">Margin</th><th style="text-align:right">Turnout</th></tr></thead>

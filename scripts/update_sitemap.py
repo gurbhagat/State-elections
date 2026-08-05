@@ -68,6 +68,13 @@ for c in constituencies:
     loc = f"https://punjabelectionresults.com/constituency/{slug}.html"
     append_url_block(loc)
 
+# Add districts to sitemap
+districts = sorted(list(set(c.get("district", "Punjab") for c in constituencies)))
+for dist in districts:
+    dist_slug = re.sub(r'[^a-z0-9]+', '-', dist.lower())
+    loc = f"https://punjabelectionresults.com/district/{dist_slug}.html"
+    append_url_block(loc)
+
 xml.append('</urlset>')
 
 with open(sitemap_path, "w", encoding="utf-8") as f:
