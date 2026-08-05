@@ -45,7 +45,7 @@ template = """<!DOCTYPE html>
     "containedInPlace": {{ "@type": "AdministrativeArea", "name": "{district} District" }}
   }}
   </script>
-  <script defer src="https://app.umamiengine.com/script.js" data-website-id="66249334-d6ae-4e78-8c43-aa495f7ddcf4"></script>
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
   <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/constituency/{slug}.html" />
   <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/constituency/{slug}.html?lang=hi" />
   <link rel="alternate" hreflang="pa-IN" href="https://upelectionresults.com/constituency/{slug}.html?lang=pa" />

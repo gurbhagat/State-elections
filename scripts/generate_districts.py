@@ -82,6 +82,8 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
                 f'</a>\n'
             )
 
+        umami_id = "0f9e6085-bae3-48a2-a212-957a62e7dcbe" if state_name == "Uttar Pradesh" else "66249334-d6ae-4e78-8c43-aa495f7ddcf4"
+
         html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,6 +102,7 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
   <link rel="icon" type="image/png" sizes="48x48" href="../favicon-48.png" />
   <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96.png" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="{umami_id}"></script>
   <style>
     .dist-hero {{
       background: linear-gradient(135deg, {top_color}18 0%, var(--surface) 55%);
