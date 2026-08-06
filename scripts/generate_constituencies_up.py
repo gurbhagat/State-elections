@@ -55,8 +55,6 @@ template = """<!DOCTYPE html>
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     }});
@@ -66,13 +64,7 @@ template = """<!DOCTYPE html>
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() {{ googletag.display('ad-slot-container'); }});
-    </script>
-  </div>
-</div>
+
 
 
 <div class="ac-hero">
@@ -107,6 +99,15 @@ template = """<!DOCTYPE html>
   </div>
 </div>
 
+
+<div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() {{ googletag.display('ad-slot-container'); }});
+    </script>
+  </div>
+</div>
+
 <main class="section">
   <div class="container" style="max-width:900px">
     <div id="acContent"></div>
@@ -114,13 +115,7 @@ template = """<!DOCTYPE html>
 </main>
 
 
-<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() {{ googletag.display('ad-slot-container-3'); }});
-    </script>
-  </div>
-</div>
+
 
 <footer class="site-footer" id="siteFooter"></footer>
 
@@ -228,13 +223,7 @@ template = """<!DOCTYPE html>
       </div>
 
       
-<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() {{ googletag.display('ad-slot-container-2'); }});
-    </script>
-  </div>
-</div>
+
 
 <div class="faq-section" style="margin-top:var(--s-8);padding-top:var(--s-6);border-top:1px solid var(--border);text-align:left">
         <h3 style="margin-bottom:var(--s-4)" data-i18n="faqTitle">Frequently Asked Questions</h3>
@@ -377,8 +366,6 @@ for c in constituencies:
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     }});

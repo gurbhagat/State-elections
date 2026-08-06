@@ -63,8 +63,6 @@
     window.googletag = window.googletag || {cmd: []};
     googletag.cmd.push(function() {
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -74,13 +72,7 @@
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
-    </script>
-  </div>
-</div>
+
 
 
 <main>
@@ -107,6 +99,15 @@
       </div>
     </div>
   </section>
+
+<div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
+
 
   <!-- Key Stats -->
   <div class="stats-bar" aria-label="Key election statistics">
@@ -196,13 +197,7 @@
         </div>
       </div>
       
-<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container-2'); });
-    </script>
-  </div>
-</div>
+
 
 <div class="feature-grid">
         <a href="constituencies.html" class="feature-card" id="feat-constituencies">
@@ -331,13 +326,7 @@
 </main>
 
 
-<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container-3'); });
-    </script>
-  </div>
-</div>
+
 
 <footer class="site-footer" id="siteFooter"></footer>
 

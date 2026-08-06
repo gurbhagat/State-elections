@@ -24,8 +24,6 @@
     window.googletag = window.googletag || {cmd: []};
     googletag.cmd.push(function() {
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
-      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -35,13 +33,7 @@
 
 <header class="site-header" id="siteHeader"></header>
 
-<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
-    </script>
-  </div>
-</div>
+
 
 
 <div class="ac-hero">
@@ -58,6 +50,15 @@
       <p data-i18n="edSection1Desc">Our network maintains absolute political neutrality. We are completely independent of any political party, candidate, or PR lobby. Our focus is exclusively on presenting clean, verifiable democratic metrics to the public.</p>
     </section>
 
+<div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
+
+
     <section>
       <h2 style="font-size:var(--text-xl);color:var(--text-1);margin-bottom:var(--s-3)" data-i18n="edSection2Title">2. Data Sourcing Standards</h2>
       <p data-i18n="edSection2Desc">Every election result, vote count, candidate list, and category layout is derived directly from publicly available government documents (primarily the Election Commission of India reports). We do not publish speculative predictions or exit polls.</p>
@@ -71,22 +72,10 @@
 </main>
 
 
-<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container-2'); });
-    </script>
-  </div>
-</div>
 
 
-<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
-    <script>
-      googletag.cmd.push(function() { googletag.display('ad-slot-container-3'); });
-    </script>
-  </div>
-</div>
+
+
 
 <footer class="site-footer" id="siteFooter"></footer>
 
