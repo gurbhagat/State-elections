@@ -80,6 +80,8 @@
     window.googletag = window.googletag || {cmd: []};
     googletag.cmd.push(function() {
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -88,6 +90,15 @@
 <body>
 
 <header class="site-header" id="siteHeader"></header>
+
+<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
+
 
 <div class="dist-hero">
   <div class="container">
@@ -124,7 +135,16 @@
       <div class="dist-party-legend"><div class="dist-leg-item"><div class="dist-leg-dot" style="background:#FF671F"></div><span class="dist-leg-label">BJP</span><span class="dist-leg-count">5</span></div></div>
     </div>
 
-    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    
+<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container-2'); });
+    </script>
+  </div>
+</div>
+
+<div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
     <div class="const-grid">
 <a class="const-card const-card-party-line" href="../constituency/chhata.html" style="border-left-color:#FF671F"><div class="const-name">Chhata</div><div class="const-winner">Chaudhary Laxmi Narayan Singh</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 48,948</span></div></a>
 <a class="const-card const-card-party-line" href="../constituency/mant.html" style="border-left-color:#FF671F"><div class="const-name">Mant</div><div class="const-winner">Rajesh Chaudhary</div><div class="const-meta"><span class="const-badge" style="background:#FF671F">BJP</span><span class="const-margin">Margin: 9,580</span></div></a>
@@ -140,6 +160,15 @@
 
   </div>
 </main>
+
+
+<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container-3'); });
+    </script>
+  </div>
+</div>
 
 <footer class="site-footer" id="siteFooter"></footer>
 <script src="../js/app.js"></script>

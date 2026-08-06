@@ -166,6 +166,8 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     }});
@@ -174,6 +176,15 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
 <body>
 
 <header class="site-header" id="siteHeader"></header>
+
+<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() {{ googletag.display('ad-slot-container'); }});
+    </script>
+  </div>
+</div>
+
 
 <div class="dist-hero">
   <div class="container">
@@ -210,7 +221,16 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
       <div class="dist-party-legend">{legend_items}</div>
     </div>
 
-    <div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
+    
+<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() {{ googletag.display('ad-slot-container-2'); }});
+    </script>
+  </div>
+</div>
+
+<div class="dist-section-label" style="margin-bottom:var(--s-4)">Constituency Results</div>
     <div class="const-grid">
 {const_cards}
     </div>
@@ -221,6 +241,15 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
 
   </div>
 </main>
+
+
+<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() {{ googletag.display('ad-slot-container-3'); }});
+    </script>
+  </div>
+</div>
 
 <footer class="site-footer" id="siteFooter"></footer>
 <script src="../js/app.js"></script>
@@ -247,6 +276,8 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     }});

@@ -29,6 +29,8 @@
     window.googletag = window.googletag || {cmd: []};
     googletag.cmd.push(function() {
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-2').addService(googletag.pubads());
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container-3').addService(googletag.pubads());
       googletag.pubads().enableSingleRequest();
       googletag.enableServices();
     });
@@ -37,6 +39,15 @@
 <body>
 
 <header class="site-header" id="siteHeader"></header>
+
+<div class="ad-wrap-top" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
+
 
 <div class="page-header">
   <div class="container">
@@ -80,7 +91,16 @@
     </form>
 
     <div id="tableContainer">
-      <div class="table-wrap">
+      
+<div class="ad-wrap-middle" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-2" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container-2'); });
+    </script>
+  </div>
+</div>
+
+<div class="table-wrap">
         <table class="data-table" id="constituencyTable">
           <thead></thead>
           <tbody><tr><td colspan="8" style="text-align:center;padding:48px;color:var(--text-3)">Loading data...</td></tr></tbody>
@@ -91,6 +111,15 @@
 
   </div>
 </main>
+
+
+<div class="ad-wrap-bottom" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container-3" style="width: 728px; height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container-3'); });
+    </script>
+  </div>
+</div>
 
 <footer class="site-footer" id="siteFooter"></footer>
 
