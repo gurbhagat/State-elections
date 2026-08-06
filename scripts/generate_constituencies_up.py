@@ -50,6 +50,15 @@ template = """<!DOCTYPE html>
   <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/constituency/{slug}.html?lang=hi" />
   <link rel="alternate" hreflang="pa-IN" href="https://upelectionresults.com/constituency/{slug}.html?lang=pa" />
   <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/constituency/{slug}.html" />
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {{cmd: []}};
+    googletag.cmd.push(function() {{
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    }});
+  </script>
 </head>
 <body>
 
@@ -334,6 +343,15 @@ for c in constituencies:
   <link rel="canonical" href="https://upelectionresults.com/constituency/{slug}.html">
   <meta http-equiv="refresh" content="0; url=constituency/{slug}.html">
   <script>window.location.replace("constituency/{slug}.html");</script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {{cmd: []}};
+    googletag.cmd.push(function() {{
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    }});
+  </script>
 </head>
 <body>
   <p>Redirecting to <a href="constituency/{slug}.html">{name} results</a>...</p>

@@ -161,6 +161,15 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
       .const-grid {{ grid-template-columns: 1fr; }}
     }}
   </style>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {{cmd: []}};
+    googletag.cmd.push(function() {{
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    }});
+  </script>
 </head>
 <body>
 
@@ -233,6 +242,15 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
   <link rel="canonical" href="https://{domain}/district/{slug}.html">
   <meta http-equiv="refresh" content="0; url=district/{slug}.html">
   <script>window.location.replace("district/{slug}.html");</script>
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {{cmd: []}};
+    googletag.cmd.push(function() {{
+      googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
+      googletag.pubads().enableSingleRequest();
+      googletag.enableServices();
+    }});
+  </script>
 </head>
 <body>
   <p>Redirecting to <a href="district/{slug}.html">{dist} district results</a>...</p>
