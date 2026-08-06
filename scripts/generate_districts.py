@@ -166,11 +166,11 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       var mapping = googletag.sizeMapping()
-        .addSize([768, 0], [728, 90])  // Tablet & Desktop
-        .addSize([0, 0], [320, 50])    // Mobile
+        .addSize([768, 0], [728, 90])   // Tablet & Desktop: 728x90
+        .addSize([0, 0], [320, 480])    // Mobile: 320x480
         .build();
         
-      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 50]], 'ad-slot-container')
+      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 480]], 'ad-slot-container')
         .defineSizeMapping(mapping)
         .addService(googletag.pubads());
         
@@ -219,8 +219,11 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
 
 
 
+
+
+
 <div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
-  <div id="ad-slot-container" style="min-width: 320px; min-height: 50px;">
+  <div id="ad-slot-container" style="min-width: 320px; min-height: 90px;">
     <script>
       googletag.cmd.push(function() {{ googletag.display('ad-slot-container'); }});
     </script>
@@ -279,11 +282,11 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       var mapping = googletag.sizeMapping()
-        .addSize([768, 0], [728, 90])  // Tablet & Desktop
-        .addSize([0, 0], [320, 50])    // Mobile
+        .addSize([768, 0], [728, 90])   // Tablet & Desktop: 728x90
+        .addSize([0, 0], [320, 480])    // Mobile: 320x480
         .build();
         
-      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 50]], 'ad-slot-container')
+      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 480]], 'ad-slot-container')
         .defineSizeMapping(mapping)
         .addService(googletag.pubads());
         
