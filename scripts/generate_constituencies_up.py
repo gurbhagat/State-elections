@@ -55,7 +55,7 @@ template = """<!DOCTYPE html>
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.pubads().enableSingleRequest();
+      googletag.setConfig({{singleRequest: true}});
       googletag.enableServices();
     }});
   </script>
@@ -369,7 +369,7 @@ for c in constituencies:
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.pubads().enableSingleRequest();
+      googletag.setConfig({{singleRequest: true}});
       googletag.enableServices();
     }});
   </script>

@@ -166,7 +166,7 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.pubads().enableSingleRequest();
+      googletag.setConfig({{singleRequest: true}});
       googletag.enableServices();
     }});
   </script>
@@ -268,7 +268,7 @@ def generate_district_pages(state_name, json_path, out_dir, root_state_dir, doma
     window.googletag = window.googletag || {{cmd: []}};
     googletag.cmd.push(function() {{
       googletag.defineSlot('/130702287/Leaderboard', [728, 90], 'ad-slot-container').addService(googletag.pubads());
-      googletag.pubads().enableSingleRequest();
+      googletag.setConfig({{singleRequest: true}});
       googletag.enableServices();
     }});
   </script>
