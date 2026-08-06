@@ -19,6 +19,23 @@
   <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/privacy.html?lang=hi" />
   <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/privacy.html" />
   <link rel="mcp-actions" href="/mcp-actions.json" />
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+      var mapping = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90])  // Tablet & Desktop
+        .addSize([0, 0], [320, 50])    // Mobile
+        .build();
+        
+      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 50]], 'ad-slot-container')
+        .defineSizeMapping(mapping)
+        .addService(googletag.pubads());
+        
+      googletag.setConfig({singleRequest: true});
+      googletag.enableServices();
+    });
+  </script>
 </head>
 <body>
 
@@ -36,6 +53,15 @@
 
 
 
+
+
+<div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="min-width: 320px; min-height: 50px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
 
 <main class="section">
   <div class="container" style="max-width:800px;line-height:1.75;color:var(--text-2);display:flex;flex-direction:column;gap:var(--s-6)">
