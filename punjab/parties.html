@@ -209,6 +209,7 @@
           <div class="party-stat-row"><span class="label">2022 Vote Share</span><span class="value">${latest.voteShare ? latest.voteShare.toFixed(2) + '%' : '—'}</span></div>
           <div class="party-stat-row"><span class="label">Change from 2017</span><span class="value">${swingHtml}</span></div>
           <div class="party-stat-row"><span class="label">2017 Seats</span><span class="value">${prev.seats ?? '—'}</span></div>
+          ${p.leader2027 ? `<div class="party-stat-row"><span class="label">2027 Leader</span><span class="value">${p.leader2027}</span></div>` : ''}
           ${p.leader2022 ? `<div class="party-stat-row"><span class="label">2022 Leader</span><span class="value">${p.leader2022}</span></div>` : ''}
           ${p.ideology ? `<div class="party-stat-row"><span class="label">Ideology</span><span class="value" style="font-size:12px">${p.ideology}</span></div>` : ''}
         </div>

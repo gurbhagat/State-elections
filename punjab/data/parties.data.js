@@ -17,13 +17,38 @@ window._DATA.parties = [
     "history": "Aam Aadmi Party won a landslide majority in the 2022 Punjab Assembly Election, securing 92 of 117 seats with 42.01% vote share. Bhagwant Mann became Chief Minister on March 16, 2022.",
     "historyHi": "ਆਮ ਆਦਮੀ ਪਾਰਟੀ ਨੇ 2022 ਪੰਜਾਬ ਵਿਧਾਨ ਸਭਾ ਚੋਣਾਂ ਵਿੱਚ 117 ਵਿੱਚੋਂ 92 ਸੀਟਾਂ ਜਿੱਤ ਕੇ ਭਾਰੀ ਜਿੱਤ ਹਾਸਲ ਕੀਤੀ।",
     "seats": [
-      { "year": 1997, "seats": 0, "voteShare": 0 },
-      { "year": 2002, "seats": 0, "voteShare": 0 },
-      { "year": 2007, "seats": 0, "voteShare": 0 },
-      { "year": 2012, "seats": 0, "voteShare": 0 },
-      { "year": 2017, "seats": 20, "voteShare": 23.72 },
-      { "year": 2022, "seats": 92, "voteShare": 42.01 }
-    ]
+      {
+        "year": 1997,
+        "seats": 0,
+        "voteShare": 0
+      },
+      {
+        "year": 2002,
+        "seats": 0,
+        "voteShare": 0
+      },
+      {
+        "year": 2007,
+        "seats": 0,
+        "voteShare": 0
+      },
+      {
+        "year": 2012,
+        "seats": 0,
+        "voteShare": 0
+      },
+      {
+        "year": 2017,
+        "seats": 20,
+        "voteShare": 23.72
+      },
+      {
+        "year": 2022,
+        "seats": 92,
+        "voteShare": 42.01
+      }
+    ],
+    "leader2027": "Bhagwant Mann"
   },
   {
     "id": "inc",
@@ -34,7 +59,7 @@ window._DATA.parties = [
     "color": "#138808",
     "textColor": "#FFFFFF",
     "founded": 1885,
-    "leader2022": "Amrinder Singh Raja Warring",
+    "leader2022": "Charanjit Singh Channi",
     "leaderHi": "ਚਰਨਜੀਤ ਸਿੰਘ ਚੰਨੀ",
     "ideology": "Centrism, Social democracy",
     "ideologyHi": "केंद्रवाद, सामाजिक लोकतंत्र",
@@ -42,13 +67,38 @@ window._DATA.parties = [
     "history": "Indian National Congress governed Punjab for five years (2017–2022) under Capt. Amarinder Singh and later Charanjit Singh Channi. The party suffered a historic defeat in 2022, winning only 18 seats.",
     "historyHi": "ਭਾਰਤੀ ਰਾਸ਼ਟਰੀ ਕਾਂਗਰਸ ਨੇ 2017-2022 ਤੱਕ ਕੈਪਟਨ ਅਮਰਿੰਦਰ ਸਿੰਘ ਅਤੇ ਚਰਨਜੀਤ ਸਿੰਘ ਚੰਨੀ ਅਧੀਨ ਪੰਜਾਬ ਵਿੱਚ ਸ਼ਾਸਨ ਕੀਤਾ।",
     "seats": [
-      { "year": 1997, "seats": 14, "voteShare": 26.4 },
-      { "year": 2002, "seats": 62, "voteShare": 35.9 },
-      { "year": 2007, "seats": 44, "voteShare": 40.7 },
-      { "year": 2012, "seats": 46, "voteShare": 40.1 },
-      { "year": 2017, "seats": 77, "voteShare": 38.5 },
-      { "year": 2022, "seats": 18, "voteShare": 22.98 }
-    ]
+      {
+        "year": 1997,
+        "seats": 14,
+        "voteShare": 26.4
+      },
+      {
+        "year": 2002,
+        "seats": 62,
+        "voteShare": 35.9
+      },
+      {
+        "year": 2007,
+        "seats": 44,
+        "voteShare": 40.7
+      },
+      {
+        "year": 2012,
+        "seats": 46,
+        "voteShare": 40.1
+      },
+      {
+        "year": 2017,
+        "seats": 77,
+        "voteShare": 38.5
+      },
+      {
+        "year": 2022,
+        "seats": 18,
+        "voteShare": 22.98
+      }
+    ],
+    "leader2027": "Amrinder Singh Raja Warring"
   },
   {
     "id": "sad",
@@ -67,13 +117,38 @@ window._DATA.parties = [
     "history": "Shiromani Akali Dal, one of the oldest regional parties, suffered its worst ever performance in 2022, winning only 3 seats. The party had governed Punjab from 2007–2017 in alliance with BJP.",
     "historyHi": "ਸ਼੍ਰੋਮਣੀ ਅਕਾਲੀ ਦਲ ਨੇ 2022 ਵਿੱਚ ਆਪਣੀ ਸਭ ਤੋਂ ਮਾੜੀ ਕਾਰਗੁਜ਼ਾਰੀ ਦਿਖਾਈ, ਸਿਰਫ਼ 3 ਸੀਟਾਂ ਜਿੱਤੀਆਂ।",
     "seats": [
-      { "year": 1997, "seats": 75, "voteShare": 37.6 },
-      { "year": 2002, "seats": 41, "voteShare": 31.1 },
-      { "year": 2007, "seats": 48, "voteShare": 37.1 },
-      { "year": 2012, "seats": 56, "voteShare": 34.7 },
-      { "year": 2017, "seats": 15, "voteShare": 25.2 },
-      { "year": 2022, "seats": 3, "voteShare": 18.38 }
-    ]
+      {
+        "year": 1997,
+        "seats": 75,
+        "voteShare": 37.6
+      },
+      {
+        "year": 2002,
+        "seats": 41,
+        "voteShare": 31.1
+      },
+      {
+        "year": 2007,
+        "seats": 48,
+        "voteShare": 37.1
+      },
+      {
+        "year": 2012,
+        "seats": 56,
+        "voteShare": 34.7
+      },
+      {
+        "year": 2017,
+        "seats": 15,
+        "voteShare": 25.2
+      },
+      {
+        "year": 2022,
+        "seats": 3,
+        "voteShare": 18.38
+      }
+    ],
+    "leader2027": "Sukhbir Singh Badal"
   },
   {
     "id": "bjp",
@@ -84,7 +159,7 @@ window._DATA.parties = [
     "color": "#FF6600",
     "textColor": "#FFFFFF",
     "founded": 1980,
-    "leader2022": "Kewal Singh Dhillon",
+    "leader2022": "Ashwani Sharma",
     "leaderHi": "ਅਸ਼ਵਨੀ ਸ਼ਰਮਾ",
     "ideology": "Hindu nationalism, Conservatism",
     "ideologyHi": "हिंदू राष्ट्रवाद, रूढ़िवाद",
@@ -92,13 +167,38 @@ window._DATA.parties = [
     "history": "Bharatiya Janata Party contested the 2022 Punjab election independently after ending its long-standing alliance with SAD. The party won 2 seats, performing poorly across the state.",
     "historyHi": "ਭਾਰਤੀ ਜਨਤਾ ਪਾਰਟੀ ਨੇ 2022 ਵਿੱਚ ਸੁਤੰਤਰ ਰੂਪ ਵਿੱਚ ਚੋਣ ਲੜੀ ਅਤੇ ਸਿਰਫ਼ 2 ਸੀਟਾਂ ਜਿੱਤੀਆਂ।",
     "seats": [
-      { "year": 1997, "seats": 18, "voteShare": 6.6 },
-      { "year": 2002, "seats": 0, "voteShare": 5.67 },
-      { "year": 2007, "seats": 19, "voteShare": 8.3 },
-      { "year": 2012, "seats": 12, "voteShare": 7.2 },
-      { "year": 2017, "seats": 3, "voteShare": 5.4 },
-      { "year": 2022, "seats": 2, "voteShare": 6.59 }
-    ]
+      {
+        "year": 1997,
+        "seats": 18,
+        "voteShare": 6.6
+      },
+      {
+        "year": 2002,
+        "seats": 0,
+        "voteShare": 5.67
+      },
+      {
+        "year": 2007,
+        "seats": 19,
+        "voteShare": 8.3
+      },
+      {
+        "year": 2012,
+        "seats": 12,
+        "voteShare": 7.2
+      },
+      {
+        "year": 2017,
+        "seats": 3,
+        "voteShare": 5.4
+      },
+      {
+        "year": 2022,
+        "seats": 2,
+        "voteShare": 6.59
+      }
+    ],
+    "leader2027": "Kewal Singh Dhillon"
   },
   {
     "id": "bsp",
@@ -109,7 +209,7 @@ window._DATA.parties = [
     "color": "#0A0A5A",
     "textColor": "#FFFFFF",
     "founded": 1984,
-    "leader2022": "Avtar Singh Karimpuri",
+    "leader2022": "Kanshi Ram Bharti",
     "leaderHi": "ਕਾਂਸ਼ੀ ਰਾਮ ਭਾਰਤੀ",
     "ideology": "Ambedkarism, Social justice",
     "ideologyHi": "अंबेडकरवाद, सामाजिक न्याय",
@@ -117,13 +217,38 @@ window._DATA.parties = [
     "history": "Bahujan Samaj Party contested the 2022 Punjab election in alliance with SAD and won 1 seat. The party has a significant support base in SC-reserved constituencies across the state.",
     "historyHi": "ਬਹੁਜਨ ਸਮਾਜ ਪਾਰਟੀ ਨੇ 2022 ਵਿੱਚ ਅਕਾਲੀ ਦਲ ਨਾਲ ਗੱਠਜੋੜ ਕਰਕੇ ਚੋਣ ਲੜੀ ਅਤੇ 1 ਸੀਟ ਜਿੱਤੀ।",
     "seats": [
-      { "year": 1997, "seats": 0, "voteShare": 1.4 },
-      { "year": 2002, "seats": 0, "voteShare": 5.7 },
-      { "year": 2007, "seats": 0, "voteShare": 4.1 },
-      { "year": 2012, "seats": 1, "voteShare": 4.3 },
-      { "year": 2017, "seats": 0, "voteShare": 1.5 },
-      { "year": 2022, "seats": 1, "voteShare": 1.72 }
-    ]
+      {
+        "year": 1997,
+        "seats": 0,
+        "voteShare": 1.4
+      },
+      {
+        "year": 2002,
+        "seats": 0,
+        "voteShare": 5.7
+      },
+      {
+        "year": 2007,
+        "seats": 0,
+        "voteShare": 4.1
+      },
+      {
+        "year": 2012,
+        "seats": 1,
+        "voteShare": 4.3
+      },
+      {
+        "year": 2017,
+        "seats": 0,
+        "voteShare": 1.5
+      },
+      {
+        "year": 2022,
+        "seats": 1,
+        "voteShare": 1.72
+      }
+    ],
+    "leader2027": "Avtar Singh Karimpuri"
   },
   {
     "id": "ind",
@@ -140,13 +265,36 @@ window._DATA.parties = [
     "ideologyPa": "ਵੱਖ-ਵੱਖ",
     "history": "Independent candidates won 1 seat in the 2022 Punjab election and 2 seats in 2017.",
     "seats": [
-      { "year": 1997, "seats": 2, "voteShare": 5.8 },
-      { "year": 2002, "seats": 2, "voteShare": 7.4 },
-      { "year": 2007, "seats": 2, "voteShare": 6.1 },
-      { "year": 2012, "seats": 0, "voteShare": 5.9 },
-      { "year": 2017, "seats": 2, "voteShare": 3.0 },
-      { "year": 2022, "seats": 1, "voteShare": 3.8 }
+      {
+        "year": 1997,
+        "seats": 2,
+        "voteShare": 5.8
+      },
+      {
+        "year": 2002,
+        "seats": 2,
+        "voteShare": 7.4
+      },
+      {
+        "year": 2007,
+        "seats": 2,
+        "voteShare": 6.1
+      },
+      {
+        "year": 2012,
+        "seats": 0,
+        "voteShare": 5.9
+      },
+      {
+        "year": 2017,
+        "seats": 2,
+        "voteShare": 3.0
+      },
+      {
+        "year": 2022,
+        "seats": 1,
+        "voteShare": 3.8
+      }
     ]
   }
-]
-;
+];
