@@ -22,7 +22,9 @@
         "seats": 12,
         "voteShare": 1.54
       }
-    ]
+    ],
+    "leader2022": "Anupriya Patel",
+    "leader2027": "Anupriya Patel"
   },
   {
     "id": "bjp",
@@ -47,7 +49,9 @@
         "seats": 255,
         "voteShare": 41.29
       }
-    ]
+    ],
+    "leader2022": "Yogi Adityanath",
+    "leader2027": "Yogi Adityanath"
   },
   {
     "id": "bsp",
@@ -72,7 +76,9 @@
         "seats": 1,
         "voteShare": 12.88
       }
-    ]
+    ],
+    "leader2022": "Mayawati",
+    "leader2027": "Mayawati"
   },
   {
     "id": "inc",
@@ -97,7 +103,9 @@
         "seats": 2,
         "voteShare": 2.33
       }
-    ]
+    ],
+    "leader2022": "Ajay Kumar Lallu",
+    "leader2027": "Ajay Rai"
   },
   {
     "id": "ind",
@@ -172,7 +180,9 @@
         "seats": 6,
         "voteShare": 0.9
       }
-    ]
+    ],
+    "leader2022": "Sanjay Nishad",
+    "leader2027": "Sanjay Nishad"
   },
   {
     "id": "rld",
@@ -197,7 +207,9 @@
         "seats": 8,
         "voteShare": 2.85
       }
-    ]
+    ],
+    "leader2022": "Jayant Chaudhary",
+    "leader2027": "Jayant Chaudhary"
   },
   {
     "id": "sbsp",
@@ -222,7 +234,9 @@
         "seats": 6,
         "voteShare": 1.3
       }
-    ]
+    ],
+    "leader2022": "Om Prakash Rajbhar",
+    "leader2027": "Om Prakash Rajbhar"
   },
   {
     "id": "sp",
@@ -247,6 +261,8 @@
         "seats": 111,
         "voteShare": 32.06
       }
-    ]
+    ],
+    "leader2022": "Akhilesh Yadav",
+    "leader2027": "Akhilesh Yadav"
   }
 ]
