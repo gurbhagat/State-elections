@@ -23,6 +23,7 @@ urls = [
     "https://punjabelectionresults.com/candidates.html",
     "https://punjabelectionresults.com/trends.html",
     "https://punjabelectionresults.com/districts.html",
+    "https://punjabelectionresults.com/candidates-2027.html",
     "https://punjabelectionresults.com/about.html",
     "https://punjabelectionresults.com/network.html"
 ]

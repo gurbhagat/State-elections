@@ -1,0 +1,6854 @@
+window._DATA = window._DATA || {};
+window._DATA.candidates2027 = [
+  {
+    "acNo": 1,
+    "name": "Behat",
+    "nameHi": "Behat",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 2,
+    "name": "Nakur",
+    "nameHi": "Nakur",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 3,
+    "name": "Saharanpur Nagar",
+    "nameHi": "Saharanpur Nagar",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 4,
+    "name": "Saharanpur",
+    "nameHi": "Saharanpur",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 5,
+    "name": "Deoband",
+    "nameHi": "Deoband",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 6,
+    "name": "Rampur Maniharan",
+    "nameHi": "Rampur Maniharan",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 7,
+    "name": "Gangoh",
+    "nameHi": "Gangoh",
+    "district": "Saharanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 8,
+    "name": "Kairana",
+    "nameHi": "Kairana",
+    "district": "Shamli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 9,
+    "name": "Thana Bhawan",
+    "nameHi": "Thana Bhawan",
+    "district": "Shamli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 10,
+    "name": "Shamli",
+    "nameHi": "Shamli",
+    "district": "Shamli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 11,
+    "name": "Budhana",
+    "nameHi": "Budhana",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 12,
+    "name": "Charthawal",
+    "nameHi": "Charthawal",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 13,
+    "name": "Purqazi",
+    "nameHi": "Purqazi",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 14,
+    "name": "Muzaffarnagar",
+    "nameHi": "Muzaffarnagar",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 15,
+    "name": "Khatauli",
+    "nameHi": "Khatauli",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 16,
+    "name": "Meerapur",
+    "nameHi": "Meerapur",
+    "district": "Muzaffarnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 17,
+    "name": "Najibabad",
+    "nameHi": "Najibabad",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 18,
+    "name": "Nagina",
+    "nameHi": "Nagina",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 19,
+    "name": "Barhapur",
+    "nameHi": "Barhapur",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 20,
+    "name": "Dhampur",
+    "nameHi": "Dhampur",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 21,
+    "name": "Nehtaur",
+    "nameHi": "Nehtaur",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 22,
+    "name": "Bijnor",
+    "nameHi": "Bijnor",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 23,
+    "name": "Chandpur",
+    "nameHi": "Chandpur",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 24,
+    "name": "Noorpur",
+    "nameHi": "Noorpur",
+    "district": "Bijnor",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 25,
+    "name": "Kanth",
+    "nameHi": "Kanth",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 26,
+    "name": "Thakurdwara",
+    "nameHi": "Thakurdwara",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 27,
+    "name": "Moradabad Rural",
+    "nameHi": "Moradabad Rural",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 28,
+    "name": "Moradabad Nagar",
+    "nameHi": "Moradabad Nagar",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 29,
+    "name": "Kundarki",
+    "nameHi": "Kundarki",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 30,
+    "name": "Bilari",
+    "nameHi": "Bilari",
+    "district": "Moradabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 31,
+    "name": "Chandausi",
+    "nameHi": "Chandausi",
+    "district": "Sambhal",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 32,
+    "name": "Asmoli",
+    "nameHi": "Asmoli",
+    "district": "Sambhal",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 33,
+    "name": "Sambhal",
+    "nameHi": "Sambhal",
+    "district": "Sambhal",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 34,
+    "name": "Suar",
+    "nameHi": "Suar",
+    "district": "Rampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 35,
+    "name": "Chamraua",
+    "nameHi": "Chamraua",
+    "district": "Rampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 36,
+    "name": "Bilaspur",
+    "nameHi": "Bilaspur",
+    "district": "Rampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 37,
+    "name": "Rampur",
+    "nameHi": "Rampur",
+    "district": "Rampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 38,
+    "name": "Milak",
+    "nameHi": "Milak",
+    "district": "Rampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 39,
+    "name": "Dhanaura",
+    "nameHi": "Dhanaura",
+    "district": "Amroha",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 40,
+    "name": "Naugawan Sadat",
+    "nameHi": "Naugawan Sadat",
+    "district": "Amroha",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 41,
+    "name": "Amroha",
+    "nameHi": "Amroha",
+    "district": "Amroha",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 42,
+    "name": "Hasanpur",
+    "nameHi": "Hasanpur",
+    "district": "Amroha",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 43,
+    "name": "Siwalkhas",
+    "nameHi": "Siwalkhas",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 44,
+    "name": "Sardhana",
+    "nameHi": "Sardhana",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 45,
+    "name": "Hastinapur",
+    "nameHi": "Hastinapur",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 46,
+    "name": "Kithore",
+    "nameHi": "Kithore",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 47,
+    "name": "Meerut Cantt",
+    "nameHi": "Meerut Cantt",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 48,
+    "name": "Meerut",
+    "nameHi": "Meerut",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 49,
+    "name": "Meerut South",
+    "nameHi": "Meerut South",
+    "district": "Meerut",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 50,
+    "name": "Chhaprauli",
+    "nameHi": "Chhaprauli",
+    "district": "Baghpat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 51,
+    "name": "Baraut",
+    "nameHi": "Baraut",
+    "district": "Baghpat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 52,
+    "name": "Baghpat",
+    "nameHi": "Baghpat",
+    "district": "Baghpat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 53,
+    "name": "Loni",
+    "nameHi": "Loni",
+    "district": "Ghaziabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 54,
+    "name": "Muradnagar",
+    "nameHi": "Muradnagar",
+    "district": "Ghaziabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 55,
+    "name": "Sahibabad",
+    "nameHi": "Sahibabad",
+    "district": "Ghaziabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 56,
+    "name": "Ghaziabad",
+    "nameHi": "Ghaziabad",
+    "district": "Ghaziabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 57,
+    "name": "Modinagar",
+    "nameHi": "Modinagar",
+    "district": "Ghaziabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 58,
+    "name": "Dhaulana",
+    "nameHi": "Dhaulana",
+    "district": "Hapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 59,
+    "name": "Hapur",
+    "nameHi": "Hapur",
+    "district": "Hapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 60,
+    "name": "Garhmukteshwar",
+    "nameHi": "Garhmukteshwar",
+    "district": "Hapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 61,
+    "name": "Noida",
+    "nameHi": "Noida",
+    "district": "Gautam Buddha Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 62,
+    "name": "Dadri",
+    "nameHi": "Dadri",
+    "district": "Gautam Buddha Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 63,
+    "name": "Jewar",
+    "nameHi": "Jewar",
+    "district": "Gautam Buddha Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 64,
+    "name": "Sikandrabad",
+    "nameHi": "Sikandrabad",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 65,
+    "name": "Bulandshahr",
+    "nameHi": "Bulandshahr",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 66,
+    "name": "Syana",
+    "nameHi": "Syana",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 67,
+    "name": "Anupshahr",
+    "nameHi": "Anupshahr",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 68,
+    "name": "Debai",
+    "nameHi": "Debai",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 69,
+    "name": "Shikarpur",
+    "nameHi": "Shikarpur",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 70,
+    "name": "Khurja",
+    "nameHi": "Khurja",
+    "district": "Bulandshahr",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 71,
+    "name": "Khair",
+    "nameHi": "Khair",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 72,
+    "name": "Barauli",
+    "nameHi": "Barauli",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 73,
+    "name": "Atrauli",
+    "nameHi": "Atrauli",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 74,
+    "name": "Chharra",
+    "nameHi": "Chharra",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 75,
+    "name": "Koil",
+    "nameHi": "Koil",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 76,
+    "name": "Aligarh",
+    "nameHi": "Aligarh",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 77,
+    "name": "Iglas",
+    "nameHi": "Iglas",
+    "district": "Aligarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 78,
+    "name": "Hathras",
+    "nameHi": "Hathras",
+    "district": "Hathras",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 79,
+    "name": "Sadabad",
+    "nameHi": "Sadabad",
+    "district": "Hathras",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 80,
+    "name": "Sikandra Rao",
+    "nameHi": "Sikandra Rao",
+    "district": "Hathras",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 81,
+    "name": "Chhata",
+    "nameHi": "Chhata",
+    "district": "Mathura",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 82,
+    "name": "Mant",
+    "nameHi": "Mant",
+    "district": "Mathura",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 83,
+    "name": "Goverdhan",
+    "nameHi": "Goverdhan",
+    "district": "Mathura",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 84,
+    "name": "Mathura",
+    "nameHi": "Mathura",
+    "district": "Mathura",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 85,
+    "name": "Baldev",
+    "nameHi": "Baldev",
+    "district": "Mathura",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 86,
+    "name": "Etmadpur",
+    "nameHi": "Etmadpur",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 87,
+    "name": "Agra Cantonment",
+    "nameHi": "Agra Cantonment",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 88,
+    "name": "Agra South",
+    "nameHi": "Agra South",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 89,
+    "name": "Agra North",
+    "nameHi": "Agra North",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 90,
+    "name": "Agra Rural",
+    "nameHi": "Agra Rural",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 91,
+    "name": "Fatehpur Sikri",
+    "nameHi": "Fatehpur Sikri",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 92,
+    "name": "Kheragarh",
+    "nameHi": "Kheragarh",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 93,
+    "name": "Fatehabad",
+    "nameHi": "Fatehabad",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 94,
+    "name": "Bah",
+    "nameHi": "Bah",
+    "district": "Agra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 95,
+    "name": "Tundla",
+    "nameHi": "Tundla",
+    "district": "Firozabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 96,
+    "name": "Jasrana",
+    "nameHi": "Jasrana",
+    "district": "Firozabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 97,
+    "name": "Firozabad",
+    "nameHi": "Firozabad",
+    "district": "Firozabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 98,
+    "name": "Shikohabad",
+    "nameHi": "Shikohabad",
+    "district": "Firozabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 99,
+    "name": "Sirsaganj",
+    "nameHi": "Sirsaganj",
+    "district": "Firozabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 100,
+    "name": "Kasganj",
+    "nameHi": "Kasganj",
+    "district": "Kasganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 101,
+    "name": "Amanpur",
+    "nameHi": "Amanpur",
+    "district": "Kasganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 102,
+    "name": "Patiyali",
+    "nameHi": "Patiyali",
+    "district": "Kasganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 103,
+    "name": "Aliganj",
+    "nameHi": "Aliganj",
+    "district": "Etah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 104,
+    "name": "Etah",
+    "nameHi": "Etah",
+    "district": "Etah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 105,
+    "name": "Marhara",
+    "nameHi": "Marhara",
+    "district": "Etah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 106,
+    "name": "Jalesar",
+    "nameHi": "Jalesar",
+    "district": "Etah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 107,
+    "name": "Mainpuri",
+    "nameHi": "Mainpuri",
+    "district": "Mainpuri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 108,
+    "name": "Bhongaon",
+    "nameHi": "Bhongaon",
+    "district": "Mainpuri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 109,
+    "name": "Kishni",
+    "nameHi": "Kishni",
+    "district": "Mainpuri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 110,
+    "name": "Karhal",
+    "nameHi": "Karhal",
+    "district": "Mainpuri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 111,
+    "name": "Gunnaur",
+    "nameHi": "Gunnaur",
+    "district": "Sambhal",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 112,
+    "name": "Bisauli",
+    "nameHi": "Bisauli",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 113,
+    "name": "Sahaswan",
+    "nameHi": "Sahaswan",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 114,
+    "name": "Bilsi",
+    "nameHi": "Bilsi",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 115,
+    "name": "Badaun",
+    "nameHi": "Badaun",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 116,
+    "name": "Shekhupur",
+    "nameHi": "Shekhupur",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 117,
+    "name": "Dataganj",
+    "nameHi": "Dataganj",
+    "district": "Budaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 118,
+    "name": "Baheri",
+    "nameHi": "Baheri",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 119,
+    "name": "Meerganj",
+    "nameHi": "Meerganj",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 120,
+    "name": "Bhojipura",
+    "nameHi": "Bhojipura",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 121,
+    "name": "Nawabganj",
+    "nameHi": "Nawabganj",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 122,
+    "name": "Faridpur",
+    "nameHi": "Faridpur",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 123,
+    "name": "Bithari Chainpur",
+    "nameHi": "Bithari Chainpur",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 124,
+    "name": "Bareilly",
+    "nameHi": "Bareilly",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 125,
+    "name": "Bareilly Cantt",
+    "nameHi": "Bareilly Cantt",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 126,
+    "name": "Aonla",
+    "nameHi": "Aonla",
+    "district": "Bareilly",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 127,
+    "name": "Pilibhit",
+    "nameHi": "Pilibhit",
+    "district": "Pilibhit",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 128,
+    "name": "Barkhera",
+    "nameHi": "Barkhera",
+    "district": "Pilibhit",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 129,
+    "name": "Puranpur",
+    "nameHi": "Puranpur",
+    "district": "Pilibhit",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 130,
+    "name": "Bisalpur",
+    "nameHi": "Bisalpur",
+    "district": "Pilibhit",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 131,
+    "name": "Katra",
+    "nameHi": "Katra",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 132,
+    "name": "Jalalabad",
+    "nameHi": "Jalalabad",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 133,
+    "name": "Tilhar",
+    "nameHi": "Tilhar",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 134,
+    "name": "Powayan",
+    "nameHi": "Powayan",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 135,
+    "name": "Shahjahanpur",
+    "nameHi": "Shahjahanpur",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 136,
+    "name": "Dadraul",
+    "nameHi": "Dadraul",
+    "district": "Shahjahanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 137,
+    "name": "Palia",
+    "nameHi": "Palia",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 138,
+    "name": "Nighasan",
+    "nameHi": "Nighasan",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 139,
+    "name": "Gola Gokrannath",
+    "nameHi": "Gola Gokrannath",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 140,
+    "name": "Sri Nagar",
+    "nameHi": "Sri Nagar",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 141,
+    "name": "Dhaurahra",
+    "nameHi": "Dhaurahra",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 142,
+    "name": "Lakhimpur",
+    "nameHi": "Lakhimpur",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 143,
+    "name": "Kasta",
+    "nameHi": "Kasta",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 144,
+    "name": "Mohammdi",
+    "nameHi": "Mohammdi",
+    "district": "Lakhimpur Kheri",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 145,
+    "name": "Maholi",
+    "nameHi": "Maholi",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 146,
+    "name": "Sitapur",
+    "nameHi": "Sitapur",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 147,
+    "name": "Hargaon",
+    "nameHi": "Hargaon",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 148,
+    "name": "Laharpur",
+    "nameHi": "Laharpur",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 149,
+    "name": "Biswan",
+    "nameHi": "Biswan",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 150,
+    "name": "Sevata",
+    "nameHi": "Sevata",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 151,
+    "name": "Mahmoodabad",
+    "nameHi": "Mahmoodabad",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 152,
+    "name": "Sidhauli",
+    "nameHi": "Sidhauli",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 153,
+    "name": "Misrikh",
+    "nameHi": "Misrikh",
+    "district": "Sitapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 154,
+    "name": "Sawayazpur",
+    "nameHi": "Sawayazpur",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 155,
+    "name": "Shahabad",
+    "nameHi": "Shahabad",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 156,
+    "name": "Hardoi",
+    "nameHi": "Hardoi",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 157,
+    "name": "Gopamau",
+    "nameHi": "Gopamau",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 158,
+    "name": "Sandi",
+    "nameHi": "Sandi",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 159,
+    "name": "Bilgram-Mallanwan",
+    "nameHi": "Bilgram-Mallanwan",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 160,
+    "name": "Balamau",
+    "nameHi": "Balamau",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 161,
+    "name": "Sandila",
+    "nameHi": "Sandila",
+    "district": "Hardoi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 162,
+    "name": "Bangarmau",
+    "nameHi": "Bangarmau",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 163,
+    "name": "Safipur",
+    "nameHi": "Safipur",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 164,
+    "name": "Mohan",
+    "nameHi": "Mohan",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 165,
+    "name": "Unnao",
+    "nameHi": "Unnao",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 166,
+    "name": "Bhagwantnagar",
+    "nameHi": "Bhagwantnagar",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 167,
+    "name": "Purwa",
+    "nameHi": "Purwa",
+    "district": "Unnao",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 168,
+    "name": "Malihabad",
+    "nameHi": "Malihabad",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 169,
+    "name": "Bakshi Kaa Talab",
+    "nameHi": "Bakshi Kaa Talab",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 170,
+    "name": "Sarojini Nagar",
+    "nameHi": "Sarojini Nagar",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 171,
+    "name": "Lucknow West",
+    "nameHi": "Lucknow West",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 172,
+    "name": "Lucknow North",
+    "nameHi": "Lucknow North",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 173,
+    "name": "Lucknow East",
+    "nameHi": "Lucknow East",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 174,
+    "name": "Lucknow Central",
+    "nameHi": "Lucknow Central",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 175,
+    "name": "Lucknow Cantonment",
+    "nameHi": "Lucknow Cantonment",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 176,
+    "name": "Mohanlalganj",
+    "nameHi": "Mohanlalganj",
+    "district": "Lucknow",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 177,
+    "name": "Bachhrawan",
+    "nameHi": "Bachhrawan",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 178,
+    "name": "Tiloi",
+    "nameHi": "Tiloi",
+    "district": "Amethi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 179,
+    "name": "Harchandpur",
+    "nameHi": "Harchandpur",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 180,
+    "name": "Rae Bareli",
+    "nameHi": "Rae Bareli",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 181,
+    "name": "Salon",
+    "nameHi": "Salon",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 182,
+    "name": "Sareni",
+    "nameHi": "Sareni",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 183,
+    "name": "Unchahar",
+    "nameHi": "Unchahar",
+    "district": "Raebareli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 184,
+    "name": "Jagdishpur",
+    "nameHi": "Jagdishpur",
+    "district": "Amethi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 185,
+    "name": "Gauriganj",
+    "nameHi": "Gauriganj",
+    "district": "Amethi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 186,
+    "name": "Amethi",
+    "nameHi": "Amethi",
+    "district": "Amethi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 187,
+    "name": "Isauli",
+    "nameHi": "Isauli",
+    "district": "Sultanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 188,
+    "name": "Sultanpur",
+    "nameHi": "Sultanpur",
+    "district": "Sultanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 189,
+    "name": "Sadar",
+    "nameHi": "Sadar",
+    "district": "Sultanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 190,
+    "name": "Lambhua",
+    "nameHi": "Lambhua",
+    "district": "Sultanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 191,
+    "name": "Kadipur",
+    "nameHi": "Kadipur",
+    "district": "Sultanpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 192,
+    "name": "Kaimganj",
+    "nameHi": "Kaimganj",
+    "district": "Farrukhabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 193,
+    "name": "Amritpur",
+    "nameHi": "Amritpur",
+    "district": "Farrukhabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 194,
+    "name": "Farrukhabad",
+    "nameHi": "Farrukhabad",
+    "district": "Farrukhabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 195,
+    "name": "Bhojpur",
+    "nameHi": "Bhojpur",
+    "district": "Farrukhabad",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 196,
+    "name": "Chhibramau",
+    "nameHi": "Chhibramau",
+    "district": "Kannauj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 197,
+    "name": "Tirwa",
+    "nameHi": "Tirwa",
+    "district": "Kannauj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 198,
+    "name": "Kannauj",
+    "nameHi": "Kannauj",
+    "district": "Kannauj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 199,
+    "name": "Jaswantnagar",
+    "nameHi": "Jaswantnagar",
+    "district": "Etawah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 200,
+    "name": "Etawah",
+    "nameHi": "Etawah",
+    "district": "Etawah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 201,
+    "name": "Bharthana",
+    "nameHi": "Bharthana",
+    "district": "Etawah",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 202,
+    "name": "Bidhuna",
+    "nameHi": "Bidhuna",
+    "district": "Auraiya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 203,
+    "name": "Dibiyapur",
+    "nameHi": "Dibiyapur",
+    "district": "Auraiya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 204,
+    "name": "Auraiya",
+    "nameHi": "Auraiya",
+    "district": "Auraiya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 205,
+    "name": "Rasulabad",
+    "nameHi": "Rasulabad",
+    "district": "Kanpur Dehat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 206,
+    "name": "Akbarpur-Raniya",
+    "nameHi": "Akbarpur-Raniya",
+    "district": "Kanpur Dehat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 207,
+    "name": "Sikandra",
+    "nameHi": "Sikandra",
+    "district": "Kanpur Dehat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 208,
+    "name": "Bhognipur",
+    "nameHi": "Bhognipur",
+    "district": "Kanpur Dehat",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 209,
+    "name": "Bilhaur",
+    "nameHi": "Bilhaur",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 210,
+    "name": "Bithoor",
+    "nameHi": "Bithoor",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 211,
+    "name": "Kalyanpur",
+    "nameHi": "Kalyanpur",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 212,
+    "name": "Govindnagar",
+    "nameHi": "Govindnagar",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 213,
+    "name": "Sishamau",
+    "nameHi": "Sishamau",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 214,
+    "name": "Arya Nagar",
+    "nameHi": "Arya Nagar",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 215,
+    "name": "Kidwai Nagar",
+    "nameHi": "Kidwai Nagar",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 216,
+    "name": "Kanpur Cantonment",
+    "nameHi": "Kanpur Cantonment",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 217,
+    "name": "Maharajpur",
+    "nameHi": "Maharajpur",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 218,
+    "name": "Ghatampur",
+    "nameHi": "Ghatampur",
+    "district": "Kanpur Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 219,
+    "name": "Madhogarh",
+    "nameHi": "Madhogarh",
+    "district": "Jalaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 220,
+    "name": "Kalpi",
+    "nameHi": "Kalpi",
+    "district": "Jalaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 221,
+    "name": "Orai",
+    "nameHi": "Orai",
+    "district": "Jalaun",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 222,
+    "name": "Babina",
+    "nameHi": "Babina",
+    "district": "Jhansi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 223,
+    "name": "Jhansi Nagar",
+    "nameHi": "Jhansi Nagar",
+    "district": "Jhansi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 224,
+    "name": "Mauranipur",
+    "nameHi": "Mauranipur",
+    "district": "Jhansi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 225,
+    "name": "Garautha",
+    "nameHi": "Garautha",
+    "district": "Jhansi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 226,
+    "name": "Lalitpur",
+    "nameHi": "Lalitpur",
+    "district": "Lalitpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 227,
+    "name": "Mehroni",
+    "nameHi": "Mehroni",
+    "district": "Lalitpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 228,
+    "name": "Hamirpur",
+    "nameHi": "Hamirpur",
+    "district": "Hamirpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 229,
+    "name": "Rath",
+    "nameHi": "Rath",
+    "district": "Hamirpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 230,
+    "name": "Mahoba",
+    "nameHi": "Mahoba",
+    "district": "Mahoba",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 231,
+    "name": "Charkhari",
+    "nameHi": "Charkhari",
+    "district": "Mahoba",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 232,
+    "name": "Tindwari",
+    "nameHi": "Tindwari",
+    "district": "Banda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 233,
+    "name": "Baberu",
+    "nameHi": "Baberu",
+    "district": "Banda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 234,
+    "name": "Naraini",
+    "nameHi": "Naraini",
+    "district": "Banda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 235,
+    "name": "Banda",
+    "nameHi": "Banda",
+    "district": "Banda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 236,
+    "name": "Chitrakoot",
+    "nameHi": "Chitrakoot",
+    "district": "Chitrakoot",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 237,
+    "name": "Manikpur",
+    "nameHi": "Manikpur",
+    "district": "Chitrakoot",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 238,
+    "name": "Jahanabad",
+    "nameHi": "Jahanabad",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 239,
+    "name": "Bindki",
+    "nameHi": "Bindki",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 240,
+    "name": "Fatehpur",
+    "nameHi": "Fatehpur",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 241,
+    "name": "Ayah Shah",
+    "nameHi": "Ayah Shah",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 242,
+    "name": "Husainganj",
+    "nameHi": "Husainganj",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 243,
+    "name": "Khaga",
+    "nameHi": "Khaga",
+    "district": "Fatehpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 244,
+    "name": "Rampur Khas",
+    "nameHi": "Rampur Khas",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 245,
+    "name": "Babaganj",
+    "nameHi": "Babaganj",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 246,
+    "name": "Kunda",
+    "nameHi": "Kunda",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 247,
+    "name": "Vishwanathganj",
+    "nameHi": "Vishwanathganj",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 248,
+    "name": "Pratapgarh",
+    "nameHi": "Pratapgarh",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 249,
+    "name": "Patti",
+    "nameHi": "Patti",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 250,
+    "name": "Raniganj",
+    "nameHi": "Raniganj",
+    "district": "Pratapgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 251,
+    "name": "Sirathu",
+    "nameHi": "Sirathu",
+    "district": "Kaushambi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 252,
+    "name": "Manjhanpur",
+    "nameHi": "Manjhanpur",
+    "district": "Kaushambi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 253,
+    "name": "Chail",
+    "nameHi": "Chail",
+    "district": "Kaushambi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 254,
+    "name": "Phaphamau",
+    "nameHi": "Phaphamau",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 255,
+    "name": "Soraon",
+    "nameHi": "Soraon",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 256,
+    "name": "Phulpur",
+    "nameHi": "Phulpur",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 257,
+    "name": "Pratappur",
+    "nameHi": "Pratappur",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 258,
+    "name": "Handia",
+    "nameHi": "Handia",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 259,
+    "name": "Meja",
+    "nameHi": "Meja",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 260,
+    "name": "Karachhana",
+    "nameHi": "Karachhana",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 261,
+    "name": "Allahabad West",
+    "nameHi": "Allahabad West",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 262,
+    "name": "Allahabad North",
+    "nameHi": "Allahabad North",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 263,
+    "name": "Allahabad South",
+    "nameHi": "Allahabad South",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 264,
+    "name": "Bara",
+    "nameHi": "Bara",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 265,
+    "name": "Koraon",
+    "nameHi": "Koraon",
+    "district": "Prayagraj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 266,
+    "name": "Kursi",
+    "nameHi": "Kursi",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 267,
+    "name": "Ramnagar",
+    "nameHi": "Ramnagar",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 268,
+    "name": "Barabanki",
+    "nameHi": "Barabanki",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 269,
+    "name": "Zaidpur",
+    "nameHi": "Zaidpur",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 270,
+    "name": "Dariyabad",
+    "nameHi": "Dariyabad",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 271,
+    "name": "Rudauli",
+    "nameHi": "Rudauli",
+    "district": "Ayodhya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 272,
+    "name": "Haidergarh",
+    "nameHi": "Haidergarh",
+    "district": "Barabanki",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 273,
+    "name": "Milkipur",
+    "nameHi": "Milkipur",
+    "district": "Ayodhya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 274,
+    "name": "Bikapur",
+    "nameHi": "Bikapur",
+    "district": "Ayodhya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 275,
+    "name": "Ayodhya",
+    "nameHi": "Ayodhya",
+    "district": "Ayodhya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 276,
+    "name": "Goshainganj",
+    "nameHi": "Goshainganj",
+    "district": "Ayodhya",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 277,
+    "name": "Katehari",
+    "nameHi": "Katehari",
+    "district": "Ambedkar Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 278,
+    "name": "Tanda",
+    "nameHi": "Tanda",
+    "district": "Ambedkar Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 279,
+    "name": "Alapur",
+    "nameHi": "Alapur",
+    "district": "Ambedkar Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 280,
+    "name": "Jalalpur",
+    "nameHi": "Jalalpur",
+    "district": "Ambedkar Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 281,
+    "name": "Akbarpur",
+    "nameHi": "Akbarpur",
+    "district": "Ambedkar Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 282,
+    "name": "Balha",
+    "nameHi": "Balha",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 283,
+    "name": "Nanpara",
+    "nameHi": "Nanpara",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 284,
+    "name": "Matera",
+    "nameHi": "Matera",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 285,
+    "name": "Mahasi",
+    "nameHi": "Mahasi",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 286,
+    "name": "Bahraich",
+    "nameHi": "Bahraich",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 287,
+    "name": "Payagpur",
+    "nameHi": "Payagpur",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 288,
+    "name": "Kaiserganj",
+    "nameHi": "Kaiserganj",
+    "district": "Bahraich",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 289,
+    "name": "Bhinga",
+    "nameHi": "Bhinga",
+    "district": "Shrawasti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 290,
+    "name": "Shrawasti",
+    "nameHi": "Shrawasti",
+    "district": "Shrawasti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 291,
+    "name": "Tulsipur",
+    "nameHi": "Tulsipur",
+    "district": "Balrampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 292,
+    "name": "Gainsari",
+    "nameHi": "Gainsari",
+    "district": "Balrampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 293,
+    "name": "Utraula",
+    "nameHi": "Utraula",
+    "district": "Balrampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 294,
+    "name": "Balrampur",
+    "nameHi": "Balrampur",
+    "district": "Balrampur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 295,
+    "name": "Mehnaun",
+    "nameHi": "Mehnaun",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 296,
+    "name": "Gonda",
+    "nameHi": "Gonda",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 297,
+    "name": "Katra Bazar",
+    "nameHi": "Katra Bazar",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 298,
+    "name": "Colonelganj",
+    "nameHi": "Colonelganj",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 299,
+    "name": "Tarabganj",
+    "nameHi": "Tarabganj",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 300,
+    "name": "Mankapur",
+    "nameHi": "Mankapur",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 301,
+    "name": "Gaura",
+    "nameHi": "Gaura",
+    "district": "Gonda",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 302,
+    "name": "Shohratgarh",
+    "nameHi": "Shohratgarh",
+    "district": "Siddharthnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 303,
+    "name": "Kapilvastu",
+    "nameHi": "Kapilvastu",
+    "district": "Siddharthnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 304,
+    "name": "Bansi",
+    "nameHi": "Bansi",
+    "district": "Siddharthnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 305,
+    "name": "Itwa",
+    "nameHi": "Itwa",
+    "district": "Siddharthnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 306,
+    "name": "Domariyaganj",
+    "nameHi": "Domariyaganj",
+    "district": "Siddharthnagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 307,
+    "name": "Harraiya",
+    "nameHi": "Harraiya",
+    "district": "Basti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 308,
+    "name": "Kaptanganj",
+    "nameHi": "Kaptanganj",
+    "district": "Basti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 309,
+    "name": "Rudhauli",
+    "nameHi": "Rudhauli",
+    "district": "Basti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 310,
+    "name": "Basti Sadar",
+    "nameHi": "Basti Sadar",
+    "district": "Basti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 311,
+    "name": "Mahadewa",
+    "nameHi": "Mahadewa",
+    "district": "Basti",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 312,
+    "name": "Menhdawal",
+    "nameHi": "Menhdawal",
+    "district": "Sant Kabir Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 313,
+    "name": "Khalilabad",
+    "nameHi": "Khalilabad",
+    "district": "Sant Kabir Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 314,
+    "name": "Dhanghata",
+    "nameHi": "Dhanghata",
+    "district": "Sant Kabir Nagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 315,
+    "name": "Pharenda",
+    "nameHi": "Pharenda",
+    "district": "Maharajganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 316,
+    "name": "Nautanwa",
+    "nameHi": "Nautanwa",
+    "district": "Maharajganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 317,
+    "name": "Siswa",
+    "nameHi": "Siswa",
+    "district": "Maharajganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 318,
+    "name": "Maharajganj",
+    "nameHi": "Maharajganj",
+    "district": "Maharajganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 319,
+    "name": "Paniyara",
+    "nameHi": "Paniyara",
+    "district": "Maharajganj",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 320,
+    "name": "Caimpiyarganj",
+    "nameHi": "Caimpiyarganj",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 321,
+    "name": "Pipraich",
+    "nameHi": "Pipraich",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 322,
+    "name": "Gorakhpur Urban",
+    "nameHi": "Gorakhpur Urban",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 323,
+    "name": "Gorakhpur Rural",
+    "nameHi": "Gorakhpur Rural",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 324,
+    "name": "Sahajanwa",
+    "nameHi": "Sahajanwa",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 325,
+    "name": "Khajani",
+    "nameHi": "Khajani",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 326,
+    "name": "Chauri-Chaura",
+    "nameHi": "Chauri-Chaura",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 327,
+    "name": "Bansgaon",
+    "nameHi": "Bansgaon",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 328,
+    "name": "Chillupar",
+    "nameHi": "Chillupar",
+    "district": "Gorakhpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 329,
+    "name": "Khadda",
+    "nameHi": "Khadda",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 330,
+    "name": "Padrauna",
+    "nameHi": "Padrauna",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 331,
+    "name": "Tamkuhi Raj",
+    "nameHi": "Tamkuhi Raj",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 332,
+    "name": "Fazilnagar",
+    "nameHi": "Fazilnagar",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 333,
+    "name": "Kushinagar",
+    "nameHi": "Kushinagar",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 334,
+    "name": "Hata",
+    "nameHi": "Hata",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 335,
+    "name": "Ramkola",
+    "nameHi": "Ramkola",
+    "district": "Kushinagar",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 336,
+    "name": "Rudrapur",
+    "nameHi": "Rudrapur",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 337,
+    "name": "Deoria",
+    "nameHi": "Deoria",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 338,
+    "name": "Pathardeva",
+    "nameHi": "Pathardeva",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 339,
+    "name": "Rampur Karkhana",
+    "nameHi": "Rampur Karkhana",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 340,
+    "name": "Bhatpar Rani",
+    "nameHi": "Bhatpar Rani",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 341,
+    "name": "Salempur",
+    "nameHi": "Salempur",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 342,
+    "name": "Barhaj",
+    "nameHi": "Barhaj",
+    "district": "Deoria",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 343,
+    "name": "Atrauliya",
+    "nameHi": "Atrauliya",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 344,
+    "name": "Gopalpur",
+    "nameHi": "Gopalpur",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 345,
+    "name": "Sagri",
+    "nameHi": "Sagri",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 346,
+    "name": "Mubarakpur",
+    "nameHi": "Mubarakpur",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 347,
+    "name": "Azamgarh",
+    "nameHi": "Azamgarh",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 348,
+    "name": "Nizamabad",
+    "nameHi": "Nizamabad",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 349,
+    "name": "Phoolpur Pawai",
+    "nameHi": "Phoolpur Pawai",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 350,
+    "name": "Didarganj",
+    "nameHi": "Didarganj",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 351,
+    "name": "Lalganj",
+    "nameHi": "Lalganj",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 352,
+    "name": "Mehnagar",
+    "nameHi": "Mehnagar",
+    "district": "Azamgarh",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 353,
+    "name": "Madhuban",
+    "nameHi": "Madhuban",
+    "district": "Mau",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 354,
+    "name": "Ghosi",
+    "nameHi": "Ghosi",
+    "district": "Mau",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 355,
+    "name": "Muhammadabad-Gohna",
+    "nameHi": "Muhammadabad-Gohna",
+    "district": "Mau",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 356,
+    "name": "Mau",
+    "nameHi": "Mau",
+    "district": "Mau",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 357,
+    "name": "Belthara Road",
+    "nameHi": "Belthara Road",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 358,
+    "name": "Rasara",
+    "nameHi": "Rasara",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 359,
+    "name": "Sikanderpur",
+    "nameHi": "Sikanderpur",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 360,
+    "name": "Phephana",
+    "nameHi": "Phephana",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 361,
+    "name": "Ballia Nagar",
+    "nameHi": "Ballia Nagar",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 362,
+    "name": "Bansdih",
+    "nameHi": "Bansdih",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 363,
+    "name": "Bairia",
+    "nameHi": "Bairia",
+    "district": "Ballia",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 364,
+    "name": "Badlapur",
+    "nameHi": "Badlapur",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 365,
+    "name": "Shahganj",
+    "nameHi": "Shahganj",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 366,
+    "name": "Jaunpur",
+    "nameHi": "Jaunpur",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 367,
+    "name": "Malhani",
+    "nameHi": "Malhani",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 368,
+    "name": "Mungra Badshahpur",
+    "nameHi": "Mungra Badshahpur",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 369,
+    "name": "Machhlishahr",
+    "nameHi": "Machhlishahr",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 370,
+    "name": "Mariyahu",
+    "nameHi": "Mariyahu",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 371,
+    "name": "Zafrabad",
+    "nameHi": "Zafrabad",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 372,
+    "name": "Kerakat",
+    "nameHi": "Kerakat",
+    "district": "Jaunpur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 373,
+    "name": "Jakhanian",
+    "nameHi": "Jakhanian",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 374,
+    "name": "Saidpur",
+    "nameHi": "Saidpur",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 375,
+    "name": "Ghazipur Sadar",
+    "nameHi": "Ghazipur Sadar",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 376,
+    "name": "Jangipur",
+    "nameHi": "Jangipur",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 377,
+    "name": "Zahoorabad",
+    "nameHi": "Zahoorabad",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 378,
+    "name": "Mohammadabad",
+    "nameHi": "Mohammadabad",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 379,
+    "name": "Zamania",
+    "nameHi": "Zamania",
+    "district": "Ghazipur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 380,
+    "name": "Mughalsarai",
+    "nameHi": "Mughalsarai",
+    "district": "Chandauli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 381,
+    "name": "Sakaldiha",
+    "nameHi": "Sakaldiha",
+    "district": "Chandauli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 382,
+    "name": "Saiyadraja",
+    "nameHi": "Saiyadraja",
+    "district": "Chandauli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 383,
+    "name": "Chakia",
+    "nameHi": "Chakia",
+    "district": "Chandauli",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 384,
+    "name": "Pindra",
+    "nameHi": "Pindra",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 385,
+    "name": "Ajagara",
+    "nameHi": "Ajagara",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 386,
+    "name": "Shivpur",
+    "nameHi": "Shivpur",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 387,
+    "name": "Rohaniya",
+    "nameHi": "Rohaniya",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 388,
+    "name": "Varanasi North",
+    "nameHi": "Varanasi North",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 389,
+    "name": "Varanasi South",
+    "nameHi": "Varanasi South",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 390,
+    "name": "Varanasi Cantt.",
+    "nameHi": "Varanasi Cantt.",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 391,
+    "name": "Sevapuri",
+    "nameHi": "Sevapuri",
+    "district": "Varanasi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 392,
+    "name": "Bhadohi",
+    "nameHi": "Bhadohi",
+    "district": "Bhadohi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 393,
+    "name": "Gyanpur",
+    "nameHi": "Gyanpur",
+    "district": "Bhadohi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 394,
+    "name": "Aurai",
+    "nameHi": "Aurai",
+    "district": "Bhadohi",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 395,
+    "name": "Chhanbey",
+    "nameHi": "Chhanbey",
+    "district": "Mirzapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 396,
+    "name": "Mirzapur",
+    "nameHi": "Mirzapur",
+    "district": "Mirzapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 397,
+    "name": "Majhawan",
+    "nameHi": "Majhawan",
+    "district": "Mirzapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 398,
+    "name": "Chunar",
+    "nameHi": "Chunar",
+    "district": "Mirzapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 399,
+    "name": "Marihan",
+    "nameHi": "Marihan",
+    "district": "Mirzapur",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 400,
+    "name": "Ghorawal",
+    "nameHi": "Ghorawal",
+    "district": "Sonbhadra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 401,
+    "name": "Robertsganj",
+    "nameHi": "Robertsganj",
+    "district": "Sonbhadra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 402,
+    "name": "Obra",
+    "nameHi": "Obra",
+    "district": "Sonbhadra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  },
+  {
+    "acNo": 403,
+    "name": "Duddhi",
+    "nameHi": "Duddhi",
+    "district": "Sonbhadra",
+    "declarations": {
+      "BJP": "TBD",
+      "SP": "TBD",
+      "BSP": "TBD",
+      "INC": "TBD",
+      "RLD": "TBD",
+      "SBSP": "TBD",
+      "AD-S": "TBD",
+      "NISHAD": "TBD",
+      "ASP-KR": "TBD"
+    }
+  }
+];

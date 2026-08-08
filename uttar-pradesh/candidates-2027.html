@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uttar Pradesh Assembly Election 2027 Candidates Tracker | Candidates List</title>
+  <meta name="description" content="Live tracking of declared candidates for Uttar Pradesh Assembly Election 2027. Search candidates by constituency, district, and party (BJP, SP, BSP, INC, RLD).">
+  <link rel="canonical" href="https://upelectionresults.com/candidates-2027.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <script defer src="https://app.umamiengine.com/script.js" data-website-id="0f9e6085-bae3-48a2-a212-957a62e7dcbe"></script>
+  <link rel="alternate" hreflang="en-IN" href="https://upelectionresults.com/candidates-2027.html" />
+  <link rel="alternate" hreflang="hi-IN" href="https://upelectionresults.com/candidates-2027.html?lang=hi" />
+  <link rel="alternate" hreflang="x-default" href="https://upelectionresults.com/candidates-2027.html" />
+  <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+  <script>
+    window.googletag = window.googletag || {cmd: []};
+    googletag.cmd.push(function() {
+      var mapping = googletag.sizeMapping()
+        .addSize([768, 0], [728, 90])
+        .addSize([0, 0], [320, 480])
+        .build();
+        
+      googletag.defineSlot('/130702287/Leaderboard', [[728, 90], [320, 480]], 'ad-slot-container')
+        .defineSizeMapping(mapping)
+        .addService(googletag.pubads());
+        
+      googletag.setConfig({singleRequest: true});
+      googletag.enableServices();
+    });
+  </script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader"></header>
+
+<div class="page-header">
+  <div class="container">
+    <span class="page-eyebrow" data-i18n="heroEyebrow">UP Assembly Election 2027</span>
+    <h1 class="page-title" data-i18n="candidatesTitle">2027 Candidates Tracker</h1>
+    <p class="page-desc" data-i18n="candidatesDesc">Live list of declared candidates for all 403 constituencies in Uttar Pradesh. Filter by party and search by constituency.</p>
+  </div>
+</div>
+
+<div class="ad-wrap-content" style="display:flex;justify-content:center;margin:20px auto;max-width:100%;overflow:hidden;">
+  <div id="ad-slot-container" style="min-width: 320px; min-height: 90px;">
+    <script>
+      googletag.cmd.push(function() { googletag.display('ad-slot-container'); });
+    </script>
+  </div>
+</div>
+
+<main class="section">
+  <div class="container">
+    
+    <!-- Stats Cards Grid -->
+    <div class="stats-grid" id="declarationStats" style="margin-bottom:var(--s-8)">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <!-- Filter & Search Controls -->
+    <div style="background:var(--bg-2);padding:var(--s-5);border-radius:var(--radius-lg);border:1px solid var(--border-color);margin-bottom:var(--s-6);display:flex;flex-wrap:wrap;gap:var(--s-4);align-items:center;justify-content:between;">
+      <div style="display:flex;gap:var(--s-2);flex-wrap:wrap;" id="partyFilters">
+        <button class="btn btn-primary" data-party="ALL">All Parties</button>
+        <button class="btn" data-party="BJP" style="border-left:4px solid #FF9933">BJP</button>
+        <button class="btn" data-party="SP" style="border-left:4px solid #FF2222">SP</button>
+        <button class="btn" data-party="BSP" style="border-left:4px solid #0000FF">BSP</button>
+        <button class="btn" data-party="INC" style="border-left:4px solid #19AAED">INC</button>
+        <button class="btn" data-party="RLD" style="border-left:4px solid #008000">RLD</button>
+        <button class="btn" data-party="ASP-KR" style="border-left:4px solid #0A0A5A">ASP(KR)</button>
+      </div>
+      <div style="position:relative;flex:1;min-width:280px;">
+        <input type="text" id="candSearch" placeholder="Search constituency, candidate or district..." style="width:100%;padding:var(--s-3) var(--s-4);border-radius:var(--radius-md);border:1px solid var(--border-color);background:var(--bg-1);color:var(--text-1);font-family:inherit;">
+      </div>
+    </div>
+
+    <!-- Candidates Table -->
+    <div class="table-wrap">
+      <table class="data-table" id="candidatesTable">
+        <thead>
+          <tr>
+            <th style="width:70px">AC No.</th>
+            <th>Constituency</th>
+            <th>District</th>
+            <th>Party</th>
+            <th>Candidate Name</th>
+            <th style="text-align:right">Status</th>
+          </tr>
+        </thead>
+        <tbody id="candidatesListBody">
+          <tr>
+            <td colspan="6" style="text-align:center;padding:var(--s-8);color:var(--text-3)">Loading candidates database...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="siteFooter"></footer>
+
+<script src="js/app.js"></script>
+<script src="js/data-loader.js"></script>
+<script>
+(async () => {
+  let candidatesData = [];
+  let currentPartyFilter = 'ALL';
+  let currentSearchQuery = '';
+
+  const listBody = document.getElementById('candidatesListBody');
+  const statsGrid = document.getElementById('declarationStats');
+  const searchInput = document.getElementById('candSearch');
+  const filterButtons = document.querySelectorAll('#partyFilters button');
+
+  // Load database
+  try {
+    candidatesData = await loadCandidates2027();
+    updateUI();
+  } catch (err) {
+    listBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:var(--s-8);color:#c00">Failed to load candidates database.</td></tr>`;
+  }
+
+  // Handle party filter selection
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('btn-primary'));
+      btn.classList.add('btn-primary');
+      currentPartyFilter = btn.getAttribute('data-party');
+      updateUI();
+    });
+  });
+
+  // Handle search filter
+  searchInput.addEventListener('input', (e) => {
+    currentSearchQuery = e.target.value.toLowerCase().trim();
+    updateUI();
+  });
+
+  function updateUI() {
+    const lang = localStorage.getItem('pe_lang') || 'en';
+    
+    // 1. Calculate stats per party
+    const stats = {
+      BJP: { total: 403, declared: 0, color: '#FF9933' },
+      SP: { total: 403, declared: 0, color: '#FF2222' },
+      BSP: { total: 403, declared: 0, color: '#0000FF' },
+      INC: { total: 403, declared: 0, color: '#19AAED' },
+      RLD: { total: 403, declared: 0, color: '#008000' },
+      "ASP-KR": { total: 403, declared: 0, color: '#0A0A5A' }
+    };
+
+    candidatesData.forEach(c => {
+      for (const p in stats) {
+        if (c.declarations[p] && c.declarations[p] !== 'TBD') {
+          stats[p].declared++;
+        }
+      }
+    });
+
+    // Render Stats Grid
+    statsGrid.innerHTML = Object.keys(stats).map(p => {
+      const s = stats[p];
+      const pct = (s.declared / s.total) * 100;
+      return `
+        <div style="background:var(--bg-2);padding:var(--s-4);border-radius:var(--radius-md);border:1px solid var(--border-color);border-top:4px solid ${s.color}">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s-2)">
+            <span style="font-weight:var(--w-bold);color:var(--text-1)">${p === 'ASP-KR' ? 'ASP(KR)' : p}</span>
+            <span style="font-size:var(--text-xs);color:var(--text-3)">${s.declared} / ${s.total} Declared</span>
+          </div>
+          <div style="height:6px;background:var(--bg-3);border-radius:3px;overflow:hidden">
+            <div style="width:${pct}%;height:100%;background:${s.color}"></div>
+          </div>
+        </div>`;
+    }).join('');
+
+    // 2. Filter & Flatten for rendering
+    let filteredList = [];
+    candidatesData.forEach(c => {
+      const cName = lang === 'hi' ? c.nameHi : c.name;
+      
+      const partiesToLoop = currentPartyFilter === 'ALL' ? Object.keys(c.declarations) : [currentPartyFilter];
+      
+      partiesToLoop.forEach(p => {
+        const candidateName = c.declarations[p] || 'TBD';
+        
+        // Match Search Query
+        const matchSearch = !currentSearchQuery || 
+          c.name.toLowerCase().includes(currentSearchQuery) ||
+          (c.nameHi && c.nameHi.toLowerCase().includes(currentSearchQuery)) ||
+          c.district.toLowerCase().includes(currentSearchQuery) ||
+          candidateName.toLowerCase().includes(currentSearchQuery) ||
+          p.toLowerCase().includes(currentSearchQuery);
+
+        if (matchSearch) {
+          filteredList.push({
+            acNo: c.acNo,
+            constituency: cName,
+            district: c.district,
+            party: p,
+            candidate: candidateName,
+            isDeclared: candidateName !== 'TBD'
+          });
+        }
+      });
+    });
+
+    // Render Table Rows
+    if (filteredList.length === 0) {
+      listBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:var(--s-8);color:var(--text-3)">No candidates found matching the criteria.</td></tr>`;
+      return;
+    }
+
+    listBody.innerHTML = filteredList.map(item => {
+      const statusBadge = item.isDeclared 
+        ? `<span class="badge" style="background:#e6f4ea;color:#137333">Declared</span>` 
+        : `<span class="badge" style="background:var(--bg-3);color:var(--text-3)">TBD</span>`;
+      return `
+        <tr>
+          <td>${item.acNo}</td>
+          <td><strong>${item.constituency}</strong></td>
+          <td>${item.district}</td>
+          <td><span class="badge" style="background:var(--bg-3);color:var(--text-1);font-weight:var(--w-medium)">${item.party === 'ASP-KR' ? 'ASP(KR)' : item.party}</span></td>
+          <td>${item.isDeclared ? `<strong>${item.candidate}</strong>` : `<span style="color:var(--text-3)">TBD</span>`}</td>
+          <td style="text-align:right">${statusBadge}</td>
+        </tr>`;
+    }).join('');
+  }
+})();
+</script>
+</body>
+</html>

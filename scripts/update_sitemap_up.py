@@ -23,6 +23,7 @@ urls = [
     "https://upelectionresults.com/candidates.html",
     "https://upelectionresults.com/trends.html",
     "https://upelectionresults.com/districts.html",
+    "https://upelectionresults.com/candidates-2027.html",
     "https://upelectionresults.com/about.html",
     "https://upelectionresults.com/network.html"
 ]

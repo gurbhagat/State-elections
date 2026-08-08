@@ -62,6 +62,7 @@ async function loadParties()        { return _load('parties',        'data/parti
 async function loadDistricts()      { return _load('districts',      'data/districts.json',      'data/districts.data.js'); }
 async function loadTrends()         { return _load('trends',         'data/trends.json',         'data/trends.data.js'); }
 async function loadSchedule()       { return _load('schedule',       'data/schedule-2027.json',  'data/schedule.data.js'); }
+async function loadCandidates2027() { return _load('candidates2027', 'data/candidates-2027.json', 'data/candidates-2027.data.js'); }
 
 /* Flatten constituency for table display */
 function flattenForTable(constituencies, year = 2022) {
@@ -111,5 +112,6 @@ window.loadParties = loadParties;
 window.loadDistricts = loadDistricts;
 window.loadTrends = loadTrends;
 window.loadSchedule = loadSchedule;
+window.loadCandidates2027 = loadCandidates2027;
 window.flattenForTable = flattenForTable;
 window.getDistricts = getDistricts;

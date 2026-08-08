@@ -121,6 +121,8 @@ const I18N = {
     "navHome": "Home",
     "navConstituencies": "Constituencies",
     "navCandidates": "Candidates",
+    "navCandidates2027": "Candidates 2027",
+    "footerCandidates2027": "Candidates 2027",
     "navResults": "Results",
     "nav2022": "2022 Results",
     "nav2017": "2017 Results",
@@ -377,6 +379,8 @@ const I18N = {
     "navHome": "होम",
     "navConstituencies": "निर्वाचन क्षेत्र",
     "navCandidates": "उम्मीदवार",
+    "navCandidates2027": "उम्मीदवार 2027",
+    "footerCandidates2027": "उम्मीदवार 2027",
     "navResults": "परिणाम",
     "nav2022": "2022 परिणाम",
     "nav2017": "2017 परिणाम",
@@ -668,6 +672,7 @@ function renderHeader() {
       <nav class="nav-main" id="navMain">
         <a href="${pathPrefix}constituencies.html" data-i18n="navConstituencies">${t('navConstituencies')}</a>
         <a href="${pathPrefix}candidates.html" data-i18n="navCandidates">${t('navCandidates')}</a>
+        <a href="${pathPrefix}candidates-2027.html" data-i18n="navCandidates2027">${t('navCandidates2027')}</a>
         <div class="nav-dropdown">
           <button class="nav-dropdown-btn" data-i18n="navResults">${t('navResults')}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
@@ -718,6 +723,7 @@ function renderFooter() {
             <a href="${pathPrefix}results-2022.html" data-i18n="footerResults2022">${t('footerResults2022')}</a>
             <a href="${pathPrefix}results-2017.html" data-i18n="footerResults2017">${t('footerResults2017')}</a>
             <a href="${pathPrefix}candidates.html" data-i18n="footerCandidates">${t('footerCandidates')}</a>
+            <a href="${pathPrefix}candidates-2027.html" data-i18n="footerCandidates2027">${t('footerCandidates2027')}</a>
           </div>
         </div>
         <div>
