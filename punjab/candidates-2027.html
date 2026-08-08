@@ -80,25 +80,47 @@
       </div>
     </div>
 
-    <!-- Candidates Table -->
-    <div class="table-wrap">
-      <table class="data-table" id="candidatesTable">
+    <!-- View Switcher & Pagination Header -->
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s-5);flex-wrap:wrap;gap:var(--s-3);">
+      <div style="display:flex;gap:var(--s-2);background:var(--bg-2);padding:4px;border-radius:var(--radius-md);border:1px solid var(--border-color);">
+        <button class="btn btn-sm btn-primary" id="viewCardsBtn" style="padding:var(--s-1) var(--s-3);font-size:13px;font-weight:var(--w-medium);">Card Grid</button>
+        <button class="btn btn-sm" id="viewTableBtn" style="padding:var(--s-1) var(--s-3);font-size:13px;font-weight:var(--w-medium);">Table Roster</button>
+      </div>
+      <div id="paginationInfo" style="color:var(--text-3);font-size:var(--text-sm);font-weight:var(--w-medium);">
+        <!-- Showing X-Y of Z constituencies -->
+      </div>
+    </div>
+
+    <!-- Cards Grid Container -->
+    <div id="candidatesCardsGrid" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));gap:var(--s-4);margin-bottom:var(--s-6);">
+      <!-- Rendered dynamically -->
+    </div>
+
+    <!-- Table Roster View -->
+    <div class="table-wrap" id="candidatesTableWrap" style="display:none;margin-bottom:var(--s-6);">
+      <table class="data-table">
         <thead>
           <tr>
-            <th style="width:70px">AC No.</th>
+            <th style="width:70px">AC</th>
             <th>Constituency</th>
             <th>District</th>
-            <th>Party</th>
-            <th>Candidate Name</th>
-            <th style="text-align:right">Status</th>
+            <th>AAP</th>
+            <th>INC</th>
+            <th>SAD</th>
+            <th>BJP</th>
+            <th>BSP</th>
+            <th>SAD(A)</th>
           </tr>
         </thead>
-        <tbody id="candidatesListBody">
-          <tr>
-            <td colspan="6" style="text-align:center;padding:var(--s-8);color:var(--text-3)">Loading candidates database...</td>
-          </tr>
+        <tbody id="candidatesTableBody">
+          <!-- Rendered dynamically -->
         </tbody>
       </table>
+    </div>
+
+    <!-- Pagination Footer -->
+    <div style="display:flex;justify-content:center;align-items:center;gap:var(--s-2);margin-top:var(--s-8);flex-wrap:wrap;" id="paginationControls">
+      <!-- Buttons rendered dynamically -->
     </div>
 
   </div>
@@ -113,19 +135,52 @@
   let candidatesData = [];
   let currentPartyFilter = 'ALL';
   let currentSearchQuery = '';
+  let currentView = 'cards'; // 'cards' or 'table'
+  let currentPage = 1;
+  let itemsPerPage = 12;
 
-  const listBody = document.getElementById('candidatesListBody');
+  const cardsGrid = document.getElementById('candidatesCardsGrid');
+  const tableWrap = document.getElementById('candidatesTableWrap');
+  const tableBody = document.getElementById('candidatesTableBody');
   const statsGrid = document.getElementById('declarationStats');
   const searchInput = document.getElementById('candSearch');
   const filterButtons = document.querySelectorAll('#partyFilters button');
+  const paginationInfo = document.getElementById('paginationInfo');
+  const paginationControls = document.getElementById('paginationControls');
+  
+  const viewCardsBtn = document.getElementById('viewCardsBtn');
+  const viewTableBtn = document.getElementById('viewTableBtn');
 
   // Load database
   try {
     candidatesData = await loadCandidates2027();
     updateUI();
   } catch (err) {
-    listBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:var(--s-8);color:#c00">Failed to load candidates database.</td></tr>`;
+    cardsGrid.innerHTML = `<div style="text-align:center;padding:var(--s-8);color:#c00;grid-column:1/-1">Failed to load candidates database.</div>`;
   }
+
+  // Handle View Toggle
+  viewCardsBtn.addEventListener('click', () => {
+    viewCardsBtn.classList.add('btn-primary');
+    viewTableBtn.classList.remove('btn-primary');
+    currentView = 'cards';
+    itemsPerPage = 12;
+    currentPage = 1;
+    cardsGrid.style.display = 'grid';
+    tableWrap.style.display = 'none';
+    updateUI();
+  });
+
+  viewTableBtn.addEventListener('click', () => {
+    viewTableBtn.classList.add('btn-primary');
+    viewCardsBtn.classList.remove('btn-primary');
+    currentView = 'table';
+    itemsPerPage = 20;
+    currentPage = 1;
+    cardsGrid.style.display = 'none';
+    tableWrap.style.display = 'block';
+    updateUI();
+  });
 
   // Handle party filter selection
   filterButtons.forEach(btn => {
@@ -133,6 +188,7 @@
       filterButtons.forEach(b => b.classList.remove('btn-primary'));
       btn.classList.add('btn-primary');
       currentPartyFilter = btn.getAttribute('data-party');
+      currentPage = 1;
       updateUI();
     });
   });
@@ -140,6 +196,7 @@
   // Handle search filter
   searchInput.addEventListener('input', (e) => {
     currentSearchQuery = e.target.value.toLowerCase().trim();
+    currentPage = 1;
     updateUI();
   });
 
@@ -179,59 +236,170 @@
         </div>`;
     }).join('');
 
-    // 2. Filter & Flatten for rendering
-    let filteredList = [];
+    // 2. Filter constituencies based on search and party filter
+    let filteredConstituencies = [];
     candidatesData.forEach(c => {
       const cName = lang === 'hi' ? c.nameHi : lang === 'pa' ? (c.namePa || c.name) : c.name;
       
-      // If party filter is ALL, we display rows for each party declaration
-      const partiesToLoop = currentPartyFilter === 'ALL' ? Object.keys(c.declarations) : [currentPartyFilter];
-      
-      partiesToLoop.forEach(p => {
-        const candidateName = c.declarations[p] || 'TBD';
-        
-        // Match Search Query
+      // If filtering by a specific party, constituency must have a match or we filter it out
+      if (currentPartyFilter !== 'ALL') {
+        const candidateName = c.declarations[currentPartyFilter] || 'TBD';
         const matchSearch = !currentSearchQuery || 
           c.name.toLowerCase().includes(currentSearchQuery) ||
           (c.nameHi && c.nameHi.toLowerCase().includes(currentSearchQuery)) ||
           (c.namePa && c.namePa.toLowerCase().includes(currentSearchQuery)) ||
           c.district.toLowerCase().includes(currentSearchQuery) ||
-          candidateName.toLowerCase().includes(currentSearchQuery) ||
-          p.toLowerCase().includes(currentSearchQuery);
-
+          candidateName.toLowerCase().includes(currentSearchQuery);
+          
         if (matchSearch) {
-          filteredList.push({
-            acNo: c.acNo,
-            constituency: cName,
-            district: c.district,
-            party: p,
-            candidate: candidateName,
-            isDeclared: candidateName !== 'TBD'
-          });
+          filteredConstituencies.push(c);
         }
-      });
+      } else {
+        // If ALL, match against constituency name, district, or any declared candidate name
+        let matchCandidate = false;
+        for (const p in c.declarations) {
+          if (c.declarations[p] && c.declarations[p].toLowerCase().includes(currentSearchQuery)) {
+            matchCandidate = true;
+            break;
+          }
+        }
+        
+        const matchSearch = !currentSearchQuery || 
+          c.name.toLowerCase().includes(currentSearchQuery) ||
+          (c.nameHi && c.nameHi.toLowerCase().includes(currentSearchQuery)) ||
+          (c.namePa && c.namePa.toLowerCase().includes(currentSearchQuery)) ||
+          c.district.toLowerCase().includes(currentSearchQuery) ||
+          matchCandidate;
+          
+        if (matchSearch) {
+          filteredConstituencies.push(c);
+        }
+      }
     });
 
-    // Render Table Rows
-    if (filteredList.length === 0) {
-      listBody.innerHTML = `<tr><td colspan="6" style="text-align:center;padding:var(--s-8);color:var(--text-3)">No candidates found matching the criteria.</td></tr>`;
-      return;
+    const totalItems = filteredConstituencies.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
+    const paginatedItems = filteredConstituencies.slice(startIndex, endIndex);
+
+    // Update Pagination Info
+    paginationInfo.textContent = totalItems > 0 
+      ? `Showing ${startIndex + 1}–${endIndex} of ${totalItems} Constituencies`
+      : 'No constituencies found';
+
+    // 3. Render View Content
+    if (currentView === 'cards') {
+      if (paginatedItems.length === 0) {
+        cardsGrid.innerHTML = `<div style="text-align:center;padding:var(--s-8);color:var(--text-3);grid-column:1/-1">No candidates found matching the criteria.</div>`;
+      } else {
+        cardsGrid.innerHTML = paginatedItems.map(c => {
+          const cName = lang === 'hi' ? c.nameHi : lang === 'pa' ? (c.namePa || c.name) : c.name;
+          
+          // Generate declaration blocks for each party inside card
+          const decsHtml = Object.keys(c.declarations).map(p => {
+            const candidate = c.declarations[p] || 'TBD';
+            const isDeclared = candidate !== 'TBD';
+            const partyColor = stats[p] ? stats[p].color : '#777';
+            const badgeBg = isDeclared ? '#e6f4ea' : 'var(--bg-3)';
+            const badgeColor = isDeclared ? '#137333' : 'var(--text-3)';
+            return `
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:var(--s-2) 0;border-bottom:1px solid var(--border-color);">
+                <div style="display:flex;align-items:center;gap:var(--s-2)">
+                  <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${partyColor}"></span>
+                  <span style="font-weight:var(--w-semibold);font-size:13px;color:var(--text-1)">${p}</span>
+                </div>
+                <div style="font-size:13px;font-weight:var(--w-medium);padding:2px 8px;border-radius:4px;background:${badgeBg};color:${badgeColor}">
+                  ${isDeclared ? candidate : 'TBD'}
+                </div>
+              </div>`;
+          }).join('');
+
+          return `
+            <div class="party-card" style="transition:transform 0.2s, box-shadow 0.2s; cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='none';this.style.boxShadow='none';">
+              <div class="party-card-header" style="border-bottom:1px solid var(--border-color);padding-bottom:var(--s-3);margin-bottom:var(--s-3)">
+                <div>
+                  <div style="font-size:12px;color:var(--text-3);font-weight:var(--w-semibold)">AC No. ${c.acNo}</div>
+                  <div class="party-card-name" style="font-size:18px">${cName}</div>
+                  <div style="font-size:12px;color:var(--text-3)">District: ${c.district}</div>
+                </div>
+              </div>
+              <div>
+                ${decsHtml}
+              </div>
+            </div>`;
+        }).join('');
+      }
+    } else {
+      if (paginatedItems.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:var(--s-8);color:var(--text-3)">No candidates found matching the criteria.</td></tr>`;
+      } else {
+        tableBody.innerHTML = paginatedItems.map(c => {
+          const cName = lang === 'hi' ? c.nameHi : lang === 'pa' ? (c.namePa || c.name) : c.name;
+          const getVal = (p) => {
+            const name = c.declarations[p] || 'TBD';
+            return name !== 'TBD' ? `<strong style="color:#137333">${name}</strong>` : `<span style="color:var(--text-3)">TBD</span>`;
+          };
+          return `
+            <tr>
+              <td>${c.acNo}</td>
+              <td><strong>${cName}</strong></td>
+              <td>${c.district}</td>
+              <td>${getVal('AAP')}</td>
+              <td>${getVal('INC')}</td>
+              <td>${getVal('SAD')}</td>
+              <td>${getVal('BJP')}</td>
+              <td>${getVal('BSP')}</td>
+              <td>${getVal('SAD-A')}</td>
+            </tr>`;
+        }).join('');
+      }
     }
 
-    listBody.innerHTML = filteredList.map(item => {
-      const statusBadge = item.isDeclared 
-        ? `<span class="badge" style="background:#e6f4ea;color:#137333">Declared</span>` 
-        : `<span class="badge" style="background:var(--bg-3);color:var(--text-3)">TBD</span>`;
-      return `
-        <tr>
-          <td>${item.acNo}</td>
-          <td><strong>${item.constituency}</strong></td>
-          <td>${item.district}</td>
-          <td><span class="badge" style="background:var(--bg-3);color:var(--text-1);font-weight:var(--w-medium)">${item.party}</span></td>
-          <td>${item.isDeclared ? `<strong>${item.candidate}</strong>` : `<span style="color:var(--text-3)">TBD</span>`}</td>
-          <td style="text-align:right">${statusBadge}</td>
-        </tr>`;
-    }).join('');
+    // 4. Render Pagination Controls
+    let pagHtml = '';
+    if (totalPages > 1) {
+      pagHtml += `<button class="btn btn-sm" ${currentPage === 1 ? 'disabled style="opacity:0.5"' : ''} id="prevPageBtn">Previous</button>`;
+      
+      // Page number tabs (max 5 around current page)
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+          pagHtml += `<button class="btn btn-sm ${i === currentPage ? 'btn-primary' : ''}" data-page="${i}">${i}</button>`;
+        } else if (i === currentPage - 3 || i === currentPage + 3) {
+          pagHtml += `<span style="color:var(--text-3);padding:0 var(--s-1)">...</span>`;
+        }
+      }
+      
+      pagHtml += `<button class="btn btn-sm" ${currentPage === totalPages ? 'disabled style="opacity:0.5"' : ''} id="nextPageBtn">Next</button>`;
+    }
+    paginationControls.innerHTML = pagHtml;
+
+    // Attach Pagination Event Listeners
+    if (totalPages > 1) {
+      document.getElementById('prevPageBtn').addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          updateUI();
+          window.scrollTo({ top: statsGrid.offsetTop - 20, behavior: 'smooth' });
+        }
+      });
+      document.getElementById('nextPageBtn').addEventListener('click', () => {
+        if (currentPage < totalPages) {
+          currentPage++;
+          updateUI();
+          window.scrollTo({ top: statsGrid.offsetTop - 20, behavior: 'smooth' });
+        }
+      });
+      paginationControls.querySelectorAll('button[data-page]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          currentPage = parseInt(btn.getAttribute('data-page'));
+          updateUI();
+          window.scrollTo({ top: statsGrid.offsetTop - 20, behavior: 'smooth' });
+        });
+      });
+    }
   }
 })();
 </script>
