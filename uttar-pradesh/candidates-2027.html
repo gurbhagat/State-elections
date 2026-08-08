@@ -43,8 +43,8 @@
 <div class="page-header">
   <div class="container">
     <span class="page-eyebrow" data-i18n="heroEyebrow">UP Assembly Election 2027</span>
-    <h1 class="page-title" data-i18n="candidatesTitle">2027 Candidates Tracker</h1>
-    <p class="page-desc" data-i18n="candidatesDesc">Live list of declared candidates for all 403 constituencies in Uttar Pradesh. Filter by party and search by constituency.</p>
+    <h1 class="page-title">2027 Candidates Tracker</h1>
+    <p class="page-desc">Live list of declared candidates for all 403 constituencies in Uttar Pradesh. Filter by party and search by constituency.</p>
   </div>
 </div>
 
@@ -82,22 +82,14 @@
 
     <!-- View Switcher & Pagination Header -->
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:var(--s-5);flex-wrap:wrap;gap:var(--s-3);">
-      <div style="display:flex;gap:var(--s-2);background:var(--bg-2);padding:4px;border-radius:var(--radius-md);border:1px solid var(--border-color);">
-        <button class="btn btn-sm btn-primary" id="viewCardsBtn" style="padding:var(--s-1) var(--s-3);font-size:13px;font-weight:var(--w-medium);">Card Grid</button>
-        <button class="btn btn-sm" id="viewTableBtn" style="padding:var(--s-1) var(--s-3);font-size:13px;font-weight:var(--w-medium);">Table Roster</button>
-      </div>
+      <div></div>
       <div id="paginationInfo" style="color:var(--text-3);font-size:var(--text-sm);font-weight:var(--w-medium);">
         <!-- Showing X-Y of Z constituencies -->
       </div>
     </div>
 
-    <!-- Cards Grid Container -->
-    <div id="candidatesCardsGrid" style="display:grid;grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));gap:var(--s-4);margin-bottom:var(--s-6);">
-      <!-- Rendered dynamically -->
-    </div>
-
     <!-- Table Roster View -->
-    <div class="table-wrap" id="candidatesTableWrap" style="display:none;margin-bottom:var(--s-6);">
+    <div class="table-wrap" id="candidatesTableWrap" style="margin-bottom:var(--s-6);">
       <table class="data-table">
         <thead>
           <tr>
@@ -135,11 +127,9 @@
   let candidatesData = [];
   let currentPartyFilter = 'ALL';
   let currentSearchQuery = '';
-  let currentView = 'cards'; // 'cards' or 'table'
   let currentPage = 1;
-  let itemsPerPage = 12;
+  let itemsPerPage = 25;
 
-  const cardsGrid = document.getElementById('candidatesCardsGrid');
   const tableWrap = document.getElementById('candidatesTableWrap');
   const tableBody = document.getElementById('candidatesTableBody');
   const statsGrid = document.getElementById('declarationStats');
@@ -147,40 +137,14 @@
   const filterButtons = document.querySelectorAll('#partyFilters button');
   const paginationInfo = document.getElementById('paginationInfo');
   const paginationControls = document.getElementById('paginationControls');
-  
-  const viewCardsBtn = document.getElementById('viewCardsBtn');
-  const viewTableBtn = document.getElementById('viewTableBtn');
 
   // Load database
   try {
     candidatesData = await loadCandidates2027();
     updateUI();
   } catch (err) {
-    cardsGrid.innerHTML = `<div style="text-align:center;padding:var(--s-8);color:#c00;grid-column:1/-1">Failed to load candidates database.</div>`;
+    tableBody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:var(--s-8);color:#c00">Failed to load candidates database.</td></tr>`;
   }
-
-  // Handle View Toggle
-  viewCardsBtn.addEventListener('click', () => {
-    viewCardsBtn.classList.add('btn-primary');
-    viewTableBtn.classList.remove('btn-primary');
-    currentView = 'cards';
-    itemsPerPage = 12;
-    currentPage = 1;
-    cardsGrid.style.display = 'grid';
-    tableWrap.style.display = 'none';
-    updateUI();
-  });
-
-  viewTableBtn.addEventListener('click', () => {
-    viewTableBtn.classList.add('btn-primary');
-    viewCardsBtn.classList.remove('btn-primary');
-    currentView = 'table';
-    itemsPerPage = 20;
-    currentPage = 1;
-    cardsGrid.style.display = 'none';
-    tableWrap.style.display = 'block';
-    updateUI();
-  });
 
   // Handle party filter selection
   filterButtons.forEach(btn => {
@@ -290,71 +254,28 @@
       : 'No constituencies found';
 
     // 3. Render View Content
-    if (currentView === 'cards') {
-      if (paginatedItems.length === 0) {
-        cardsGrid.innerHTML = `<div style="text-align:center;padding:var(--s-8);color:var(--text-3);grid-column:1/-1">No candidates found matching the criteria.</div>`;
-      } else {
-        cardsGrid.innerHTML = paginatedItems.map(c => {
-          const cName = lang === 'hi' ? c.nameHi : c.name;
-          
-          // Generate declaration blocks for each party inside card
-          const decsHtml = Object.keys(c.declarations).map(p => {
-            const candidate = c.declarations[p] || 'TBD';
-            const isDeclared = candidate !== 'TBD';
-            const partyColor = stats[p] ? stats[p].color : '#777';
-            const badgeBg = isDeclared ? '#e6f4ea' : 'var(--bg-3)';
-            const badgeColor = isDeclared ? '#137333' : 'var(--text-3)';
-            return `
-              <div style="display:flex;justify-content:space-between;align-items:center;padding:var(--s-2) 0;border-bottom:1px solid var(--border-color);">
-                <div style="display:flex;align-items:center;gap:var(--s-2)">
-                  <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${partyColor}"></span>
-                  <span style="font-weight:var(--w-semibold);font-size:13px;color:var(--text-1)">${p === 'ASP-KR' ? 'ASP(KR)' : p}</span>
-                </div>
-                <div style="font-size:13px;font-weight:var(--w-medium);padding:2px 8px;border-radius:4px;background:${badgeBg};color:${badgeColor}">
-                  ${isDeclared ? candidate : 'TBD'}
-                </div>
-              </div>`;
-          }).join('');
-
-          return `
-            <div class="party-card" style="transition:transform 0.2s, box-shadow 0.2s; cursor:default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='none';this.style.boxShadow='none';">
-              <div class="party-card-header" style="border-bottom:1px solid var(--border-color);padding-bottom:var(--s-3);margin-bottom:var(--s-3)">
-                <div>
-                  <div style="font-size:12px;color:var(--text-3);font-weight:var(--w-semibold)">AC No. ${c.acNo}</div>
-                  <div class="party-card-name" style="font-size:18px">${cName}</div>
-                  <div style="font-size:12px;color:var(--text-3)">District: ${c.district}</div>
-                </div>
-              </div>
-              <div>
-                ${decsHtml}
-              </div>
-            </div>`;
-        }).join('');
-      }
+    if (paginatedItems.length === 0) {
+      tableBody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:var(--s-8);color:var(--text-3)">No candidates found matching the criteria.</td></tr>`;
     } else {
-      if (paginatedItems.length === 0) {
-        tableBody.innerHTML = `<tr><td colspan="9" style="text-align:center;padding:var(--s-8);color:var(--text-3)">No candidates found matching the criteria.</td></tr>`;
-      } else {
-        tableBody.innerHTML = paginatedItems.map(c => {
-          const cName = lang === 'hi' ? c.nameHi : c.name;
-          const getVal = (p) => {
-            const name = c.declarations[p] || 'TBD';
-            return name !== 'TBD' ? `<strong style="color:#137333">${name}</strong>` : `<span style="color:var(--text-3)">TBD</span>`;
-          };
-          return `
-            <tr>
-              <td>${c.acNo}</td>
-              <td><strong>${cName}</strong></td>
-              <td>${c.district}</td>
-              <td>${getVal('BJP')}</td>
-              <td>${getVal('SP')}</td>
-              <td>${getVal('BSP')}</td>
-              <td>${getVal('INC')}</td>
-              <td>${getVal('RLD')}</td>
-              <td>${getVal('ASP-KR')}</td>
-            </tr>`;
-        }).join('');
-      }
+      tableBody.innerHTML = paginatedItems.map(c => {
+        const cName = lang === 'hi' ? c.nameHi : c.name;
+        const getVal = (p) => {
+          const name = c.declarations[p] || 'TBD';
+          return name !== 'TBD' ? `<strong style="color:#137333">${name}</strong>` : `<span style="color:var(--text-3)">TBD</span>`;
+        };
+        return `
+          <tr>
+            <td>${c.acNo}</td>
+            <td><strong>${cName}</strong></td>
+            <td>${c.district}</td>
+            <td>${getVal('BJP')}</td>
+            <td>${getVal('SP')}</td>
+            <td>${getVal('BSP')}</td>
+            <td>${getVal('INC')}</td>
+            <td>${getVal('RLD')}</td>
+            <td>${getVal('ASP-KR')}</td>
+          </tr>`;
+      }).join('');
     }
 
     // 4. Render Pagination Controls
