@@ -1,5 +1,4 @@
-window._DATA = window._DATA || {};
-window._DATA.candidates2027 = [
+const candidates2027Data = [
   {
     "acNo": 1,
     "name": "Sujanpur",
@@ -101,7 +100,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Gurbachan Singh Pawar"
     },
     "namePa": "ਬਟਾਲਾ"
   },
@@ -131,7 +130,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Gurvinder Singh Jolly"
     },
     "namePa": "ਫਤਹਿਗੜ੍ਹ ਚੂੜੀਆਂ"
   },
@@ -176,7 +175,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Shamsher Singh Brar"
     },
     "namePa": "ਰਾਜਾਸਾਂਸੀ"
   },
@@ -206,7 +205,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Baljit Singh Buttar"
     },
     "namePa": "ਜੰਡਿਆਲਾ"
   },
@@ -326,7 +325,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Harpal Singh Baler"
     },
     "namePa": "ਖੇਮਕਰਨ"
   },
@@ -671,7 +670,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Gurnam Singh Singriwal"
     },
     "namePa": "ਗੜ੍ਹਸ਼ੰਕਰ"
   },
@@ -746,7 +745,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Kuldeep Singh Bhagowal"
     },
     "namePa": "ਰੋਪੜ"
   },
@@ -776,7 +775,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Kusalpal Singh Mann"
     },
     "namePa": "ਖਰੜ"
   },
@@ -866,7 +865,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Amritpal Singh Chhandran"
     },
     "namePa": "ਸਮਰਾਲਾ"
   },
@@ -1061,7 +1060,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Baldev Singh Gaggra"
     },
     "namePa": "ਨਿਹਾਲ ਸਿੰਘ ਵਾਲਾ"
   },
@@ -1106,7 +1105,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Balraj Singh Khalsa"
     },
     "namePa": "ਧਰਮਕੋਟ"
   },
@@ -1136,7 +1135,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Tejinder Singh Deol"
     },
     "namePa": "ਫ਼ਿਰੋਜ਼ਪੁਰ ਸ਼ਹਿਰ"
   },
@@ -1211,7 +1210,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Inderjit Bulandi"
     },
     "namePa": "ਅਬੋਹਰ"
   },
@@ -1286,7 +1285,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Bibi Mandeep Kaur Sandhu"
     },
     "namePa": "ਮੁਕਤਸਰ"
   },
@@ -1421,7 +1420,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Parminder Singh Balianwali"
     },
     "namePa": "ਮੌੜ"
   },
@@ -1526,7 +1525,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Dr. Harjinder Singh Jakhu"
     },
     "namePa": "ਭਦੌੜ"
   },
@@ -1556,7 +1555,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Gurjant Singh Kattu"
     },
     "namePa": "ਮਹਿਲ ਕਲਾਂ"
   },
@@ -1616,7 +1615,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Gurnaib Singh Rampura"
     },
     "namePa": "ਸੰਗਰੂਰ"
   },
@@ -1646,7 +1645,7 @@ window._DATA.candidates2027 = [
       "SAD": "TBD",
       "BJP": "TBD",
       "BSP": "TBD",
-      "SAD-A": "TBD"
+      "SAD-A": "Prof. Mahinderpal Singh"
     },
     "namePa": "ਪਟਿਆਲਾ ਦਿਹਾਤੀ"
   },
